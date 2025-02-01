@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "logs/.b7bb3e001a949398e3d0d7df70667e34d166c9f2-audit.json",
+    "files": [
+        {
+            "date": 1737739646544,
+            "name": "logs/stremio-addon-manager-2025-01-24.log",
+            "hash": "feb904815339c460d4aedebb0c286e1f348f3888f126047b0c31ee71cc7ea771"
+        },
+        {
+            "date": 1737789154611,
+            "name": "logs/stremio-addon-manager-2025-01-25.log",
+            "hash": "83713b907410850b6f60c6b52386316fc8d1aa43862f72befcbbb34218fbf207"
+        },
+        {
+            "date": 1737847792519,
+            "name": "logs/stremio-addon-manager-2025-01-26.log",
+            "hash": "b8de6a13d62d8f0f1dd2dca6713ec0e7c8f1e68f64b0ac1d0a44409ae28545b5"
+        }
+    ],
+    "hashType": "sha256"
+}

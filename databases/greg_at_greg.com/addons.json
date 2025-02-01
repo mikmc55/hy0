@@ -1,0 +1,429 @@
+[
+  {
+    "transportUrl": "https://modshack.duckdns.org/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.premiumize.proxy",
+      "version": "1.0.0",
+      "name": "Premiumize Proxy",
+      "description": "Combined Torrent Streams with Premiumize Debrid",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "stream"
+      ],
+      "idPrefixes": null,
+      "catalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://torrentiopro.duckdns.org/pr3m1um1z3pr0x/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "Torrentio PM",
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(-), NyaaSi(-), TokyoTosho(-), AniDex(-), Rutor(-), Rutracker(-), Comando(-), BluDV(-), Torrent9(+), ilCorSaRoNeRo(-), MejorTorrent(-), Wolfmax4k(-), Cinecalidad(-) and Premiumize enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://propremiumize.duckdns.org/pr3m1um1z3pr0x/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.premiumize",
+      "version": "1.6.0",
+      "name": "Premiumize",
+      "description": "Stream movies and series via Debrid services",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "stream"
+      ],
+      "idPrefixes": [
+        "tt",
+        "tmdb"
+      ],
+      "catalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://123easyas.duckdns.org/eyJ1c2VybmFtZSI6ImlnamZwYWxwbGMiLCJwYXNzd29yZCI6ImxtZ3Fzd2V2dHYifQ==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.stremio.easynews",
+      "version": "1.0.0",
+      "name": "Easynews",
+      "description": "Stream movies and series from Easynews with high quality sources",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        {
+          "name": "meta",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "easynews"
+          ]
+        },
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "tmdb",
+            "easynews"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "type": "movie",
+          "id": "easynews-movie-catalog",
+          "name": "Easynews Movies",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "type": "series",
+          "id": "easynews-series-catalog",
+          "name": "Easynews Series",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://ufccatalog.duckdns.org/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.stremio.ufc",
+      "version": "1.3.0",
+      "name": "UFC Catalog",
+      "description": "Stremio Add-on showcasing UFC events and related content from TMDB with daily updates",
+      "types": [
+        "movie"
+      ],
+      "resources": [
+        "catalog",
+        "meta"
+      ],
+      "idPrefixes": [
+        "tmdb"
+      ],
+      "catalogs": [
+        {
+          "type": "movie",
+          "id": "ufc-movie-catalog",
+          "name": "UFC Events",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false
+            }
+          ]
+        }
+      ],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://lucky-cloud-4a8f.stremiotv.workers.dev/eyJ1c2VybmFtZSI6InR3aGxqc2Rla3ciLCJwYXNzd29yZCI6InRiaXItcnVuYi16ZGRsIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.stremio.easynewsrss",
+      "version": "2.1.0",
+      "name": "Easynews rss",
+      "description": "Stream movies and series from Easynews with high quality sources",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        {
+          "name": "meta",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "easynews"
+          ]
+        },
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "tmdb",
+            "easynews"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "type": "movie",
+          "id": "easynews-movie-catalog",
+          "name": "Easynews Movies",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "type": "series",
+          "id": "easynews-series-catalog",
+          "name": "Easynews Series",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://jackettiopro.duckdns.org/pr3m1um1z3pr0x/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.stremio.jackettio",
+      "version": "1.6.0",
+      "name": "TMDb UFC Jackettio PM",
+      "description": "Stremio addon that resolve streams using Jackett and Debrid. It seamlessly integrates with private trackers.",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "stream"
+      ],
+      "idPrefixes": [
+        "tt",
+        "tmdb"
+      ],
+      "catalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://7a82163c306e-stremio-netflix-catalog-addon.baby-beamup.club/bmZ4LGRucCxhbXAsYXRwLGhibSxuZmsscG1wLGRwZTp0MC1mcmVlLXJwZGI6dXM6MTczNjg4ODYwMTgwOA%3D%3D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "pw.ers.netflix-catalog",
+      "logo": "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI",
+      "version": "1.0.9",
+      "name": "Streaming Catalogs",
+      "description": "Your favourite streaming services!",
+      "catalogs": [
+        {
+          "id": "nfx",
+          "type": "movie",
+          "name": "Netflix"
+        },
+        {
+          "id": "nfx",
+          "type": "series",
+          "name": "Netflix"
+        },
+        {
+          "id": "nfk",
+          "type": "movie",
+          "name": "Netflix Kids"
+        },
+        {
+          "id": "nfk",
+          "type": "series",
+          "name": "Netflix Kids"
+        },
+        {
+          "id": "hbm",
+          "type": "movie",
+          "name": "HBO Max"
+        },
+        {
+          "id": "hbm",
+          "type": "series",
+          "name": "HBO Max"
+        },
+        {
+          "id": "dnp",
+          "type": "movie",
+          "name": "Disney+"
+        },
+        {
+          "id": "dnp",
+          "type": "series",
+          "name": "Disney+"
+        },
+        {
+          "id": "amp",
+          "type": "movie",
+          "name": "Prime Video"
+        },
+        {
+          "id": "amp",
+          "type": "series",
+          "name": "Prime Video"
+        },
+        {
+          "id": "pmp",
+          "type": "movie",
+          "name": "Paramount+"
+        },
+        {
+          "id": "pmp",
+          "type": "series",
+          "name": "Paramount+"
+        },
+        {
+          "id": "atp",
+          "type": "movie",
+          "name": "Apple TV+"
+        },
+        {
+          "id": "atp",
+          "type": "series",
+          "name": "Apple TV+"
+        },
+        {
+          "id": "dpe",
+          "type": "series",
+          "name": "Discovery+"
+        }
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "behaviorHints": {
+        "configurable": true
+      }
+    },
+    "flags": {}
+  }
+]

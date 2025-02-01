@@ -1,0 +1,3827 @@
+{
+  "abder-stremio@hotmail.fr": [
+    {
+      "transportUrl": "https://up-next.dontwanttos.top/eyJhY2Nlc3NUb2tlbiI6ImYwZmQxN2E1ZTI3ZjgyNjI0ZDhjMjFlNWQzZDk5MWE2MGI2MmYyNDZjOGU0OGExNTc2MjYyZjIxZmFhMmJiOTgiLCJjYXRhbG9ncyI6eyJyZWNlbnRseUFpcmVkIjpmYWxzZSwicmVjZW50bHlXYXRjaGVkIjp0cnVlfSwiaW5jbHVkZVdhdGNobGlzdCI6dHJ1ZX0=/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "com.noone.stremio-trakt-up-next",
+        "version": "0.1.2",
+        "name": "[TRAKT] Up Next",
+        "contactEmail": null,
+        "description": "Up Next - Personalised Stremio series catalogs showcasing unwatched and recently aired episodes. ",
+        "logo": "https://i.ibb.co/khBT18p/logo.png",
+        "background": null,
+        "types": [
+          "series"
+        ],
+        "resources": [
+          {
+            "name": "meta",
+            "types": [
+              "series"
+            ],
+            "idPrefixes": [
+              "tun_"
+            ]
+          }
+        ],
+        "idPrefixes": [
+          "tun_"
+        ],
+        "catalogs": [
+          {
+            "id": "trakt-up-next-recently-watched",
+            "type": "series",
+            "name": "Progression en cours",
+            "extraRequired": [],
+            "extraSupported": []
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=0db59,19322%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Tendance Aujourd'hui (Films, Séries)",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "Séries",
+          "Films"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "trending_today.movie",
+            "type": "Films Tendance du jour",
+            "name": "",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adult",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "trending_today.series",
+            "type": "Séries Tendance du jour",
+            "name": "",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adult",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=458f5,ba15a%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://logodownload.org/wp-content/uploads/2023/05/apple-tv-logo.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "apple_tv_plus.new.movie",
+            "type": "Apple Tv Plus",
+            "name": "Nouveautés Films ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2003",
+                  "2002",
+                  "1992",
+                  "1986",
+                  "1975",
+                  "1974",
+                  "1973",
+                  "1966"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "apple_tv_plus.new.series",
+            "type": "Apple Tv Plus",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2017",
+                  "2015",
+                  "2007",
+                  "2004",
+                  "1983"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=2699b,44ed2%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://get-picto.com/wp-content/uploads/2023/08/logo-amazon-prime-video.webp",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "amazon_prime.new.movie",
+            "type": "Amazon Prime",
+            "name": "Nouveautés Films ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2017",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "amazon_prime.new.series",
+            "type": "Amazon Prime",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2012",
+                  "2005",
+                  "2000"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=47f38,71418%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Séries Films",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://iphonesoft.fr/images/appstore/1446075923/disney-icon.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "disney_plus.new.movie",
+            "type": "Disney Plus",
+            "name": "Nouveautés Films",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "disney_plus.new.series",
+            "type": "Disney Plus",
+            "name": "Nouveautés Séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=cf003,eba63%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Séries Films",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "netflix.new.movie",
+            "type": "Netflix",
+            "name": "Nouveautés Films",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "netflix.new.series",
+            "type": "Netflix",
+            "name": "Nouveautés Séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=4cc98,14b3a%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Animés Populaires et nouveautés",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "http://cyberflix.elfhosted.com/logo.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "anime.trending.series",
+            "type": "Animés",
+            "name": "Séries tendances",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Sport",
+                  "Thriller"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "anime.new.series",
+            "type": "Animés",
+            "name": "Séries nouveautés",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2019",
+                  "2018",
+                  "2016",
+                  "2013",
+                  "2011",
+                  "2008",
+                  "2005",
+                  "2004",
+                  "1999",
+                  "1986"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=2b537%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://m.media-amazon.com/images/I/31EBJJgC2PL.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "network_series.adult_swim.series",
+            "type": "Adult Swim",
+            "name": "Séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Drama",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Sci-Fi",
+                  "Short",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=f7c8f,8c976%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Asiatique Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://previews.123rf.com/images/gagarych/gagarych2011/gagarych201100833/158794011-carte-de-l-asie-carte-du-continent-avec-de-belles-vagues-g%C3%A9om%C3%A9triques-aux-couleurs-bleu-rouge.jpg",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "asian.new.movie",
+            "type": "Asiatique",
+            "name": "Nouveautés Films",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2012",
+                  "2009",
+                  "2003",
+                  "1951"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "asian.new.series",
+            "type": "Asiatique",
+            "name": "Nouveautés Séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2014"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=5b796,02475%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Asiatique Films et séries Populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://previews.123rf.com/images/gagarych/gagarych2011/gagarych201100833/158794011-carte-de-l-asie-carte-du-continent-avec-de-belles-vagues-g%C3%A9om%C3%A9triques-aux-couleurs-bleu-rouge.jpg",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "asian.popular.movie",
+            "type": "Films Asiatique",
+            "name": "Populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adult",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "asian.popular.series",
+            "type": "Séries Asiatique",
+            "name": "Populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=bfb17,ed8a6%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://logodownload.org/wp-content/uploads/2023/05/apple-tv-logo.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "apple_tv_plus.popular.movie",
+            "type": "Apple Tv Plus",
+            "name": "Films populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "apple_tv_plus.popular.series",
+            "type": "Apple Tv Plus",
+            "name": "Series populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=5653e,223ce%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://get-picto.com/wp-content/uploads/2023/08/logo-amazon-prime-video.webp",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "amazon_prime.popular.movie",
+            "type": "Amazon Prime",
+            "name": "Films populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "amazon_prime.popular.series",
+            "type": "Amazon Prime",
+            "name": "Series populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=c4e72,071c0%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Films et séries populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://iphonesoft.fr/images/appstore/1446075923/disney-icon.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "disney_plus.popular.movie",
+            "type": "Disney Plus",
+            "name": "Films Populaires ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "disney_plus.popular.series",
+            "type": "Disney Plus",
+            "name": "Séries Populaires ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=cd492,15846%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Films et séries Populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "netflix.popular.movie",
+            "type": "Netflix",
+            "name": "Films Populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "netflix.popular.series",
+            "type": "Netflix",
+            "name": "Séries Populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=45927,8a40d%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://static.cdnlogo.com/logos/p/90/paramount-thumb.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "paramount_plus.new.movie",
+            "type": "Paramount Plus",
+            "name": "Nouveautés Films ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "paramount_plus.new.series",
+            "type": "Paramount Plus",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=88681,a2ff4%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://www.boxofficepro.fr/wp-content/uploads/sites/2/2023/04/Fth6ZAwaYAEK5-H.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "hbo_max.new.movie",
+            "type": "Hbo Max",
+            "name": "Nouveautés Films",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "hbo_max.new.series",
+            "type": "Hbo Max",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=648d5,7459e%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ujbmCqYg2cQYRr1IPkRbcEu5E97gU4sK2A&s",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "peacock_premium.new.movie",
+            "type": "Peacock Premium",
+            "name": "Nouveautés Films",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2009",
+                  "2004",
+                  "1983"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "peacock_premium.new.series",
+            "type": "Peacock Premium",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=a727d,c29be%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://play-lh.googleusercontent.com/70N00IvZzmPe6O2gE8Eq9uU1oLYdtlrBHIy9jTd99egSOrDxNRx-D1XGuL4StgxaOg",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "sky_showtime.new.movie",
+            "type": "Sky Showtime",
+            "name": "Nouveautés Films ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "sky_showtime.new.series",
+            "type": "Sky Showtime",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=330d5,ec1fd%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://i.pinimg.com/736x/d5/0c/cb/d50ccbb13b971a1ffd2c50de40a16716.jpg",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "hulu.new.movie",
+            "type": "Hulu",
+            "name": "Nouveautés Films ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "hulu.new.series",
+            "type": "Hulu",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=5f746,5998a%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Nouveautés Films et séries",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://cdnimg.spectrum.net/imageserver/image/default?providerId=STARZ_HD&productId=STZOD&sourceType=colorHybrid",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "starz.new.movie",
+            "type": "Starz",
+            "name": "Nouveautés Films ",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "starz.new.series",
+            "type": "Starz",
+            "name": "Nouveautés séries",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2010",
+                  "2009",
+                  "1999"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=4354b,10164%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://static.cdnlogo.com/logos/p/90/paramount-thumb.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "paramount_plus.popular.movie",
+            "type": "Paramount Plus",
+            "name": "Films populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "paramount_plus.popular.series",
+            "type": "Paramount Plus",
+            "name": "Series populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=61f57,60f26%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://www.boxofficepro.fr/wp-content/uploads/sites/2/2023/04/Fth6ZAwaYAEK5-H.png",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "hbo_max.popular.movie",
+            "type": "Hbo Max",
+            "name": "Films populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "hbo_max.popular.series",
+            "type": "Hbo Max",
+            "name": "Series populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=09ef9,02d66%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaire",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ujbmCqYg2cQYRr1IPkRbcEu5E97gU4sK2A&s",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "peacock_premium.popular.movie",
+            "type": "Peacock Premium",
+            "name": "Films populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "peacock_premium.popular.series",
+            "type": "Peacock Premium",
+            "name": "Series populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=83e38,43a25%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaire",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://play-lh.googleusercontent.com/70N00IvZzmPe6O2gE8Eq9uU1oLYdtlrBHIy9jTd99egSOrDxNRx-D1XGuL4StgxaOg",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "sky_showtime.popular.movie",
+            "type": "Sky Showtime",
+            "name": "Films populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "sky_showtime.popular.series",
+            "type": "Sky Showtime",
+            "name": "Series populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=f3902,241e6%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaires",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://i.pinimg.com/736x/d5/0c/cb/d50ccbb13b971a1ffd2c50de40a16716.jpg",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "hulu.popular.movie",
+            "type": "Hulu",
+            "name": "Films populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "hulu.popular.series",
+            "type": "Hulu",
+            "name": "Series populaires",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Kids",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=21291,f0224%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "marcojoao.ml.cyberflix.catalog",
+        "version": "1.6.0",
+        "name": "[INFO] Series Films populaire",
+        "contactEmail": null,
+        "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+        "logo": "https://cdnimg.spectrum.net/imageserver/image/default?providerId=STARZ_HD&productId=STZOD&sourceType=colorHybrid",
+        "background": "http://cyberflix.elfhosted.com/background.png",
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "cyberflix:"
+        ],
+        "catalogs": [
+          {
+            "id": "starz.popular.movie",
+            "type": "Starz",
+            "name": "Films populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Music",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "starz.popular.series",
+            "type": "Starz",
+            "name": "Series populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Mystery",
+                  "Romance",
+                  "Short",
+                  "Sport",
+                  "Thriller",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://94c8cb9f702d-tmdb-addon.baby-beamup.club/%7B%22ratings%22%3A%22on%22%2C%22rpdbkey%22%3A%22t0-free-rpdb%22%2C%22provide_imdbId%22%3A%22true%22%2C%22language%22%3A%22fr-FR%22%2C%22sessionId%22%3A%224cd60156e3ea775137e76b28ac636c3eb85cefb0%22%7D/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "tmdb-addon",
+        "version": "3.0.18",
+        "name": "[INFO] The Movie Database Addon",
+        "contactEmail": null,
+        "description": "Metadata provided by TMDB with fr-FR language.",
+        "logo": "https://github.com/mrcanelas/tmdb-addon/raw/main/images/logo.png",
+        "background": "https://github.com/mrcanelas/tmdb-addon/raw/main/images/background.png",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "tmdb:",
+          "tt"
+        ],
+        "catalogs": [
+          {
+            "id": "tmdb.top",
+            "type": "movie",
+            "name": "Populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action",
+                  "Animation",
+                  "Aventure",
+                  "Comédie",
+                  "Crime",
+                  "Documentaire",
+                  "Drame",
+                  "Familial",
+                  "Fantastique",
+                  "Guerre",
+                  "Histoire",
+                  "Horreur",
+                  "Musique",
+                  "Mystère",
+                  "Romance",
+                  "Science-Fiction",
+                  "Thriller",
+                  "Téléfilm",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "search",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.year",
+            "type": "movie",
+            "name": "Année",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010",
+                  "2009",
+                  "2008",
+                  "2007",
+                  "2006",
+                  "2005"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.language",
+            "type": "movie",
+            "name": "Langue",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "French",
+                  "Afrikaans",
+                  "Albanian",
+                  "Arabic",
+                  "Basque",
+                  "Belarusian",
+                  "Bengali",
+                  "Breton",
+                  "Bulgarian",
+                  "Catalan",
+                  "Chamorro",
+                  "Croatian",
+                  "Czech",
+                  "Danish",
+                  "Dutch",
+                  "English",
+                  "Esperanto",
+                  "Estonian",
+                  "Finnish",
+                  "Gaelic",
+                  "Galician",
+                  "Georgian",
+                  "German",
+                  "Greek",
+                  "Hebrew",
+                  "Hindi",
+                  "Hungarian",
+                  "Indonesian",
+                  "Irish",
+                  "Italian",
+                  "Japanese",
+                  "Kannada",
+                  "Kazakh",
+                  "Kirghiz",
+                  "Korean",
+                  "Kurdish",
+                  "Latvian",
+                  "Lithuanian",
+                  "Malay",
+                  "Malayalam",
+                  "Mandarin",
+                  "Marathi",
+                  "Norwegian",
+                  "Norwegian Bokmål",
+                  "Persian",
+                  "Polish",
+                  "Portuguese",
+                  "Punjabi",
+                  "Romanian",
+                  "Russian",
+                  "Serbian",
+                  "Sinhalese",
+                  "Slovak",
+                  "Slovenian",
+                  "Somali",
+                  "Spanish",
+                  "Swahili",
+                  "Swedish",
+                  "Tagalog",
+                  "Tamil",
+                  "Telugu",
+                  "Thai",
+                  "Turkish",
+                  "Ukrainian",
+                  "Urdu",
+                  "Uzbek",
+                  "Vietnamese",
+                  "Welsh",
+                  "Zulu"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.trending",
+            "type": "movie",
+            "name": "Tendances",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "Day",
+                  "Week"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.favorites",
+            "type": "movie",
+            "name": "Favoris",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "Top"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.watchlist",
+            "type": "movie",
+            "name": "Intérêts",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "Top"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.top",
+            "type": "series",
+            "name": "Populaire",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "Action & Adventure",
+                  "Animation",
+                  "Comédie",
+                  "Crime",
+                  "Documentaire",
+                  "Drame",
+                  "Familial",
+                  "Kids",
+                  "Mystère",
+                  "News",
+                  "Reality",
+                  "Science-Fiction & Fantastique",
+                  "Soap",
+                  "Talk",
+                  "War & Politics",
+                  "Western"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "search",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.year",
+            "type": "series",
+            "name": "Année",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "2025",
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010",
+                  "2009",
+                  "2008",
+                  "2007",
+                  "2006",
+                  "2005"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.language",
+            "type": "series",
+            "name": "Langue",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "French",
+                  "Afrikaans",
+                  "Albanian",
+                  "Arabic",
+                  "Basque",
+                  "Belarusian",
+                  "Bengali",
+                  "Breton",
+                  "Bulgarian",
+                  "Catalan",
+                  "Chamorro",
+                  "Croatian",
+                  "Czech",
+                  "Danish",
+                  "Dutch",
+                  "English",
+                  "Esperanto",
+                  "Estonian",
+                  "Finnish",
+                  "Gaelic",
+                  "Galician",
+                  "Georgian",
+                  "German",
+                  "Greek",
+                  "Hebrew",
+                  "Hindi",
+                  "Hungarian",
+                  "Indonesian",
+                  "Irish",
+                  "Italian",
+                  "Japanese",
+                  "Kannada",
+                  "Kazakh",
+                  "Kirghiz",
+                  "Korean",
+                  "Kurdish",
+                  "Latvian",
+                  "Lithuanian",
+                  "Malay",
+                  "Malayalam",
+                  "Mandarin",
+                  "Marathi",
+                  "Norwegian",
+                  "Norwegian Bokmål",
+                  "Persian",
+                  "Polish",
+                  "Portuguese",
+                  "Punjabi",
+                  "Romanian",
+                  "Russian",
+                  "Serbian",
+                  "Sinhalese",
+                  "Slovak",
+                  "Slovenian",
+                  "Somali",
+                  "Spanish",
+                  "Swahili",
+                  "Swedish",
+                  "Tagalog",
+                  "Tamil",
+                  "Telugu",
+                  "Thai",
+                  "Turkish",
+                  "Ukrainian",
+                  "Urdu",
+                  "Uzbek",
+                  "Vietnamese",
+                  "Welsh",
+                  "Zulu"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.trending",
+            "type": "series",
+            "name": "Tendances",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "Day",
+                  "Week"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.favorites",
+            "type": "series",
+            "name": "Favoris",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "Top"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "tmdb.watchlist",
+            "type": "series",
+            "name": "Intérêts",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": true,
+                "options": [
+                  "Top"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://subhero.onrender.com/%7B%22language%22%3A%22fr%22%7D/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.subhero.wyzie",
+        "version": "1.0.3",
+        "name": "[SUBS] SubHero",
+        "contactEmail": null,
+        "description": "Subtitles with language filtering. Subtitles provided & scraped by Wyzie API.",
+        "logo": "https://cdn.icon-icons.com/icons2/3606/PNG/512/sculpture_statue_texture_futuristic_art_geometry_organic_abstract_shape_explode_shae_icon_226539.png",
+        "background": "https://w.wallhaven.cc/full/0p/wallhaven-0pjkp9.png",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://2ecbbd610840-podnapisi.baby-beamup.club/french/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.podnapisi",
+        "version": "0.0.3",
+        "name": "[SUBS] podnapisi subtitles by dexter21767",
+        "contactEmail": "dexter21767@gmail.com",
+        "description": "Addon for getting subtitles from podnapisi, by Dexter21767.",
+        "logo": "https://www.podnapisi.net/static/favicon.ico",
+        "background": "https://cdn.discordapp.com/attachments/669540503674421268/1025051084126953513/i-like-my-subtitles-like-i-like-my-pillows-extra-soft.jpg",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/stremio/languages=french/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "comunity.aio-subtitle",
+        "version": "1.0.0",
+        "name": "[SUBS] AIO Substitle",
+        "contactEmail": "dev.namnv@gmail.com",
+        "description": "Unofficial addon to get subtitles from Subscene, OpenSubtitles, and Kitsunekko. Uses Microsoft Translator to translate subtitles if they are available from providers. Visit https://aiosubtitle.org to easily download subtitles.",
+        "logo": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/assets/AI-sub.png",
+        "background": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/assets/background.jpg",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt",
+          "kitsu"
+        ],
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://opensubtitlesv3-pro.dexter21767.com/eyJsYW5ncyI6WyJmcmVuY2giXSwic291cmNlIjoiYWxsIiwiYWlUcmFuc2xhdGVkIjpmYWxzZSwiYXV0b0FkanVzdG1lbnQiOmZhbHNlfQ==/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.opensubtitlesv3.pro",
+        "version": "0.1.0",
+        "name": "[SUBS] opensubtitles PRO",
+        "contactEmail": "dexter21767@gmail.com",
+        "description": "ad-free and spam-free subtitles addon",
+        "logo": "https://i.imgur.com/cGc1DXB.png",
+        "background": "https://github.com/Stremio/stremio-art/raw/main/originals/reiphantomhive1.png",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt",
+          "kitsu"
+        ],
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://subdl.strem.bar/blF0LVFhZkdoZ181bGliaHlKZnFCZmpuLVh2eW9mSF8vRlIvaGlFeGNsdWRlLw==/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.subdl.subtitles",
+        "version": "1.0.3",
+        "name": "[SUBS] SubDL Subtitles - [Exclude HI]",
+        "contactEmail": null,
+        "description": "Unofficial addon for getting subtitles from SubDL.com",
+        "logo": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/download.jpg",
+        "background": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/backgroundcinema.jpg",
+        "types": [
+          "movie",
+          "series",
+          "subtitles"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://subsource.strem.bar/RnJlbmNoLEZyZW5jaCAoRnJhbmNlKSxGcmVuY2ggKENhbmFkYSkvaGlFeGNsdWRlLw==/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.subsource.subtitles",
+        "version": "1.0.6",
+        "name": "[SUBS] SubSource Subtitles - [Exclude HI]",
+        "contactEmail": null,
+        "description": "Unofficial addon for getting subtitles from SubSource.net",
+        "logo": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/ss.png",
+        "background": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/backgroundcinema.jpg",
+        "types": [
+          "movie",
+          "series",
+          "subtitles"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://msubtitles.lowlevel1989.click/e2c4bb91-dfbf-4b91-9c9c-43b783cc4eb7/api/v1/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "lowlevel.subtitles.consumer",
+        "version": "1.7.0",
+        "name": "[SUBS] MSubtitles",
+        "contactEmail": null,
+        "description": "MSubtitles provides you with a consumer for personal use. Sharing your profile's UUID or sharing your MSubtitles account is not allowed, as it may result in limiting your daily subtitle quotas.",
+        "logo": "https://cdn.statically.io/gh/lowlevel-1989/manage-subtitles-static/master/seo/images/logo-256x.png",
+        "background": null,
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": null,
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://2ecbbd610840-trakt.baby-beamup.club/eyJsaXN0cyI6WyJ0cmFrdF93YXRjaGxpc3Q6c2VwYXJhdGVkOnJlbGVhc2VkLGFzYyIsInRyYWt0X3NlYXJjaCJdLCJpZHMiOltdLCJhY2Nlc3NfdG9rZW4iOiI4MzM3OWY1OTBiZjdmNjRjMzA0MWRkYzVhMzhmZDA4MTVmZjI2M2JjMDg3NzQzMDQ4MDljODQ4NTFiNzdiMGZiIiwicmVmcmVzaF90b2tlbiI6IjUxMjExOGJkYzRkOWEwNDM4Y2EwN2UyZDAxZmVlNjk4MTNlYzMxM2IwZWNmMDgyMWRkZjg0ZGVlYzkyOTAyNzMiLCJleHBpcmVzIjoxNzQ0NTYwNDQ1LCJSUERCa2V5Ijp7ImtleSI6InQwLWZyZWUtcnBkYiIsInZhbGlkIjp0cnVlLCJwb3N0ZXIiOiJwb3N0ZXItZGVmYXVsdCIsInBvc3RlcnMiOlt7Im5hbWUiOiJwb3N0ZXItZGVmYXVsdCJ9LHsibmFtZSI6InRleHRsZXNzLWRlZmF1bHQifV0sInRpZXIiOjB9LCJyZW1vdmVQcmVmaXgiOmZhbHNlfQ==/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.trakt-tv",
+        "version": "0.2.7",
+        "name": "[TRAKT] Trakt Tv",
+        "contactEmail": null,
+        "description": "Addon for getting Trakt's public and user lists, recommendations and watch list.\n user authenticated}\n token expires on: 4/13/2025, 4:07:25 PM",
+        "logo": "https://2ecbbd610840-trakt.baby-beamup.club/public/logoPS.png?ver=0.2.7",
+        "background": "https://2ecbbd610840-trakt.baby-beamup.club/public/background.png?ver=0.2.7",
+        "types": [],
+        "resources": [
+          {
+            "name": "meta",
+            "types": [
+              "series",
+              "movie"
+            ],
+            "idPrefixes": [
+              "trakt:"
+            ]
+          }
+        ],
+        "idPrefixes": [
+          "trakt"
+        ],
+        "catalogs": [
+          {
+            "id": "trakt_watchlist_movies_released,asc",
+            "type": "trakt",
+            "name": "trakt - Watchlist movies",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "added asc",
+                  "added desc",
+                  "title asc",
+                  "title desc",
+                  "released asc",
+                  "released desc",
+                  "runtime asc",
+                  "runtime desc",
+                  "votes asc",
+                  "votes desc",
+                  "rating asc",
+                  "rating desc",
+                  "rank asc",
+                  "rank desc",
+                  "popularity asc",
+                  "popularity desc",
+                  "random asc",
+                  "random desc"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "trakt_watchlist_series_released,asc",
+            "type": "trakt",
+            "name": "trakt - Watchlist series",
+            "extra": [
+              {
+                "name": "genre",
+                "isRequired": false,
+                "options": [
+                  "added asc",
+                  "added desc",
+                  "title asc",
+                  "title desc",
+                  "released asc",
+                  "released desc",
+                  "runtime asc",
+                  "runtime desc",
+                  "votes asc",
+                  "votes desc",
+                  "rating asc",
+                  "rating desc",
+                  "rank asc",
+                  "rank desc",
+                  "popularity asc",
+                  "popularity desc",
+                  "random asc",
+                  "random desc"
+                ],
+                "optionsLimit": 1
+              },
+              {
+                "name": "skip",
+                "isRequired": false,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "trakt_search_movies",
+            "type": "trakt",
+            "name": "trakt - search movies",
+            "extra": [
+              {
+                "name": "search",
+                "isRequired": true,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          },
+          {
+            "id": "trakt_search_series",
+            "type": "trakt",
+            "name": "trakt - search series",
+            "extra": [
+              {
+                "name": "search",
+                "isRequired": true,
+                "options": [],
+                "optionsLimit": 1
+              }
+            ]
+          }
+        ],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://56bca7d190fc-syncribullet.baby-beamup.club/simkl_accesstoken-=-f2883874ee5b52e0aad888dcd07fbc8bb30d274000fd1fb66fbfd9dab8ea4d70%7Csimkl_clientid-=-undefined%7Csimkl_settings-=-c%C2%ACP:f,C:f,D:f,W:f,TP:f,TC:f,TO:f,TD:f,AW:f,AP:f,AC:f,AO:f,AD:f%7Cstremio_authKey-=-ZXalQuucTVqRM6NT0HUs8Fz6v-KpwSO37SfUWdzLV8g=/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "com.aliyss.syncribullet",
+        "version": "1.0.14",
+        "name": "syncribullet",
+        "contactEmail": null,
+        "description": "App that mixes your syncs",
+        "logo": "https://github.com/aliyss/syncribullet/blob/master/public/android-chrome-192x192.png?raw=true",
+        "background": null,
+        "types": [
+          "series",
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          {
+            "name": "meta",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "anilist_"
+            ]
+          },
+          "stream",
+          "subtitles"
+        ],
+        "idPrefixes": null,
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://subsource.strem.bar/RnJlbmNoLEZyZW5jaCAoRnJhbmNlKSxBcmFiaWMvaGlFeGNsdWRlLw==/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.subsource.subtitles",
+        "version": "1.0.6",
+        "name": "SubSource Subtitles - [Exclude HI]",
+        "contactEmail": null,
+        "description": "Unofficial addon for getting subtitles from SubSource.net",
+        "logo": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/ss.png",
+        "background": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/backgroundcinema.jpg",
+        "types": [
+          "movie",
+          "series",
+          "subtitles"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://aiostreams.elfhosted.com/E-2b33760e26fb3b500a18662c1aa34ac1-5a853801b2e7aa3b18945e105075c4655dbf4f5eeb6b600bc4a18884bb8db8e5a176c2badcc07b9190c16e6ee9734e78ef82360dab752be184b47ee81f56ddeb23ef56da44efa6be131b6023390658bec887f36388bae16bc61cba76dc07fbef3cb72b473f6b6339ad79ccc8998ee5334cf03ff12bb0c5eb9a4b9a3e293bea507c7ac1a598d00de9177d3f23ed9e2e413c6b76a3e7040f1b7c160bdadec7cbb08c51ef1ca88316912e8f91e76d672dd997f0f5245732a3bb05881c4c784435cecad71f37d4a872fc8f41e1a75987dad536020c1f1692522cfb9340eebd19dbb872076597e8b97925e5fe29098d14ed901982b9012fce07907ce9f860a74269bed8705dbc37b1b3140e5a8a9fbccb72aee4ea599f02e2e1cfeb8e41e592c9e0e168ad14fa902f68d26ebb2ee964df7fa6da6fdccd116aae2846880af66818eb0b1b3b450acdd02f1d0109422fdd5e7de4349d2fcbba42f3143faae81df3f102108c6532b0d036ef4d1ae184f170e24334ece56d49f5e1a3cce6d2634083967f328f1fffd3846cebe3d500fedf8c203cdd5b2d60939acf39d5f4c780adc3c55f27136fda10ffc8a504268987aed99603422aa8fbbcf24cb050f51c1103b3f30a7a394d210ec387a7bd19536af46887a549bfa96ff216f9f9654b842b4c0105219b4f4a06688ee1783e1abf52493ab7dc48f7cd516cc03f21f9f2a104bbe06377afaedd7aee6186f78bf4d7263b58f7944352269bc38341e20241d0e43834854362a417eb44e8f456e836df1d9858b2547015903256e4001216b09ee5da4b6be8f99677f88c08e26cf28d2d5fb47e3e93a41ff51f5659cbb2f01e927b40a607bd8d8ea0988d7cda964701b29d0bca9ab776243b4c2f877dfbe60c66b113af341976a92490964df64f8ee3d64b195cec4d415fa8e9b1b02cfb46533541b7417628f6f51f7ea2107fb18de4552d50f1e7ee7b1b9cf868e4bacf809cce7df576a73e9917fb415d58f97cac9df8e40375b285af6d7cf7fea140d84c6b29a9ada51976bb9cef9ceabece4a4166390605e07dbcadb5d2086b2d725cc5f23ed2fbc33a9ac9532c23de77940189df86f135f8ba35014799f2a502ef1d3d89f5f3ff41dcb7d0f708b2ec85f3d117fcd9d53ca090ed391f67497ab69cfe2a5ec4665471201165418f899f46328ea8a4fde8747cfab7b749ef1a8d67d41f4d71b8e4bfb34bbe445239d2e35d209fc63f029c1b29b838517c9423155ca189709dcd3ece0e768e9ff32a2bf1bc1127ddf70f57757bb4d69986eae781e6b4a8fe294b69779e642a3b3a4cfeb6308c3e778ec8d88772ff439b5bd8db5fb19341118183bf0c551bc0097ab23ab760a7b4bb01d38031f5a92f8d433e8a932a6bdf1a65868b95cf4ef0be0fab7035a847ed521fb1f971bfe3173144b4ab47db3a64e81fb3e6c2b647523f0c7c3de817279d0945b640c80fca9b7c3f02146c60b0811f0278dde9d5f0a3121bc931fe01be2e9d934cbff5de68b00218d129552127752cf72ebabbf1c55d7f02ea96848d90b0d174ba10c155914d9b4789757670209b2dea183c225da969e487db3795881aae5b1bdd0c432ab15f8d9bd9633cde4e3d0f6af6d5ff3dc22c775167451ff05ac58b2b087fb59c2067ffd901049e5a8278a592e4ecbc9802ef26f735e3079ef74ddaf5dee0fee2738a41bb73c78589661eb74de22a4535ce87f3810b5c46cd654140cb460b8ca14ae57bcc6c7e7fdf89e6b0afcea9e30b290b08721984e8c17295918e7c2c486ff5b8295a6cf250dd6230c137c2e2af159c17dbcb8a50a7273a78635d49c03ebd348dc3dbf34ba03132cb40f2f755c3057de7dbbe9a9b3f96eea9d31aa77f258fb890ffdc28498cde2e3adbf0e0aa4ed6e12d18958861e625605bc4b5431ca915dab10e8dbcd3c6fe3300c7eb346fd67869136a86b0ed9a292bd9e60a883bf4566ddb0f4e9eb7d7b66ebea2ce1228271f0bdec047c04110d4ed48e5bcfa8f8a6a0b53f7f098e67ce2faf4a6158d9741e92bb241548e7fd7efde552f29abe723f10ad2ad90fe8d0553337b8a466a2909c9baaf699b2ff91d39097283918f22d1f96ffcae395f6dec9b2cafa238d7539e943273b9f9f9e687fd2de13e3740fdcc6871f543b00c284934bd840522ae32a4711e6a71fae3a0d5b5be1d867855205570001e35d53dc993513430a1f7bc94948b42c46aeb86960880dd38e2752469bb797817e2e9d73c9d108d86fd29680641357cae37a85869f6bd4b215785ad212795310de9a8be5f2e5ae64124f183039ec9fec19279b326e2b4451556bf276ad13a2064866861641a516441ccb64d1c835ae7332a698b533dfa37b89298e62083514c307b6dd782bf4cfc2ac835b2e7ad27562021d0c2d873724b769ea9b7714db5581b0dbe3ef07fc6ac5834f6d8d5b86c79d6c31ad46d693f8d0c05c3ad93ba68dd837702181c76598f896e2978cbd6292898699ac15cd30b60eceb7f68e34f46c936fe23fd314f4b17522758e3f384b347846b73a3d50cab7e75a5e9753a67c5c43c79fe841df1991bd1027538efc973749e304dd16941297cdb9a7dc86bd750f7583a712e8b014d7cd5a9131d56ba622425fabd38de16bc1ba2674f9ea012fc3a5c1ef50c19439b8877c278b5c2dbe9d41787a08c910fd7aed6433c657cd24afcc04e12aa83616d32ef89499ec977b19ea79b48a21af3929fe290713cffcdfd2ef7a971cd2f8227a54fb6f50cbfc57119a042682a0530cf7784ddb8fd5bc7fcfc1892abcba9b2edb9656cc3dcf7edc4d8f80cd85e039c6dd8c7b8e90bdafab19bce66655a708804387899d3ea3d1e0dc68d06c8a4a4da0e498de65e90657300f60f541c095ab6cc1784fd785ccd84eea389c01a9f4b369c06bbc86ea07588ea1140acbbffa9788927ae83f01052e4e0919eb401cdfe955eca8fa0558ed81d77add8f79b9afb017e3f27d38ba12b83327d4bdd2972bf8873097a6a22bc5342fc82a9e7cfa6537578a8f6f78f6a7799a1d55b614a6a3c0f7536433378275508b591fa43a7ff5f49c730c173417ee02423cba1d78afc6f82daa945bc56ade39ff39fcbc4efed5818c557d9da252f8242c25b49f1cc9c07fd487670bc6c842f314d7d29dce72c3249cba622146193482363792ee89ce9b20293600e61809bb64110bd0bc15b623d03443f5bb9e6179cc6ca3ee7c7b5cd4a53e6048336b8874b34c58a2644704c10e06f7bf9c8e14b7786eafb29c46dd31483bedf68b16c95b9573913e4203238f76fae7e5d89df38d76bf4fd641979002eab1d8bdd0f30d4e3fde3806de0008cdfa30cfad61db3bbce598e60d76c3ae983173cdabcb56fb0240b5041043f2968d9f0cfe3fdc8166530211126fa5316350ffa5592941989d301d7baf98fd29b240124a4c08670ee0259bbfa65ef262e396dfb1bdc28e716c671c236eb04b5b56e785d887f78485f1249589a71fa828b976da835ad7174359a4c1e1aa1ec35f4021f1aeb5d413c29d69a7e099ec3d9/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "aiostreams.viren070.com",
+        "version": "1.7.0",
+        "name": "AIOStreams",
+        "contactEmail": null,
+        "description": "Combine all your streams into one addon and display them with consistent formatting, sorting, and filtering.",
+        "logo": "https://raw.githubusercontent.com/Viren070/AIOStreams/refs/heads/main/packages/frontend/public/assets/logo.png",
+        "background": "https://raw.githubusercontent.com/Viren070/AIOStreams/refs/heads/main/packages/frontend/public/assets/background.png",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "stream"
+        ],
+        "idPrefixes": null,
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://comet.stremiofr.com/eyJpbmRleGVycyI6WyJ5Z2d0b3JyZW50Iiwic2hhcmV3b29kLWFwaSIsInlnZ2Nvb2tpZSIsImdrdG9ycmVudCIsImRtbSIsInlnZ2FwaSJdLCJtYXhSZXN1bHRzIjowLCJtYXhSZXN1bHRzUGVyUmVzb2x1dGlvbiI6MCwibWF4U2l6ZSI6MCwicmV2ZXJzZVJlc3VsdE9yZGVyIjpmYWxzZSwicmVtb3ZlVHJhc2giOnRydWUsInJlc3VsdEZvcm1hdCI6WyJTaXplIiwiTGFuZ3VhZ2VzIl0sInJlc29sdXRpb25zIjpbIjRrIiwiMjE2MHAiLCIxNDQwcCIsIjEwODBwIiwiNzIwcCIsIjU3NnAiLCI0ODBwIl0sImxhbmd1YWdlcyI6WyJNdWx0aSIsIkZyZW5jaCJdLCJkZWJyaWRTZXJ2aWNlIjoiYWxsZGVicmlkIiwiZGVicmlkQXBpS2V5IjoiTTBObFM0eWM2ZnBzNlQwWjNJMmUiLCJkZWJyaWRTdHJlYW1Qcm94eVBhc3N3b3JkIjoiIn0=/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "stremio.comet.fr",
+        "version": "1.0.0",
+        "name": "CometFR | AD",
+        "contactEmail": null,
+        "description": "Stremio addons for French content.",
+        "logo": "https://i.imgur.com/dUL8j6C.png",
+        "background": "https://i.imgur.com/WwnXB3k.jpeg",
+        "types": [
+          "movie",
+          "series",
+          "anime",
+          "other"
+        ],
+        "resources": [
+          {
+            "name": "stream",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "tt",
+              "kitsu"
+            ]
+          }
+        ],
+        "idPrefixes": null,
+        "catalogs": [],
+        "addonCatalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    }
+  ]
+}

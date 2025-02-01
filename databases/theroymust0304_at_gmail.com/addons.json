@@ -1,0 +1,5040 @@
+[
+  {
+    "transportUrl": "https://2ecbbd610840-trakt.baby-beamup.club/eyJsaXN0cyI6WyJ0cmFrdF93YXRjaGxpc3Q6YWRkZWQsYXNjIiwidHJha3Rfc2VhcmNoIl0sImlkcyI6WyJnYXJ5Y3Jhd2ZvcmRnYzpsYXRlc3QtcmVsZWFzZXM6YWRkZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6bGF0ZXN0LXR2LXNob3dzOnJhbmssYXNjIiwic2hheWFuazp0di1iYXNlZC1vbi1teS13YXRjaGxpc3QtY291Y2htb25leS10djpyYW5kb20sYXNjIiwic2hheWFuazphbmltZS1yZWNvbW1lbmRhdGlvbnMtY291Y2htb25leS10djpyYW5kb20sYXNjIiwic2hheWFuazp0di1yZWNvbW1lbmRhdGlvbnMtY291Y2htb25leS10djpyYW5kb20sYXNjIiwic2hheWFuazprdHYtcmVjb21tYW5kYXRpb25zLWNvdWNobW9uZXktdHY6cmFuZG9tLGFzYyIsInNoYXlhbms6bW92aWVzLXJlY29tbWVuZGF0aW9ucy1jb3VjaG1vbmV5LXR2OnJhbmRvbSxhc2MiXSwiYWNjZXNzX3Rva2VuIjoiNWVjNDg4YTkzMTdlYjRlYWJiZTM2MTc3MmJjMGEyNDgxODJlNTUzZTg4OTEyOGRkYzA0NGIxYzNkNDE5YzJjZCIsInJlZnJlc2hfdG9rZW4iOiIzYzMwOGJlNmZlOThiOTYyNDQxYWQ1NmE3NDk1ZDcwZjVlN2QyMDM5NjYwNGE4OWE4YTliOTc1Y2UzYmE1ZmY3IiwiZXhwaXJlcyI6MTc0MzgxMjg2MywiUlBEQmtleSI6eyJrZXkiOiJ0MC1mcmVlLXJwZGIiLCJ2YWxpZCI6dHJ1ZSwicG9zdGVyIjoicG9zdGVyLWRlZmF1bHQiLCJwb3N0ZXJzIjpbeyJuYW1lIjoicG9zdGVyLWRlZmF1bHQifSx7Im5hbWUiOiJ0ZXh0bGVzcy1kZWZhdWx0In1dLCJ0aWVyIjowfSwicmVtb3ZlUHJlZml4Ijp0cnVlfQ==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.trakt-tv",
+      "version": "0.2.7",
+      "name": "Trakt Tv",
+      "contactEmail": null,
+      "description": "Addon for getting Trakt's public and user lists, recommendations and watch list.\n user authenticated}\n token expires on: 4/5/2025, 12:27:43 AM",
+      "logo": "https://2ecbbd610840-trakt.baby-beamup.club/public/logoPS.png?ver=0.2.7",
+      "background": "https://2ecbbd610840-trakt.baby-beamup.club/public/background.png?ver=0.2.7",
+      "types": [],
+      "resources": [
+        {
+          "name": "meta",
+          "types": [
+            "series",
+            "movie"
+          ],
+          "idPrefixes": [
+            "trakt:"
+          ]
+        }
+      ],
+      "idPrefixes": [
+        "trakt"
+      ],
+      "catalogs": [
+        {
+          "id": "trakt_watchlist_added,asc",
+          "type": "trakt",
+          "name": "Watchlist",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_search_movies",
+          "type": "trakt",
+          "name": "search movies",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_search_series",
+          "type": "trakt",
+          "name": "search series",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:5308818:added,asc",
+          "type": "trakt",
+          "name": "Latest releases",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20370350:rank,asc",
+          "type": "trakt",
+          "name": "Latest TV Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:shayank:27885377:random,asc",
+          "type": "trakt",
+          "name": "TV Based on My Watchlist [couchmoney.tv]",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:shayank:27276499:random,asc",
+          "type": "trakt",
+          "name": "Anime - Recommendations [couchmoney.tv]",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:shayank:30235495:random,asc",
+          "type": "trakt",
+          "name": "TV - Recommendations [couchmoney.tv]",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:shayank:27276500:random,asc",
+          "type": "trakt",
+          "name": "KTV - Recommandations [couchmoney.tv]",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:shayank:27276450:random,asc",
+          "type": "trakt",
+          "name": "Movies - Recommendations [couchmoney.tv]",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://cinemeta-ratings.pages.dev/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.linvo.cinemeta",
+      "version": "3.0.12",
+      "name": "Cinemeta + RPDB posters",
+      "contactEmail": null,
+      "description": "The official addon for movie and series catalogs",
+      "logo": null,
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "meta",
+        "addon_catalog"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "top",
+          "type": "movie",
+          "name": "Popular",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "top",
+          "type": "series",
+          "name": "Popular",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western",
+                "Reality-TV",
+                "Talk-Show",
+                "Game-Show"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "year",
+          "type": "movie",
+          "name": "New",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004",
+                "2003",
+                "2002",
+                "2001",
+                "2000",
+                "1999",
+                "1998",
+                "1997",
+                "1996",
+                "1995",
+                "1994",
+                "1993",
+                "1992",
+                "1991",
+                "1990",
+                "1989",
+                "1988",
+                "1987",
+                "1986",
+                "1985",
+                "1984",
+                "1983",
+                "1982",
+                "1981",
+                "1980",
+                "1979",
+                "1978",
+                "1977",
+                "1976",
+                "1975",
+                "1974",
+                "1973",
+                "1972",
+                "1971",
+                "1970",
+                "1969",
+                "1968",
+                "1967",
+                "1966",
+                "1965",
+                "1964",
+                "1963",
+                "1962",
+                "1961",
+                "1960",
+                "1959",
+                "1958",
+                "1957",
+                "1956",
+                "1955",
+                "1954",
+                "1953",
+                "1952",
+                "1951",
+                "1950",
+                "1949",
+                "1948",
+                "1947",
+                "1946",
+                "1945",
+                "1944",
+                "1943",
+                "1942",
+                "1941",
+                "1940",
+                "1939",
+                "1938",
+                "1937",
+                "1936",
+                "1935",
+                "1934",
+                "1933",
+                "1932",
+                "1931",
+                "1930",
+                "1929",
+                "1928",
+                "1927",
+                "1926",
+                "1925",
+                "1924",
+                "1923",
+                "1922",
+                "1921",
+                "1920"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "year",
+          "type": "series",
+          "name": "New",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004",
+                "2003",
+                "2002",
+                "2001",
+                "2000",
+                "1999",
+                "1998",
+                "1997",
+                "1996",
+                "1995",
+                "1994",
+                "1993",
+                "1992",
+                "1991",
+                "1990",
+                "1989",
+                "1988",
+                "1987",
+                "1986",
+                "1985",
+                "1984",
+                "1983",
+                "1982",
+                "1981",
+                "1980",
+                "1979",
+                "1978",
+                "1977",
+                "1976",
+                "1975",
+                "1974",
+                "1973",
+                "1972",
+                "1971",
+                "1970",
+                "1969",
+                "1968",
+                "1967",
+                "1966",
+                "1965",
+                "1964",
+                "1963",
+                "1962",
+                "1961",
+                "1960"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "imdbRating",
+          "type": "movie",
+          "name": "Featured",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "imdbRating",
+          "type": "series",
+          "name": "Featured",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western",
+                "Reality-TV",
+                "Talk-Show",
+                "Game-Show"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "last-videos",
+          "type": "series",
+          "name": "Last videos",
+          "extra": [
+            {
+              "name": "lastVideosIds",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 100
+            }
+          ]
+        },
+        {
+          "id": "calendar-videos",
+          "type": "series",
+          "name": "Calendar videos",
+          "extra": [
+            {
+              "name": "calendarVideosIds",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 100
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [
+        {
+          "id": "official",
+          "type": "all",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "official",
+          "type": "movie",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "official",
+          "type": "series",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "official",
+          "type": "channel",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "all",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "movie",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "series",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "channel",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "tv",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "Podcasts",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "other",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        }
+      ],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.stremio.local",
+      "version": "1.10.0",
+      "name": "Local Files (without catalog support)",
+      "contactEmail": null,
+      "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
+      "logo": null,
+      "background": null,
+      "types": [
+        "movie",
+        "series",
+        "other"
+      ],
+      "resources": [
+        {
+          "name": "meta",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "local:",
+            "bt:"
+          ]
+        },
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://68d69db7dc40-debrid-search.baby-beamup.club/%7B%22DebridProvider%22%3A%22RealDebrid%22%2C%22DebridApiKey%22%3A%22RRKB7IDCM6KFDV6H6LBEOIIH3NQIBWAAX74DFD3DUMMOD3WTFL6Q%22%2C%22ShowCatalog%22%3A%22true%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.stremio.debrid-search",
+      "version": "0.1.11",
+      "name": "Debrid Search",
+      "contactEmail": null,
+      "description": "Stremio Addon to search downloads and torrents in your Debrid cloud",
+      "logo": "https://img.icons8.com/fluency/256/search-in-cloud.png",
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "resources": [
+        "catalog",
+        "stream"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "debridsearch",
+          "type": "other",
+          "name": "Debrid Search - RealDebrid",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://68d69db7dc40-debrid-search.baby-beamup.club/%7B%22DebridProvider%22%3A%22TorBox%22%2C%22DebridApiKey%22%3A%226f6aa0f8-5066-4518-8af6-fa4a6b3a4b92%22%2C%22ShowCatalog%22%3A%22true%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.stremio.debrid-search",
+      "version": "0.1.11",
+      "name": "Debrid Search",
+      "contactEmail": null,
+      "description": "Stremio Addon to search downloads and torrents in your Debrid cloud",
+      "logo": "https://img.icons8.com/fluency/256/search-in-cloud.png",
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "resources": [
+        "catalog",
+        "stream"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "debridsearch",
+          "type": "other",
+          "name": "Debrid Search - TorBox",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stream-fusion.stremiofr.com/eyJhZGRvbkhvc3QiOiJodHRwczovL3N0cmVhbS1mdXNpb24uc3RyZW1pb2ZyLmNvbSIsImFwaUtleSI6IjcxYjM2OWVjLTY0ZjktNDJmZS1iZWI0LTFmNDM2YjlhM2E4ZCIsInNlcnZpY2UiOlsiUmVhbC1EZWJyaWQiLCJUb3JCb3giXSwiUkRUb2tlbiI6IntcbiAgXCJjbGllbnRfaWRcIjogXCI1NjJSUko1TVlRMzY2XCIsXG4gIFwiY2xpZW50X3NlY3JldFwiOiBcIjE2YTY1NWMyNDQzNmEzZWM3YzMwZTRlNThiYTc4MDdkMzg0ZjAxZjRcIixcbiAgXCJhY2Nlc3NfdG9rZW5cIjogXCI3QjcyWTNGMkFWTERUUVZCV0ZaNUNDVFYzQzRYUUhSVlRaTUxCNjJYUUJONTNIUFlDSFdBXCIsXG4gIFwicmVmcmVzaF90b2tlblwiOiBcIkJXV1hYTEJWU0pSNVg1SEtBS1BTM0FBQkdJRFQ2Slg1SVE1Q0ZPV0VNRldWUVpISEpPNkFcIlxufSIsIkFEVG9rZW4iOiIiLCJUQlRva2VuIjoiNmY2YWEwZjgtNTA2Ni00NTE4LThhZjYtZmE0YTZiM2E0YjkyIiwiUE1Ub2tlbiI6IiIsIlRCVXNlbmV0IjpmYWxzZSwiVEJTZWFyY2giOnRydWUsIm1heFNpemUiOjIwMCwiZXhjbHVzaW9uS2V5d29yZHMiOltdLCJsYW5ndWFnZXMiOlsiZnIiLCJtdWx0aSJdLCJzb3J0IjoicXVhbGl0eXRoZW5zaXplIiwicmVzdWx0c1BlclF1YWxpdHkiOjYsIm1heFJlc3VsdHMiOjEyLCJtaW5DYWNoZWRSZXN1bHRzIjo4LCJleGNsdXNpb24iOlsiY2FtIl0sImNhY2hlVXJsIjoiaHR0cHM6Ly9zdHJlbWlvLWphY2tldHQtY2FjaGVyLmVsZmhvc3RlZC5jb20vIiwiY2FjaGUiOnRydWUsInppbGVhbiI6dHJ1ZSwieWdnZmxpeCI6dHJ1ZSwic2hhcmV3b29kIjp0cnVlLCJ5Z2d0b3JyZW50Q3RnIjp0cnVlLCJ5Z2dmbGl4Q3RnIjp0cnVlLCJ0b3JyZW50aW5nIjpmYWxzZSwiZGVicmlkIjp0cnVlLCJtZXRhZGF0YVByb3ZpZGVyIjoidG1kYiIsImRlYnJpZERvd25sb2FkZXIiOiJUb3JCb3gifQ==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.limedrive.streamfusion",
+      "version": "2.2.1",
+      "name": "StreamFusion",
+      "contactEmail": null,
+      "description": "StreamFusion enhances Stremio by integrating torrent indexers and debrid services, providing access to a vast array of cached torrent sources. This plugin seamlessly bridges Stremio with popular indexers and debrid platforms, offering users an expanded content library and a smooth streaming experience.",
+      "logo": null,
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "latest_movies",
+          "type": "movie",
+          "name": "Yggflix",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "latest_tv_shows",
+          "type": "series",
+          "name": "Yggflix",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "recently_added_movies",
+          "type": "movie",
+          "name": "YGGtorrent - Récemment Ajoutés",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "recently_added_tv_shows",
+          "type": "series",
+          "name": "YGGtorrent - Récemment Ajoutées",
+          "extraRequired": [],
+          "extraSupported": []
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://shayanck-testingoutspace.hf.space/eyJyZXNvbHV0aW9ucyI6W3siMjE2MHAiOnRydWV9LHsiMTA4MHAiOnRydWV9LHsiNzIwcCI6dHJ1ZX0seyI0ODBwIjp0cnVlfSx7IlVua25vd24iOnRydWV9XSwicXVhbGl0aWVzIjpbeyJCbHVSYXkgUkVNVVgiOnRydWV9LHsiQmx1UmF5Ijp0cnVlfSx7IldFQi1ETCI6dHJ1ZX0seyJXRUJSaXAiOnRydWV9LHsiSERSaXAiOnRydWV9LHsiSEMgSEQtUmlwIjp0cnVlfSx7IkRWRFJpcCI6dHJ1ZX0seyJIRFRWIjp0cnVlfSx7IkNBTSI6ZmFsc2V9LHsiVFMiOmZhbHNlfSx7IlRDIjpmYWxzZX0seyJTQ1IiOnRydWV9LHsiVW5rbm93biI6dHJ1ZX1dLCJ2aXN1YWxUYWdzIjpbeyJIRFIrRFYiOnRydWV9LHsiSERSMTArIjp0cnVlfSx7IkhEUjEwIjp0cnVlfSx7IkhEUiI6dHJ1ZX0seyJEViI6dHJ1ZX0seyIzRCI6dHJ1ZX0seyJJTUFYIjp0cnVlfSx7IkFJIjp0cnVlfV0sImF1ZGlvVGFncyI6W3siQXRtb3MiOnRydWV9LHsiREQrIjp0cnVlfSx7IkREIjp0cnVlfSx7IkRUUy1IRCBNQSI6dHJ1ZX0seyJEVFMtSEQiOnRydWV9LHsiRFRTIjp0cnVlfSx7IlRydWVIRCI6dHJ1ZX0seyI1LjEiOnRydWV9LHsiNy4xIjp0cnVlfSx7IkFDMyI6dHJ1ZX0seyJBQUMiOnRydWV9XSwiZW5jb2RlcyI6W3siQVYxIjp0cnVlfSx7IkhFVkMiOnRydWV9LHsiQVZDIjp0cnVlfSx7IkgtT1UiOnRydWV9LHsiSC1TQlMiOnRydWV9LHsiVW5rbm93biI6dHJ1ZX1dLCJzb3J0QnkiOlt7ImNhY2hlZCI6dHJ1ZSwiZGlyZWN0aW9uIjoiZGVzYyJ9LHsibGFuZ3VhZ2UiOnRydWV9LHsicmVzb2x1dGlvbiI6dHJ1ZX0seyJzaXplIjp0cnVlLCJkaXJlY3Rpb24iOiJkZXNjIn0seyJ2aXN1YWxUYWciOmZhbHNlfSx7InNlcnZpY2UiOmZhbHNlfSx7ImF1ZGlvVGFnIjpmYWxzZX0seyJlbmNvZGUiOmZhbHNlfSx7InF1YWxpdHkiOmZhbHNlfSx7InNlZWRlcnMiOmZhbHNlLCJkaXJlY3Rpb24iOiJkZXNjIn0seyJhZGRvbiI6ZmFsc2V9XSwib25seVNob3dDYWNoZWRTdHJlYW1zIjp0cnVlLCJwcmlvcml0aXNlZExhbmd1YWdlcyI6WyJGcmVuY2giLCJNdWx0aSJdLCJleGNsdWRlZExhbmd1YWdlcyI6bnVsbCwibWF4TW92aWVTaXplIjpudWxsLCJtaW5Nb3ZpZVNpemUiOm51bGwsIm1heEVwaXNvZGVTaXplIjpudWxsLCJtaW5FcGlzb2RlU2l6ZSI6bnVsbCwiYWRkb25OYW1lSW5EZXNjcmlwdGlvbiI6ZmFsc2UsImNsZWFuUmVzdWx0cyI6dHJ1ZSwibWF4UmVzdWx0c1BlclJlc29sdXRpb24iOm51bGwsImZvcm1hdHRlciI6Imdkcml2ZSIsIm1lZGlhRmxvd0NvbmZpZyI6eyJtZWRpYUZsb3dFbmFibGVkIjp0cnVlLCJwcm94eVVybCI6Imh0dHBzOi8vc2hheWFuY2std2lsbGlzdWNjZWVkLmhmLnNwYWNlIiwiYXBpUGFzc3dvcmQiOiJwYXNzd29yZG5vdGZvdW5kIiwicHVibGljSXAiOiIiLCJwcm94aWVkQWRkb25zIjpudWxsLCJwcm94aWVkU2VydmljZXMiOm51bGx9LCJhZGRvbnMiOlt7ImlkIjoidG9ycmVudGlvIiwib3B0aW9ucyI6eyJ1c2VNdWx0aXBsZUluc3RhbmNlcyI6InRydWUifX0seyJpZCI6ImNvbWV0Iiwib3B0aW9ucyI6e319LHsiaWQiOiJtZWRpYWZ1c2lvbiIsIm9wdGlvbnMiOnt9fSx7ImlkIjoidG9yYm94Iiwib3B0aW9ucyI6e319LHsiaWQiOiJjdXN0b20iLCJvcHRpb25zIjp7Im5hbWUiOiJDb21ldEZSVEIiLCJ1cmwiOiJodHRwczovL2NvbWV0LnN0cmVtaW9mci5jb20vZXlKcGJtUmxlR1Z5Y3lJNld5SjVaMmQwYjNKeVpXNTBJaXdpYzJoaGNtVjNiMjlrTFdGd2FTSXNJbmxuWjJOdmIydHBaU0lzSW1kcmRHOXljbVZ1ZENJc0ltUnRiU0lzSW5sbloyRndhU0pkTENKdFlYaFNaWE4xYkhSeklqb3dMQ0p0WVhoU1pYTjFiSFJ6VUdWeVVtVnpiMngxZEdsdmJpSTZNQ3dpYldGNFUybDZaU0k2TUN3aWNtVjJaWEp6WlZKbGMzVnNkRTl5WkdWeUlqcG1ZV3h6WlN3aWNtVnRiM1psVkhKaGMyZ2lPblJ5ZFdVc0luSmxjM1ZzZEVadmNtMWhkQ0k2V3lKQmJHd2lYU3dpY21WemIyeDFkR2x2Ym5NaU9sc2lRV3hzSWwwc0lteGhibWQxWVdkbGN5STZXeUpOZFd4MGFTSXNJa1Z1WjJ4cGMyZ2lMQ0pLWVhCaGJtVnpaU0lzSWtOb2FXNWxjMlVpTENKR2NtVnVZMmdpTENKTGIzSmxZVzRpWFN3aVpHVmljbWxrVTJWeWRtbGpaU0k2SW5SdmNtSnZlQ0lzSW1SbFluSnBaRUZ3YVV0bGVTSTZJalptTm1GaE1HWTRMVFV3TmpZdE5EVXhPQzA0WVdZMkxXWmhOR0UyWWpOaE5HSTVNaUlzSW1SbFluSnBaRk4wY21WaGJWQnliM2g1VUdGemMzZHZjbVFpT2lJaWZRPT0vbWFuaWZlc3QuanNvbiJ9fV0sInNlcnZpY2VzIjpbeyJuYW1lIjoiUmVhbCBEZWJyaWQiLCJpZCI6InJlYWxkZWJyaWQiLCJlbmFibGVkIjp0cnVlLCJjcmVkZW50aWFscyI6eyJhcGlLZXkiOiJSUktCN0lEQ002S0ZEVjZINkxCRU9JSUgzTlFJQldBQVg3NERGRDNEVU1NT0QzV1RGTDZRIn19LHsibmFtZSI6IkFsbCBEZWJyaWQiLCJpZCI6ImFsbGRlYnJpZCIsImVuYWJsZWQiOmZhbHNlLCJjcmVkZW50aWFscyI6e319LHsibmFtZSI6IlByZW1pdW1pemUiLCJpZCI6InByZW1pdW1pemUiLCJlbmFibGVkIjpmYWxzZSwiY3JlZGVudGlhbHMiOnt9fSx7Im5hbWUiOiJEZWJyaWQgTGluayIsImlkIjoiZGVicmlkbGluayIsImVuYWJsZWQiOmZhbHNlLCJjcmVkZW50aWFscyI6e319LHsibmFtZSI6IlRvcmJveCIsImlkIjoidG9yYm94IiwiZW5hYmxlZCI6dHJ1ZSwiY3JlZGVudGlhbHMiOnsiYXBpS2V5IjoiNmY2YWEwZjgtNTA2Ni00NTE4LThhZjYtZmE0YTZiM2E0YjkyIn19LHsibmFtZSI6Ik9mZmNsb3VkIiwiaWQiOiJvZmZjbG91ZCIsImVuYWJsZWQiOmZhbHNlLCJjcmVkZW50aWFscyI6e319LHsibmFtZSI6InB1dC5pbyIsImlkIjoicHV0aW8iLCJlbmFibGVkIjpmYWxzZSwiY3JlZGVudGlhbHMiOnt9fSx7Im5hbWUiOiJFYXN5bmV3cyIsImlkIjoiZWFzeW5ld3MiLCJlbmFibGVkIjpmYWxzZSwiY3JlZGVudGlhbHMiOnt9fSx7Im5hbWUiOiJFYXN5RGVicmlkIiwiaWQiOiJlYXN5ZGVicmlkIiwiZW5hYmxlZCI6ZmFsc2UsImNyZWRlbnRpYWxzIjp7fX0seyJuYW1lIjoiUGlrUGFrIiwiaWQiOiJwaWtwYWsiLCJlbmFibGVkIjpmYWxzZSwiY3JlZGVudGlhbHMiOnt9fSx7Im5hbWUiOiJTZWVkciIsImlkIjoic2VlZHIiLCJlbmFibGVkIjpmYWxzZSwiY3JlZGVudGlhbHMiOnt9fSx7Im5hbWUiOiJPcmlvbiIsImlkIjoib3Jpb24iLCJlbmFibGVkIjpmYWxzZSwiY3JlZGVudGlhbHMiOnt9fV19/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "aiostreams.viren070.com",
+      "version": "1.9.2",
+      "name": "AIOStreams",
+      "contactEmail": null,
+      "description": "Combine all your streams into one addon and display them with consistent formatting, sorting, and filtering.",
+      "logo": "https://raw.githubusercontent.com/Viren070/AIOStreams/refs/heads/main/packages/frontend/public/assets/logo.png",
+      "background": "https://raw.githubusercontent.com/Viren070/AIOStreams/refs/heads/main/packages/frontend/public/assets/background.png",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "stream"
+      ],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Fmediafusion.elfhosted.com%2FD-2r3W5QWHT2B1Lh-egSBkeeMqhjo7jvXqvABLwj27Dad7NGjmXFkqtCLfjK9SCe-kXrUW5meXx--ydiltMvgoNOi9F3LB4S457JLkXjEYlCB88mFZDWZn7JCXEE7NuMPnjCEa2wfcMOQ0W0FERO0Kc4v8VQ7WT-xg1Rz1XRdOMW0Hka9OKqV3HTmKWwuxQPIPE5WMe2d6MQvmaOYKUoEkEFNjxCZQ96tywYQ1ekzQfw5VjOxDSfaAJyYTHlfgffgJFwTWlR5vrYb6690676qIjWsqsYxIRtwvnAmGS6qDeOJkfV7ddjAkhhLP2Sk7copbrR53PAUxmNV9vahKYAHztBQZdBPLmlX7r9f4OGeuHmngaG3Wf-C5H2Wul1azWAK9Tzuz-owOaQyzc7DKNvor0ISlSBfC30Dmq5Ruvsm1fbAcE0T2IxYohRyXtbdps5XtmVoRlKppOo2qL107oPRrpldSLxN7fhzA9nG1KV_3QtQ%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:stremio.addons.mediafusion|elfhostedtrb.torbox",
+      "version": "4.3.2",
+      "name": "[Disabled] MediaFusion | ElfHosted TRB",
+      "contactEmail": "mhdzumair@gmail.com",
+      "description": "Universal Stremio Add-on for Movies, Series, Live TV &amp; Sports Events. Source: https://github.com/mhdzumair/MediaFusion",
+      "logo": "https://mediafusion.elfhosted.com/static/images/mediafusion-elfhosted-logo.png",
+      "background": null,
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Fjackettio.stremiofr.com%2FeyJtYXhUb3JyZW50cyI6NCwicHJpb3RpemVQYWNrVG9ycmVudHMiOjIsImV4Y2x1ZGVLZXl3b3JkcyI6WyJjYW0iLCJ0ZWxlc3luYyJdLCJkZWJyaWRJZCI6InJlYWxkZWJyaWQiLCJoaWRlVW5jYWNoZWQiOmZhbHNlLCJzb3J0Q2FjaGVkIjpbWyJxdWFsaXR5Iix0cnVlXSxbInNpemUiLHRydWVdXSwic29ydFVuY2FjaGVkIjpbWyJzZWVkZXJzIix0cnVlXV0sImZvcmNlQ2FjaGVOZXh0RXBpc29kZSI6dHJ1ZSwicHJpb3RpemVMYW5ndWFnZXMiOlsiZnJlbmNoIl0sImluZGV4ZXJUaW1lb3V0U2VjIjozNSwibWV0YUxhbmd1YWdlIjoiIiwiZW5hYmxlTWVkaWFGbG93IjpmYWxzZSwibWVkaWFmbG93UHJveHlVcmwiOiIiLCJtZWRpYWZsb3dBcGlQYXNzd29yZCI6IiIsIm1lZGlhZmxvd1B1YmxpY0lwIjoiIiwicXVhbGl0aWVzIjpbMCw3MjAsMTA4MF0sImluZGV4ZXJzIjpbInlnZ2FwaSIsInlnZ2Nvb2tpZSIsInNoYXJld29vZC1hcGkiXSwiZGVicmlkQXBpS2V5IjoiUlJLQjdJRENNNktGRFY2SDZMQkVPSUlIM05RSUJXQUFYNzRERkQzRFVNTU9EM1dURkw2USJ9%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:community.stremio.StremioFR",
+      "version": "1.7.0",
+      "name": "[Disabled] StremioFR Tracker RD",
+      "contactEmail": null,
+      "description": "Stremio addon that resolve streams using Jackett and Debrid. It seamlessly integrates with private trackers.",
+      "logo": null,
+      "background": null,
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Fcomet.elfhosted.com%2FeyJpbmRleGVycyI6WyJiaXRzZWFyY2giLCJlenR2IiwidGhlcGlyYXRlYmF5IiwidGhlcmFyYmciLCJ5dHMiXSwibWF4UmVzdWx0cyI6MCwibWF4UmVzdWx0c1BlclJlc29sdXRpb24iOjAsIm1heFNpemUiOjAsInJldmVyc2VSZXN1bHRPcmRlciI6ZmFsc2UsInJlbW92ZVRyYXNoIjp0cnVlLCJyZXN1bHRGb3JtYXQiOlsiQWxsIl0sInJlc29sdXRpb25zIjpbIjIxNjBwIiwiMTQ0MHAiLCIxMDgwcCIsIjcyMHAiLCI1NzZwIiwiNDgwcCIsIjM2MHAiLCJ1bmtub3duIl0sImxhbmd1YWdlcyI6WyJNdWx0aSIsIkVuZ2xpc2giLCJKYXBhbmVzZSIsIkNoaW5lc2UiLCJGcmVuY2giLCJLb3JlYW4iXSwiZGVicmlkU2VydmljZSI6InJlYWxkZWJyaWQiLCJkZWJyaWRBcGlLZXkiOiJSUktCN0lEQ002S0ZEVjZINkxCRU9JSUgzTlFJQldBQVg3NERGRDNEVU1NT0QzV1RGTDZRIiwic3RyZW10aHJ1VXJsIjoiIiwiZGVicmlkU3RyZWFtUHJveHlQYXNzd29yZCI6IiJ9%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:comet.elfhosted.com.tCzM",
+      "version": "1.0.0",
+      "name": "[Disabled] Comet | ElfHosted | RD",
+      "contactEmail": null,
+      "description": "Stremio's fastest torrent/debrid search add-on.",
+      "logo": "https://i.imgur.com/jmVoVMu.jpeg",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Fcomet.elfhosted.com%2FeyJpbmRleGVycyI6WyJiaXRzZWFyY2giLCJlenR2IiwidGhlcGlyYXRlYmF5IiwidGhlcmFyYmciLCJ5dHMiXSwibWF4UmVzdWx0cyI6MTAsIm1heFJlc3VsdHNQZXJSZXNvbHV0aW9uIjo1LCJtYXhTaXplIjoxNjEwNjEyNzM2MDAsInJlbW92ZVRyYXNoIjp0cnVlLCJyZXN1bHRGb3JtYXQiOlsiQWxsIl0sInJlc29sdXRpb25zIjpbIjIxNjBwIiwiMTQ0MHAiLCIxMDgwcCIsIjcyMHAiLCI1NzZwIiwiNDgwcCJdLCJsYW5ndWFnZXMiOlsiTXVsdGkiLCJFbmdsaXNoIiwiSmFwYW5lc2UiLCJDaGluZXNlIiwiRnJlbmNoIiwiS29yZWFuIl0sImRlYnJpZFNlcnZpY2UiOiJ0b3Jib3giLCJkZWJyaWRBcGlLZXkiOiI2ZjZhYTBmOC01MDY2LTQ1MTgtOGFmNi1mYTRhNmIzYTRiOTIiLCJkZWJyaWRTdHJlYW1Qcm94eVBhc3N3b3JkIjoiIn0=%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:comet.elfhosted.com.JVxK",
+      "version": "1.0.0",
+      "name": "[Disabled] Comet | ElfHosted | TB",
+      "contactEmail": null,
+      "description": "Stremio's fastest torrent/debrid search add-on.",
+      "logo": "https://i.imgur.com/jmVoVMu.jpeg",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Fcomet.stremiofr.com%2FeyJpbmRleGVycyI6WyJ5Z2d0b3JyZW50Iiwic2hhcmV3b29kLWFwaSIsInlnZ2Nvb2tpZSIsImdrdG9ycmVudCIsImRtbSIsInlnZ2FwaSJdLCJtYXhSZXN1bHRzIjoxNSwibWF4UmVzdWx0c1BlclJlc29sdXRpb24iOjUsIm1heFNpemUiOjI2ODQzNTQ1NjAwMCwicmV2ZXJzZVJlc3VsdE9yZGVyIjpmYWxzZSwicmVtb3ZlVHJhc2giOnRydWUsInJlc3VsdEZvcm1hdCI6WyJBbGwiXSwicmVzb2x1dGlvbnMiOlsiQWxsIl0sImxhbmd1YWdlcyI6WyJNdWx0aSIsIkVuZ2xpc2giLCJKYXBhbmVzZSIsIkNoaW5lc2UiLCJGcmVuY2giLCJLb3JlYW4iXSwiZGVicmlkU2VydmljZSI6InRvcmJveCIsImRlYnJpZEFwaUtleSI6IjZmNmFhMGY4LTUwNjYtNDUxOC04YWY2LWZhNGE2YjNhNGI5MiIsImRlYnJpZFN0cmVhbVByb3h5UGFzc3dvcmQiOiIifQ==%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:stremio.comet.fr",
+      "version": "1.0.0",
+      "name": "[Disabled] CometFR | TB",
+      "contactEmail": null,
+      "description": "Stremio addons for French content.",
+      "logo": "https://i.imgur.com/dUL8j6C.png",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Ftorrentio.strem.fun%2Fqualityfilter=scr%2Ccam%257Cdebridoptions=nodownloadlinks%257Ctorbox=6f6aa0f8-5066-4518-8af6-fa4a6b3a4b92%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "[Disabled] Torrentio TB",
+      "contactEmail": null,
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(+), Rutracker(+), Comando(+), BluDV(+), Torrent9(+), ilCorSaRoNeRo(+), MejorTorrent(+), Wolfmax4k(+), Cinecalidad(+) and TorBox enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Ftorrentio.strem.fun%2Fqualityfilter=scr%2Ccam%257Cdebridoptions=nodownloadlinks%257Crealdebrid=RRKB7IDCM6KFDV6H6LBEOIIH3NQIBWAAX74DFD3DUMMOD3WTFL6Q%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "[Disabled] Torrentio RD",
+      "contactEmail": null,
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(+), Rutracker(+), Comando(+), BluDV(+), Torrent9(+), ilCorSaRoNeRo(+), MejorTorrent(+), Wolfmax4k(+), Cinecalidad(+) and RealDebrid enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Fstremio.torbox.app%2F6f6aa0f8-5066-4518-8af6-fa4a6b3a4b92%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:app.torbox.stremio",
+      "version": "1.0.0",
+      "name": "[Disabled] TorBox",
+      "contactEmail": "contact@torbox.app",
+      "description": "Provides torrent streams for users of TorBox. With zero config, and a free account you can instantly start watching your favorite torrents using TorBox. To add with streaming support, go to your TorBox settings and click the Access Stremio Addon button! Configuration can be done from the TorBox settings, which are propagated instantly, no need to reinstall the addon! Requires a TorBox account to stream. Get started for free at https://torbox.app",
+      "logo": "https://torbox.app/android-chrome-512x512.png",
+      "background": null,
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://2ecbbd610840-yifysubtitles.baby-beamup.club/french/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.yifysubtitles",
+      "version": "0.0.2",
+      "name": "yifysubtitles subtitles by dexter21767",
+      "contactEmail": "ahmidiyasser@gmail.com",
+      "description": "Addon for getting subtitles from yifysubtitles, by Dexter21767.",
+      "logo": "https://yifysubtitles.org/images/misc/yifysubtitles-logo-small.png",
+      "background": "https://github.com/Stremio/stremio-art/raw/main/originals/Zuupills.png",
+      "types": [
+        "subtitles"
+      ],
+      "resources": [
+        {
+          "name": "subtitles",
+          "types": [
+            "movie"
+          ],
+          "idPrefixes": [
+            "tt"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://94c8cb9f702d-tmdb-addon.baby-beamup.club/%7B%22ratings%22%3A%22on%22%2C%22rpdbkey%22%3A%22t0-free-rpdb%22%2C%22provide_imdbId%22%3A%22true%22%2C%22use_tmdb_prefix%22%3A%22true%22%2C%22language%22%3A%22en-US%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "tmdb-addon",
+      "version": "3.0.18",
+      "name": "The Movie Database Addon",
+      "contactEmail": null,
+      "description": "Metadata provided by TMDB.",
+      "logo": "https://github.com/mrcanelas/tmdb-addon/raw/main/images/logo.png",
+      "background": "https://github.com/mrcanelas/tmdb-addon/raw/main/images/background.png",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "meta"
+      ],
+      "idPrefixes": [
+        "tmdb:",
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "tmdb.top",
+          "type": "movie",
+          "name": "TMDB - Popular",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.year",
+          "type": "movie",
+          "name": "TMDB - Year",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.language",
+          "type": "movie",
+          "name": "TMDB - Language",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "English",
+                "Afrikaans",
+                "Albanian",
+                "Arabic",
+                "Basque",
+                "Belarusian",
+                "Bengali",
+                "Breton",
+                "Bulgarian",
+                "Catalan",
+                "Chamorro",
+                "Croatian",
+                "Czech",
+                "Danish",
+                "Dutch",
+                "Esperanto",
+                "Estonian",
+                "Finnish",
+                "French",
+                "Gaelic",
+                "Galician",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hebrew",
+                "Hindi",
+                "Hungarian",
+                "Indonesian",
+                "Irish",
+                "Italian",
+                "Japanese",
+                "Kannada",
+                "Kazakh",
+                "Kirghiz",
+                "Korean",
+                "Kurdish",
+                "Latvian",
+                "Lithuanian",
+                "Malay",
+                "Malayalam",
+                "Mandarin",
+                "Marathi",
+                "Norwegian",
+                "Norwegian Bokmål",
+                "Persian",
+                "Polish",
+                "Portuguese",
+                "Punjabi",
+                "Romanian",
+                "Russian",
+                "Serbian",
+                "Sinhalese",
+                "Slovak",
+                "Slovenian",
+                "Somali",
+                "Spanish",
+                "Swahili",
+                "Swedish",
+                "Tagalog",
+                "Tamil",
+                "Telugu",
+                "Thai",
+                "Turkish",
+                "Ukrainian",
+                "Urdu",
+                "Uzbek",
+                "Vietnamese",
+                "Welsh",
+                "Zulu"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.trending",
+          "type": "movie",
+          "name": "TMDB - Trending",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "Day",
+                "Week"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.top",
+          "type": "series",
+          "name": "TMDB - Popular",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.year",
+          "type": "series",
+          "name": "TMDB - Year",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.language",
+          "type": "series",
+          "name": "TMDB - Language",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "English",
+                "Afrikaans",
+                "Albanian",
+                "Arabic",
+                "Basque",
+                "Belarusian",
+                "Bengali",
+                "Breton",
+                "Bulgarian",
+                "Catalan",
+                "Chamorro",
+                "Croatian",
+                "Czech",
+                "Danish",
+                "Dutch",
+                "Esperanto",
+                "Estonian",
+                "Finnish",
+                "French",
+                "Gaelic",
+                "Galician",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hebrew",
+                "Hindi",
+                "Hungarian",
+                "Indonesian",
+                "Irish",
+                "Italian",
+                "Japanese",
+                "Kannada",
+                "Kazakh",
+                "Kirghiz",
+                "Korean",
+                "Kurdish",
+                "Latvian",
+                "Lithuanian",
+                "Malay",
+                "Malayalam",
+                "Mandarin",
+                "Marathi",
+                "Norwegian",
+                "Norwegian Bokmål",
+                "Persian",
+                "Polish",
+                "Portuguese",
+                "Punjabi",
+                "Romanian",
+                "Russian",
+                "Serbian",
+                "Sinhalese",
+                "Slovak",
+                "Slovenian",
+                "Somali",
+                "Spanish",
+                "Swahili",
+                "Swedish",
+                "Tagalog",
+                "Tamil",
+                "Telugu",
+                "Thai",
+                "Turkish",
+                "Ukrainian",
+                "Urdu",
+                "Uzbek",
+                "Vietnamese",
+                "Welsh",
+                "Zulu"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.trending",
+          "type": "series",
+          "name": "TMDB - Trending",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "Day",
+                "Week"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://1fe84bc728af-anime-seasons.baby-beamup.club/t0-free-rpdb/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.anime-seasons-with-ratings",
+      "version": "1.10.1",
+      "name": "Anime Seasons",
+      "contactEmail": null,
+      "description": "Catalogs that show newest anime movie and series releases. Optionally supports adding a RPDB key for rating posters. This addon is a fork of \"Animes' Season\" addon.",
+      "logo": "https://1fe84bc728af-anime-seasons.baby-beamup.club/logo.jpg",
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": [
+        "tt",
+        "kitsu"
+      ],
+      "catalogs": [
+        {
+          "id": "latest_anime_seasons",
+          "type": "series",
+          "name": "Anime Seasons",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "FALL",
+                "WINTER",
+                "SPRING",
+                "SUMMER"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "latest_anime_seasons",
+          "type": "movie",
+          "name": "Anime Seasons",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "FALL",
+                "WINTER",
+                "SPRING",
+                "SUMMER"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "archive_anime_seasons",
+          "type": "series",
+          "name": "Anime Years",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004",
+                "2003",
+                "2002",
+                "2001"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "archive_anime_seasons",
+          "type": "movie",
+          "name": "Anime Years",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004",
+                "2003",
+                "2002",
+                "2001"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://56bca7d190fc-syncribullet.baby-beamup.club/anilist_accesstoken-=-eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjMxYzhjOTY1ODRkNWFmYjAwYmUyYzJhMzIzMjUyZjRhNWU0OTQ5YTg2ZDRmODNlNDAxYzY0YWYyODliNmM3MmQ4NjQ4YzUzNzhmYjY0YWRjIn0.eyJhdWQiOiIxODEyNSIsImp0aSI6IjMxYzhjOTY1ODRkNWFmYjAwYmUyYzJhMzIzMjUyZjRhNWU0OTQ5YTg2ZDRmODNlNDAxYzY0YWYyODliNmM3MmQ4NjQ4YzUzNzhmYjY0YWRjIiwiaWF0IjoxNzEzMDkyNDM3LCJuYmYiOjE3MTMwOTI0MzcsImV4cCI6MTc0NDYyODQzNywic3ViIjoiNjY3Nzg2MSIsInNjb3BlcyI6W119.SDoGSDkWh_B9jM1egzi55KL55Zr9SLD03SyEi8c8hB6DSDsVZz1NGk7yLaUEYmJc-QKDbJ4Pc0yPJkzm7rBwn_xCARSjws9VG6znbKdEzCrj8K-VHeKpcqku-voI7-dBysQLwPpiHigM_WQw3CFkId5vja2G2qzR9dnCgdlzcASv1Bzu5gbdMNqLlNn_c5ozPB9qIDZy8_2kar3SaMBCYs2iq15npevZhmByOouggChPRBDLbDv04YAjzKNPUjCmLRnyv2zZIyT2Tem6mCF_OzhtLDGxRmKrx5ieUM35meFipI1YEiBid1Q3jzQLLWFqDNpUtieNhPAAdWc3hCLIw8W_BsFFElWu-u9VEhQ06rftSs63_fogHNhcz4WrBfsZH0PqKZuR9GybkJeG_OYn5bmfNX9En_exUWq162s6CRhvfCo0h3zirUXOL6MnGWCgNGUHAh9s3M__7bZT7_l-v15N1Ysxpr6WsNVQeaStq4xj91Lz7xyVdR1OHegJOhVQstXi8F8qo0_mTPnht2bloVGgAhktTlGdXrhvf2W7Q3ppowRWBjMTpbS-k3SX3IQQaUrer9Qg2ZOcU-Mlmcvz0YFUFz_HiuteY8HzpWp6vr3Wa7Xi1PVNxPcbcaBrcdEOe-nUxFNoro71cmdTz5MQ0vWUsHNMZAXAQ_pYXKMjcRc%7Cstremio_authKey-=-uKD5C-dRShwT74lN7zpzNtKG3a7YtjjWjJvqz4HYu_c=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.aliyss.syncribullet",
+      "version": "1.0.13",
+      "name": "syncribullet",
+      "contactEmail": null,
+      "description": "App that mixes your syncs",
+      "logo": "https://github.com/aliyss/syncribullet/blob/master/public/android-chrome-192x192.png?raw=true",
+      "background": null,
+      "types": [
+        "series",
+        "movie"
+      ],
+      "resources": [
+        "catalog",
+        {
+          "name": "meta",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "anilist_"
+          ]
+        },
+        "stream",
+        "subtitles"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "syncribullet-anilist-anime-CURRENT",
+          "type": "series",
+          "name": "Anilist - Watching",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "syncribullet-anilist-anime-PLANNING",
+          "type": "series",
+          "name": "Anilist - Planning",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "syncribullet-anilist-anime-COMPLETED",
+          "type": "series",
+          "name": "Anilist - Completed",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "syncribullet-anilist-anime-PAUSED",
+          "type": "series",
+          "name": "Anilist - On Hold",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "syncribullet-anilist-anime-DROPPED",
+          "type": "series",
+          "name": "Anilist - Dropped",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "syncribullet-anilist-anime-REPEATING",
+          "type": "series",
+          "name": "Anilist - Repeating",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://onepace.arl.sh/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "sh.arl.onepace-stremio",
+      "version": "2.0.0",
+      "name": "One Pace Addon",
+      "contactEmail": null,
+      "description": "One Pace addon for Stremio (https://onepace.net). Go to Discover -> Series -> One Pace to watch.",
+      "logo": "https://onepace.net/images/one-pace-logo.svg",
+      "background": null,
+      "types": [
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        {
+          "name": "meta",
+          "types": [
+            "series"
+          ],
+          "idPrefixes": null
+        },
+        "stream"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "seriesCatalog",
+          "type": "series",
+          "name": "One Pace",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://7a82163c306e-rottentomatoes.baby-beamup.club/%7B%22rpdb_key%22%3A%22t0-free-rpdb%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "pw.ers.rottentomatoes",
+      "version": "1.0.6",
+      "name": "Rotten Tomatoes",
+      "contactEmail": null,
+      "description": "Certified Fresh Movies to Stream at Home and Best TV Shows (2024).",
+      "logo": "https://i.ibb.co/hyPLjwC/tomato.png",
+      "background": "https://www.rottentomatoes.com/assets/pizza-pie/head-assets/images/RT_TwitterCard_2018.jpg",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "rtfresh_movie",
+          "type": "movie",
+          "name": "RT: Certified Fresh",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Fantasy",
+                "LGBTQ+",
+                "History",
+                "Horror",
+                "Kids & Family",
+                "Mystery & Thriller",
+                "Romance",
+                "Sci-Fi",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "rtfresh_series",
+          "type": "series",
+          "name": "RT: Best TV Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Fantasy",
+                "LGBTQ+",
+                "History",
+                "Horror",
+                "Kids & Family",
+                "Mystery & Thriller",
+                "Romance",
+                "Sci-Fi",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://cyberflix.elfhosted.com/c/catalogs=cd492,15846,cf003,eba63,c4e72,071c0,47f38,71418,61f57,60f26,88681,a2ff4,5653e,223ce,2699b,44ed2,bfb17,ed8a6,458f5,ba15a,f3902,241e6,330d5,ec1fd,4354b,10164,45927,8a40d,09ef9,02d66,648d5,7459e%7Crpgb=t0-free-rpdb%7Clang=en/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "marcojoao.ml.cyberflix.catalog",
+      "version": "1.5.2",
+      "name": "Cyberflix Catalog",
+      "contactEmail": null,
+      "description": "Cyberflix, an catalog add-on for Stremio, aggregates the most popular steaming platforms such as Netflix, Amazon Prime or Hulu, and also specific catalogs for Kids, Asian or Anime.",
+      "logo": "http://cyberflix.elfhosted.com/logo.png",
+      "background": "http://cyberflix.elfhosted.com/background.png",
+      "types": [
+        "series",
+        "movie"
+      ],
+      "resources": [
+        "catalog",
+        "meta"
+      ],
+      "idPrefixes": [
+        "cyberflix:"
+      ],
+      "catalogs": [
+        {
+          "id": "netflix.popular.movie",
+          "type": "Netflix",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "netflix.popular.series",
+          "type": "Netflix",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "netflix.new.movie",
+          "type": "Netflix",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                ""
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "netflix.new.series",
+          "type": "Netflix",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "disney_plus.popular.movie",
+          "type": "Disney Plus",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "disney_plus.popular.series",
+          "type": "Disney Plus",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "disney_plus.new.movie",
+          "type": "Disney Plus",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "disney_plus.new.series",
+          "type": "Disney Plus",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hbo_max.popular.movie",
+          "type": "Hbo Max",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hbo_max.popular.series",
+          "type": "Hbo Max",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hbo_max.new.movie",
+          "type": "Hbo Max",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hbo_max.new.series",
+          "type": "Hbo Max",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "amazon_prime.popular.movie",
+          "type": "Amazon Prime",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "amazon_prime.popular.series",
+          "type": "Amazon Prime",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "amazon_prime.new.movie",
+          "type": "Amazon Prime",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2010",
+                ""
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "amazon_prime.new.series",
+          "type": "Amazon Prime",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "apple_tv_plus.popular.movie",
+          "type": "Apple Tv Plus",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "apple_tv_plus.popular.series",
+          "type": "Apple Tv Plus",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "apple_tv_plus.new.movie",
+          "type": "Apple Tv Plus",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "apple_tv_plus.new.series",
+          "type": "Apple Tv Plus",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2017",
+                "2011",
+                "2009",
+                "2007",
+                "2004",
+                "1983"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hulu.popular.movie",
+          "type": "Hulu",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hulu.popular.series",
+          "type": "Hulu",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hulu.new.movie",
+          "type": "Hulu",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "hulu.new.series",
+          "type": "Hulu",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "paramount_plus.popular.movie",
+          "type": "Paramount Plus",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "paramount_plus.popular.series",
+          "type": "Paramount Plus",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "paramount_plus.new.movie",
+          "type": "Paramount Plus",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "paramount_plus.new.series",
+          "type": "Paramount Plus",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "peacock_premium.popular.movie",
+          "type": "Peacock Premium",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "peacock_premium.popular.series",
+          "type": "Peacock Premium",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Kids",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "TV",
+                "Thriller",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "peacock_premium.new.movie",
+          "type": "Peacock Premium",
+          "name": "New Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2009"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "peacock_premium.new.series",
+          "type": "Peacock Premium",
+          "name": "New Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://www.journey.co.il/stremio/manifest.json?list=9719661722857498&name=Newest%20Movies",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.imdblist.9719661722857498",
+      "version": "1.2.0",
+      "name": "IMDB list: Newest Movies",
+      "contactEmail": null,
+      "description": "Add your IMDB lists as catalogs with www.journey.co.il/stremio/",
+      "logo": "https://www.journey.co.il/stremio/addon_logo.png",
+      "background": null,
+      "types": [
+        "movie"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "9719661722857498",
+          "type": "movie",
+          "name": "Newest Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://www.journey.co.il/stremio/manifest.json?list=213&name=Netflix%20-%20Recent%20TV%20Shows",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.imdblist.213",
+      "version": "1.2.0",
+      "name": "IMDB list: Netflix - Recent TV Shows",
+      "contactEmail": null,
+      "description": "Add your IMDB lists as catalogs with www.journey.co.il/stremio/",
+      "logo": "https://www.journey.co.il/stremio/addon_logo.png",
+      "background": null,
+      "types": [
+        "network"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "213",
+          "type": "network",
+          "name": "Netflix - Recent TV Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://www.journey.co.il/stremio/manifest.json?list=1024&name=Amazon%20Prime%20-%20Recent%20TV%20Shows",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.imdblist.1024",
+      "version": "1.2.0",
+      "name": "IMDB list: Amazon Prime - Recent TV Shows",
+      "contactEmail": null,
+      "description": "Add your IMDB lists as catalogs with www.journey.co.il/stremio/",
+      "logo": "https://www.journey.co.il/stremio/addon_logo.png",
+      "background": null,
+      "types": [
+        "network"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "1024",
+          "type": "network",
+          "name": "Amazon Prime - Recent TV Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://www.journey.co.il/stremio/manifest.json?list=2552&name=Apple%20TV%20%20-%20Recent%20TV%20Shows",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.imdblist.2552",
+      "version": "1.2.0",
+      "name": "IMDB list: Apple TV  - Recent TV Shows",
+      "contactEmail": null,
+      "description": "Add your IMDB lists as catalogs with www.journey.co.il/stremio/",
+      "logo": "https://www.journey.co.il/stremio/addon_logo.png",
+      "background": null,
+      "types": [
+        "network"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "2552",
+          "type": "network",
+          "name": "Apple TV  - Recent TV Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://www.journey.co.il/stremio/manifest.json?list=2739&name=Disney%20%20-%20Recent%20TV%20Shows",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.imdblist.2739",
+      "version": "1.2.0",
+      "name": "IMDB list: Disney  - Recent TV Shows",
+      "contactEmail": null,
+      "description": "Add your IMDB lists as catalogs with www.journey.co.il/stremio/",
+      "logo": "https://www.journey.co.il/stremio/addon_logo.png",
+      "background": null,
+      "types": [
+        "network"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "2739",
+          "type": "network",
+          "name": "Disney  - Recent TV Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://www.journey.co.il/stremio/manifest.json?list=49&name=HBO%20-%20Recent%20TV%20Shows",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.imdblist.49",
+      "version": "1.2.0",
+      "name": "IMDB list: HBO - Recent TV Shows",
+      "contactEmail": null,
+      "description": "Add your IMDB lists as catalogs with www.journey.co.il/stremio/",
+      "logo": "https://www.journey.co.il/stremio/addon_logo.png",
+      "background": null,
+      "types": [
+        "network"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "49",
+          "type": "network",
+          "name": "HBO - Recent TV Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremio-dramacool-addon.xyz/eyJjYXRhbG9ncyI6W10sInRtZGItY2F0YWxvZ3MiOlsidG1kYi1tb3N0LXBvcHVsYXItZHJhbWEiXSwia2lzc2toLWNhdGFsb2dzIjpbXSwicnBkYktleSI6InQwLWZyZWUtcnBkYiIsInJkS2V5IjoiUlJLQjdJRENNNktGRFY2SDZMQkVPSUlIM05RSUJXQUFYNzRERkQzRFVNTU9EM1dURkw2USJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.stremio.dramacool",
+      "version": "1.0.0",
+      "name": "Dramacool",
+      "contactEmail": null,
+      "description": "Addon that serves asian movies and dramas from dramacool",
+      "logo": null,
+      "background": null,
+      "types": [
+        "series",
+        "dramacool",
+        "kisskh"
+      ],
+      "resources": [
+        "catalog",
+        {
+          "name": "meta",
+          "types": [
+            "series"
+          ],
+          "idPrefixes": [
+            "dcool-",
+            "kkh-"
+          ]
+        },
+        {
+          "name": "stream",
+          "types": [
+            "series"
+          ],
+          "idPrefixes": [
+            "dcool-",
+            "kkh-"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "tmdb-most-popular-drama",
+          "type": "dramacool",
+          "name": "TMDB: Most Popular Asian Drama",
+          "extra": [
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "search-results",
+          "type": "dramacool",
+          "name": "Search Results",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/disabled/https:%2F%2Fsubtito.com%2Fuser%2F54e584b6-b7cc-4f52-865f-af8d92ff67f8%2FmHRoXo6Aa%2Fmanifest.json/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:disabled:com.subtito.ai",
+      "version": "0.8.1",
+      "name": "[Disabled] Subtito",
+      "contactEmail": "support@subtito.com",
+      "description": "The content you love, with the subtitles you need. AI translated subtitles in your language.",
+      "logo": "https://subtito.com/static/images/logo_website.png",
+      "background": null,
+      "types": [],
+      "resources": [],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://opensubtitlesv3-pro.dexter21767.com/eyJsYW5ncyI6WyJmcmVuY2giXSwic291cmNlIjoiYWxsIiwiYWlUcmFuc2xhdGVkIjp0cnVlLCJhdXRvQWRqdXN0bWVudCI6dHJ1ZX0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.opensubtitlesv3.pro",
+      "version": "0.1.0",
+      "name": "opensubtitles PRO",
+      "contactEmail": "dexter21767@gmail.com",
+      "description": "ad-free and spam-free subtitles addon",
+      "logo": "https://i.imgur.com/cGc1DXB.png",
+      "background": "https://github.com/Stremio/stremio-art/raw/main/originals/reiphantomhive1.png",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt",
+        "kitsu"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://subsource.strem.bar/RW5nbGlzaCxGcmVuY2gsRnJlbmNoIChGcmFuY2UpL2hpSW5jbHVkZQ==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.subsource.subtitles",
+      "version": "0.0.8",
+      "name": "SubSource Subtitles",
+      "contactEmail": null,
+      "description": "Unofficial addon for getting subtitles from SubSource.net",
+      "logo": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/ss.png",
+      "background": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/backgroundcinema.jpg",
+      "types": [
+        "movie",
+        "series",
+        "subtitles"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://subdl.strem.bar/YlNYc19DbFZKdDhCUTlhT0lsZTJkUERUVnZvd3JQdm4vRU4sRlIvaGlJbmNsdWRlLw==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.subdl.subtitles",
+      "version": "0.1.3",
+      "name": "SubDL Subtitles",
+      "contactEmail": null,
+      "description": "Unofficial addon for getting subtitles from SubDL.com",
+      "logo": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/download.jpg",
+      "background": "https://raw.githubusercontent.com/nexusdiscord/tv-logo/master/backgroundcinema.jpg",
+      "types": [
+        "movie",
+        "series",
+        "subtitles"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://1fe84bc728af-stremio-anime-catalogs.baby-beamup.club/%7B%22ratings%22%3A%22on%22%2C%22rpdbkey%22%3A%22t0-free-rpdb%22%2C%22search%22%3A%22on%22%2C%22anilist_popular-this-season%22%3A%22on%22%2C%22livechart_popular%22%3A%22on%22%2C%22livechart_top-rated%22%3A%22on%22%2C%22notifymoe_airing-now%22%3A%22on%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.stremio.animecatalogs",
+      "version": "1.0.3",
+      "name": "Anime Catalogs",
+      "contactEmail": null,
+      "description": "Stremio catalogs for anime from: MyAnimeList, AniDB, AniList, Kitsu, aniSearch, LiveChart.me, Notify.Moe. Also supports filtering by dubbed and optional setting to use Rating Posters from RPDB.",
+      "logo": "https://1fe84bc728af-stremio-anime-catalogs.baby-beamup.club/addon-logo.png",
+      "background": "https://1fe84bc728af-stremio-anime-catalogs.baby-beamup.club/addon-background.jpg",
+      "types": [
+        "anime",
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "meta"
+      ],
+      "idPrefixes": [
+        "kitsu:"
+      ],
+      "catalogs": [
+        {
+          "id": "anilist_popular-this-season",
+          "type": "anime",
+          "name": "Popular This Season AniList",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "livechart_popular",
+          "type": "anime",
+          "name": "Popular LiveChart.me",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "livechart_top-rated",
+          "type": "anime",
+          "name": "Top Rated LiveChart.me",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "notifymoe_airing-now",
+          "type": "anime",
+          "name": "Airing Now Notify.Moe",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "anime-catalogs-search",
+          "type": "anime",
+          "name": "Search",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/stremio/languages=french/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "comunity.aio-subtitle",
+      "version": "1.0.0",
+      "name": "AIO Substitle",
+      "contactEmail": "dev.namnv@gmail.com",
+      "description": "Unofficial addon to get subtitles from Subscene, OpenSubtitles, and Kitsunekko. Uses Microsoft Translator to translate subtitles if they are available from providers. Visit https://aiosubtitle.org to easily download subtitles.",
+      "logo": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/assets/AI-sub.png",
+      "background": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/assets/background.jpg",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt",
+        "kitsu"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://subhero.onrender.com/%7B%22language%22%3A%22fr%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.subhero.wyzie",
+      "version": "1.0.3",
+      "name": "SubHero",
+      "contactEmail": null,
+      "description": "Subtitles with language filtering. Subtitles provided & scraped by Wyzie API.",
+      "logo": "https://cdn.icon-icons.com/icons2/3606/PNG/512/sculpture_statue_texture_futuristic_art_geometry_organic_abstract_shape_explode_shae_icon_226539.png",
+      "background": "https://w.wallhaven.cc/full/0p/wallhaven-0pjkp9.png",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://debridmediamanager.com/api/stremio/MALLl/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.debridmediamanager.cast",
+      "version": "0.0.5",
+      "name": "DMM Cast",
+      "contactEmail": null,
+      "description": "Cast your preferred Debrid Media Manager streams to your Stremio device; supports Anime, TV shows and Movies!",
+      "logo": "https://static.debridmediamanager.com/dmmcast.png",
+      "background": "https://static.debridmediamanager.com/background.png",
+      "types": [
+        "movie",
+        "series",
+        "other"
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt"
+          ]
+        },
+        {
+          "name": "meta",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "dmm"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "casted-movies",
+          "type": "movie",
+          "name": "DMM Casted Movies",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "casted-shows",
+          "type": "series",
+          "name": "DMM Casted TV Shows",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "casted-other",
+          "type": "other",
+          "name": "DMM Library",
+          "extra": [
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/wrap/eyJtYW5pZmVzdF91cmwiOiJodHRwczovL29uZXBhY2VhZGRvbi16b3JvcG9nZ2VyLmtveWViLmFwcC9tYW5pZmVzdC5qc29uIiwic3RvcmUiOiJyZWFsZGVicmlkIiwidG9rZW4iOiJSUktCN0lEQ002S0ZEVjZINkxCRU9JSUgzTlFJQldBQVg3NERGRDNEVU1NT0QzV1RGTDZRIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "st:wrap:org.zoropogaddon",
+      "version": "0.3.0",
+      "name": "StremThru(One Pace Catalog)",
+      "contactEmail": null,
+      "description": "Adds One-pace catalog. One Pace is a fan project that recuts the One Piece anime in an endeavor to bring it more in line with the pacing of the original manga by Eiichiro Oda.",
+      "logo": "https://i.ibb.co/4sDjXZy/logo2.jpg",
+      "background": null,
+      "types": [
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "meta",
+        "stream"
+      ],
+      "idPrefixes": [
+        "_onepace"
+      ],
+      "catalogs": [
+        {
+          "id": "Anime",
+          "type": "series",
+          "name": "",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://deeplsubtitle.sonsuzanime.com/%7B%22translateto%22%3A%22Fran%C3%A7ais%22%2C%22apikey%22%3A%223fbb22e8-7cb0-4df4-82ea-08932ab19223%3Afx%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.autotranslate.sonsuzanime",
+      "version": "1.0.1",
+      "name": "Auto Subtitle Translate by SonsuzAnime (DeepL)",
+      "contactEmail": null,
+      "description": "This addon takes subtitles from OpenSubtitlesV3 then translates into desired language.For donations: https://www.buymeacoffee.com/sonsuzosman Bug report: infinity@sonsuzanime.com",
+      "logo": "https://deeplsubtitle.sonsuzanime.com/subtitles/logo.png",
+      "background": null,
+      "types": [
+        "series",
+        "movie"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": null,
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/store/eyJzdG9yZV9uYW1lIjoidG9yYm94Iiwic3RvcmVfdG9rZW4iOiI2ZjZhYTBmOC01MDY2LTQ1MTgtOGFmNi1mYTRhNmIzYTRiOTIifQ==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "dev.muniftanjim.stremthru.store",
+      "version": "0.28.1",
+      "name": "Store | TB",
+      "contactEmail": "github@muniftanjim.dev",
+      "description": "StremThru Store Catalog and Search - torbox",
+      "logo": null,
+      "background": null,
+      "types": [],
+      "resources": [
+        {
+          "name": "meta",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "st:store:"
+          ]
+        },
+        {
+          "name": "stream",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "st:store:"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "st:store",
+          "type": "other",
+          "name": "Store",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "type",
+              "isRequired": false,
+              "options": [
+                "video",
+                "action"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremthru.elfhosted.com/stremio/store/eyJzdG9yZV9uYW1lIjoicmVhbGRlYnJpZCIsInN0b3JlX3Rva2VuIjoiUlJLQjdJRENNNktGRFY2SDZMQkVPSUlIM05RSUJXQUFYNzRERkQzRFVNTU9EM1dURkw2USJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "dev.muniftanjim.stremthru.store",
+      "version": "0.28.1",
+      "name": "Store | RD",
+      "contactEmail": "github@muniftanjim.dev",
+      "description": "StremThru Store Catalog and Search - realdebrid",
+      "logo": null,
+      "background": null,
+      "types": [],
+      "resources": [
+        {
+          "name": "meta",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "st:store:"
+          ]
+        },
+        {
+          "name": "stream",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "st:store:"
+          ]
+        }
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "st:store",
+          "type": "other",
+          "name": "Store",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "type",
+              "isRequired": false,
+              "options": [
+                "video",
+                "action"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://www.strem.io/trakt/addon/5638f0d49e64e20300a6a3bf/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.trakt.00a6a3bf",
+      "version": "1.0.0",
+      "name": "Trakt Integration",
+      "contactEmail": null,
+      "description": "",
+      "logo": null,
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "history",
+          "type": "movie",
+          "name": "Trakt History",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "history",
+          "type": "series",
+          "name": "Trakt History",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "watchlist",
+          "type": "movie",
+          "name": "Trakt Watchlist",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "watchlist",
+          "type": "series",
+          "name": "Trakt Watchlist",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "collection",
+          "type": "movie",
+          "name": "Trakt Collection",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "collection",
+          "type": "series",
+          "name": "Trakt Collection",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "recommendations",
+          "type": "movie",
+          "name": "Trakt Recommendations",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "recommendations",
+          "type": "series",
+          "name": "Trakt Recommendations",
+          "extraRequired": [],
+          "extraSupported": []
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  }
+]

@@ -1,0 +1,621 @@
+[
+  {
+    "transportUrl": "https://torrentio.strem.fun/debridoptions=nodownloadlinks,nocatalog,torrentlinks%7Crealdebrid=UG5BYFXX425ZTRQWV7ZMLEST4C3MNNIDH5UKFFUG2RJISDAI6SEA%7Cpremiumize=mxexukrpfk3uu2t6/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "Torrentio RD/PM",
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(+), Rutracker(+), Comando(+), BluDV(+), Torrent9(+), MejorTorrent(+), Cinecalidad(+) and RealDebrid & Premiumize enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/Put.io support and other settings visit https://torrentio.strem.fun",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://holy-snowflake-36a1.stremiotv.workers.dev/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "catalogs": [],
+      "description": "VOD from Google Drive",
+      "id": "hy.stremio.googledrive",
+      "logo": "https://raw.githubusercontent.com/mik25/stremio-greek-tv/master/pngwing.com.png",
+      "name": "GDrive Reborn",
+      "resources": [
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "version": "2.0.0"
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://7a82163c306e-stremio-netflix-catalog-addon.baby-beamup.club/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "pw.ers.netflix-catalog",
+      "logo": "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI",
+      "version": "1.0.8",
+      "name": "Streaming Catalogs",
+      "description": "Trending movies and series on Netflix, HBO Max, Disney+, Apple TV+ and more. Configure to choose your favourite services.",
+      "catalogs": [
+        {
+          "id": "nfx",
+          "type": "movie",
+          "name": "Netflix"
+        },
+        {
+          "id": "nfx",
+          "type": "series",
+          "name": "Netflix"
+        },
+        {
+          "id": "hbm",
+          "type": "movie",
+          "name": "HBO Max"
+        },
+        {
+          "id": "hbm",
+          "type": "series",
+          "name": "HBO Max"
+        },
+        {
+          "id": "dnp",
+          "type": "movie",
+          "name": "Disney+"
+        },
+        {
+          "id": "dnp",
+          "type": "series",
+          "name": "Disney+"
+        },
+        {
+          "id": "amp",
+          "type": "movie",
+          "name": "Prime  Video"
+        },
+        {
+          "id": "amp",
+          "type": "series",
+          "name": "Prime Video"
+        },
+        {
+          "id": "atp",
+          "type": "movie",
+          "name": "Apple TV+"
+        },
+        {
+          "id": "atp",
+          "type": "series",
+          "name": "Apple TV+"
+        }
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "behaviorHints": {
+        "configurable": true
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://torrentio.strem.fun/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "Torrentio",
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(+), Rutracker(+), Comando(+), BluDV(+), Torrent9(+), MejorTorrent(+), Cinecalidad(+). To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/Put.io support and other settings visit https://torrentio.strem.fun",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://determined-crow-underwear.cyclic.app/eyJ1c2VybmFtZSI6IlN0cmVtaW90ZXN0IiwicGFzc3dvcmQiOiIxMDQ2MzEzNyIsIkJhc2VVUkwiOiJodHRwczovL2l3ZGF5MS5jb206MjA4NyJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.community.iwday1.com",
+      "version": "1.0.0",
+      "name": "iwday1.com IPTV",
+      "description": "You will access to your iwday1.com IPTV with this addon!",
+      "idPrefixes": [
+        "iy1m:"
+      ],
+      "resources": [
+        "catalog",
+        "meta",
+        "stream"
+      ],
+      "types": [
+        "tv"
+      ],
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "catalogs": [
+        {
+          "id": "7",
+          "name": "LIVE FOOTBALL",
+          "type": "tv"
+        },
+        {
+          "id": "15",
+          "name": "UK | IFOLLOW",
+          "type": "tv"
+        },
+        {
+          "id": "1240",
+          "name": " UK | NATIONAL LEAGUE(VANARAMA)",
+          "type": "tv"
+        },
+        {
+          "id": "1249",
+          "name": "NETFLIX PREMIERE",
+          "type": "tv"
+        },
+        {
+          "id": "1250",
+          "name": "NETFLIX SERIES",
+          "type": "tv"
+        },
+        {
+          "id": "1251",
+          "name": "DISCOVERY+",
+          "type": "tv"
+        },
+        {
+          "id": "1252",
+          "name": "DISNEY +",
+          "type": "tv"
+        },
+        {
+          "id": "1253",
+          "name": "PRIME SERIES ",
+          "type": "tv"
+        },
+        {
+          "id": "1254",
+          "name": "APPLE+",
+          "type": "tv"
+        },
+        {
+          "id": "1255",
+          "name": "YOUTUBE KIDS",
+          "type": "tv"
+        },
+        {
+          "id": "1228",
+          "name": "SETANTA TV",
+          "type": "tv"
+        },
+        {
+          "id": "17",
+          "name": "24/7 UK/USA TV SHOWS ",
+          "type": "tv"
+        },
+        {
+          "id": "1247",
+          "name": " UK | IFOLLOW REPLAYS",
+          "type": "tv"
+        },
+        {
+          "id": "1",
+          "name": "UK | TV",
+          "type": "tv"
+        },
+        {
+          "id": "1141",
+          "name": "UK | BBC LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "1140",
+          "name": "UK | SPORTS",
+          "type": "tv"
+        },
+        {
+          "id": "1142",
+          "name": "UK | ITV LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "1242",
+          "name": "UK | UK SPORTS FHD 50FPS",
+          "type": "tv"
+        },
+        {
+          "id": "1210",
+          "name": "UK | SKY SPORTS RED BUTTON",
+          "type": "tv"
+        },
+        {
+          "id": "6",
+          "name": "UK | MOVIES",
+          "type": "tv"
+        },
+        {
+          "id": "4",
+          "name": "UK | DOCUMENTARY ",
+          "type": "tv"
+        },
+        {
+          "id": "5",
+          "name": "UK | KIDS",
+          "type": "tv"
+        },
+        {
+          "id": "8",
+          "name": "UK & USA | MUSIC",
+          "type": "tv"
+        },
+        {
+          "id": "14",
+          "name": " UK | FOOTBALL CLUBS",
+          "type": "tv"
+        },
+        {
+          "id": "1220",
+          "name": " UK | AMAZON PRIME (LIVE EVENTS ONLY)",
+          "type": "tv"
+        },
+        {
+          "id": "1205",
+          "name": " UK | FA PLAYER (WSL)",
+          "type": "tv"
+        },
+        {
+          "id": "1194",
+          "name": " UK | SPFL/CHAMPIONSHIP",
+          "type": "tv"
+        },
+        {
+          "id": "1216",
+          "name": " UK | NIFL",
+          "type": "tv"
+        },
+        {
+          "id": "19",
+          "name": "UK | ASIAN & SPECIALIST",
+          "type": "tv"
+        },
+        {
+          "id": "1246",
+          "name": " UK | CLUBBER TV",
+          "type": "tv"
+        },
+        {
+          "id": "9",
+          "name": " UK | BOOKIES CHANNELS",
+          "type": "tv"
+        },
+        {
+          "id": "1160",
+          "name": "LEAGUE OF IRELAND FOOTBALL (LOI)",
+          "type": "tv"
+        },
+        {
+          "id": "1207",
+          "name": "IRISH/GAAGO/HURLING",
+          "type": "tv"
+        },
+        {
+          "id": "1248",
+          "name": "NATIONAL LEAGUE REPLAYS",
+          "type": "tv"
+        },
+        {
+          "id": "1221",
+          "name": "EUROPEAN SPORTS ",
+          "type": "tv"
+        },
+        {
+          "id": "10",
+          "name": "USA | TV",
+          "type": "tv"
+        },
+        {
+          "id": "61",
+          "name": "USA | FHD TV",
+          "type": "tv"
+        },
+        {
+          "id": "1219",
+          "name": "USA | CINEBOX ",
+          "type": "tv"
+        },
+        {
+          "id": "1234",
+          "name": "USA | ABC LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "1235",
+          "name": "USA | CBS LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "1238",
+          "name": "USA | CW LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "1236",
+          "name": "USA | FOX LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "1237",
+          "name": "USA | NBC LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "1213",
+          "name": "USA | PBS LOCAL ",
+          "type": "tv"
+        },
+        {
+          "id": "447",
+          "name": " USA | TELEMUNDO LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "446",
+          "name": " USA | UNIMAS/UNIVISION LOCALS",
+          "type": "tv"
+        },
+        {
+          "id": "27",
+          "name": "USA | DOCUMENTARY ",
+          "type": "tv"
+        },
+        {
+          "id": "1245",
+          "name": " USA | DISCOVERY+",
+          "type": "tv"
+        },
+        {
+          "id": "26",
+          "name": "USA | MOVIES",
+          "type": "tv"
+        },
+        {
+          "id": "49",
+          "name": "USA | KIDS",
+          "type": "tv"
+        },
+        {
+          "id": "53",
+          "name": "USA | SPORTS",
+          "type": "tv"
+        },
+        {
+          "id": "1227",
+          "name": " USA | PEACOCK TV ",
+          "type": "tv"
+        },
+        {
+          "id": "29",
+          "name": "USA | FOX SPORTS",
+          "type": "tv"
+        },
+        {
+          "id": "28",
+          "name": "USA | ESPN +",
+          "type": "tv"
+        },
+        {
+          "id": "1195",
+          "name": " USA | AHL GAME PASS",
+          "type": "tv"
+        },
+        {
+          "id": "1201",
+          "name": " USA | TRILLER TV",
+          "type": "tv"
+        },
+        {
+          "id": "1244",
+          "name": " USA | ECHL",
+          "type": "tv"
+        },
+        {
+          "id": "1187",
+          "name": "USA | NCAA ICE HOCKEY",
+          "type": "tv"
+        },
+        {
+          "id": "1184",
+          "name": "USA | COLLEGE BASBEALL",
+          "type": "tv"
+        },
+        {
+          "id": "1175",
+          "name": "USA | MLS",
+          "type": "tv"
+        },
+        {
+          "id": "20",
+          "name": "USA | NBA LEAGUE PASS",
+          "type": "tv"
+        },
+        {
+          "id": "48",
+          "name": "USA | NHL CENTRE ICE",
+          "type": "tv"
+        },
+        {
+          "id": "11",
+          "name": "USA | NFL",
+          "type": "tv"
+        },
+        {
+          "id": "39",
+          "name": "USA | MLB",
+          "type": "tv"
+        },
+        {
+          "id": "1144",
+          "name": "AUSTRALIAN",
+          "type": "tv"
+        },
+        {
+          "id": "1154",
+          "name": "BEIN SPORTS",
+          "type": "tv"
+        },
+        {
+          "id": "30",
+          "name": "CANADIAN TV",
+          "type": "tv"
+        },
+        {
+          "id": "1199",
+          "name": "CA | DAZN",
+          "type": "tv"
+        },
+        {
+          "id": "1224",
+          "name": "INDIAN TV",
+          "type": "tv"
+        },
+        {
+          "id": "32",
+          "name": "LATINO TV",
+          "type": "tv"
+        },
+        {
+          "id": "1200",
+          "name": "NEW ZEALAND CHANNNELS",
+          "type": "tv"
+        },
+        {
+          "id": "1231",
+          "name": "RAKUTEN TV",
+          "type": "tv"
+        },
+        {
+          "id": "95",
+          "name": "SPANISH TV",
+          "type": "tv"
+        },
+        {
+          "id": "13",
+          "name": "SUPERSPORTS",
+          "type": "tv"
+        },
+        {
+          "id": "54",
+          "name": "B/R SPORTS (BLEACHER REPORT)",
+          "type": "tv"
+        },
+        {
+          "id": "35",
+          "name": "FORMULA 1 PASS",
+          "type": "tv"
+        },
+        {
+          "id": "38",
+          "name": "NRL/AFL GAME PASS",
+          "type": "tv"
+        },
+        {
+          "id": "41",
+          "name": "MOTORSPORTS",
+          "type": "tv"
+        },
+        {
+          "id": "40",
+          "name": "MOTO GP PASS",
+          "type": "tv"
+        },
+        {
+          "id": "1202",
+          "name": "OUR LEAGUE",
+          "type": "tv"
+        },
+        {
+          "id": "24",
+          "name": "RUGBY PASS",
+          "type": "tv"
+        },
+        {
+          "id": "1243",
+          "name": "PGA TOUR",
+          "type": "tv"
+        },
+        {
+          "id": "1215",
+          "name": "TENNIS CHANNELS",
+          "type": "tv"
+        },
+        {
+          "id": "18",
+          "name": "ADULT (XXX)",
+          "type": "tv"
+        }
+      ]
+    },
+    "flags": {}
+  }
+]

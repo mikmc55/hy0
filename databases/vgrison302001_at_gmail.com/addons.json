@@ -1,0 +1,6579 @@
+[
+  {
+    "transportUrl": "https://94c8cb9f702d-tmdb-addon.baby-beamup.club/%7B%22include_adult%22%3A%22true%22%2C%22language%22%3A%22fr-FR%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "tmdb-addon",
+      "version": "3.0.14",
+      "name": "The Movie Database Addon",
+      "contactEmail": null,
+      "description": "Metadata provided by TMDB with fr-FR language.",
+      "logo": "https://github.com/mrcanelas/tmdb-addon/raw/main/images/logo.png",
+      "background": "https://github.com/mrcanelas/tmdb-addon/raw/main/images/background.png",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "meta"
+      ],
+      "idPrefixes": [
+        "tmdb:",
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "tmdb.top",
+          "type": "movie",
+          "name": "TMDB - Popular",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Animation",
+                "Aventure",
+                "Comédie",
+                "Crime",
+                "Documentaire",
+                "Drame",
+                "Familial",
+                "Fantastique",
+                "Guerre",
+                "Histoire",
+                "Horreur",
+                "Musique",
+                "Mystère",
+                "Romance",
+                "Science-Fiction",
+                "Thriller",
+                "Téléfilm",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.year",
+          "type": "movie",
+          "name": "TMDB - By Year",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.language",
+          "type": "movie",
+          "name": "TMDB - By Language",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "French",
+                "Afrikaans",
+                "Albanian",
+                "Arabic",
+                "Basque",
+                "Belarusian",
+                "Bengali",
+                "Breton",
+                "Bulgarian",
+                "Catalan",
+                "Chamorro",
+                "Croatian",
+                "Czech",
+                "Danish",
+                "Dutch",
+                "English",
+                "Esperanto",
+                "Estonian",
+                "Finnish",
+                "Gaelic",
+                "Galician",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hebrew",
+                "Hindi",
+                "Hungarian",
+                "Indonesian",
+                "Irish",
+                "Italian",
+                "Japanese",
+                "Kannada",
+                "Kazakh",
+                "Kirghiz",
+                "Korean",
+                "Latvian",
+                "Lithuanian",
+                "Malay",
+                "Malayalam",
+                "Mandarin",
+                "Marathi",
+                "Norwegian",
+                "Norwegian Bokmål",
+                "Persian",
+                "Polish",
+                "Portuguese",
+                "Punjabi",
+                "Romanian",
+                "Russian",
+                "Serbian",
+                "Sinhalese",
+                "Slovak",
+                "Slovenian",
+                "Spanish",
+                "Swahili",
+                "Swedish",
+                "Tagalog",
+                "Tamil",
+                "Telugu",
+                "Thai",
+                "Turkish",
+                "Ukrainian",
+                "Urdu",
+                "Vietnamese",
+                "Welsh",
+                "Zulu"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.trending",
+          "type": "movie",
+          "name": "TMDB - Trending",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "Day",
+                "Week"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.top",
+          "type": "series",
+          "name": "TMDB - Popular",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action & Adventure",
+                "Animation",
+                "Comédie",
+                "Crime",
+                "Documentaire",
+                "Drame",
+                "Familial",
+                "Kids",
+                "Mystère",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.year",
+          "type": "series",
+          "name": "TMDB - By Year",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.language",
+          "type": "series",
+          "name": "TMDB - By Language",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "French",
+                "Afrikaans",
+                "Albanian",
+                "Arabic",
+                "Basque",
+                "Belarusian",
+                "Bengali",
+                "Breton",
+                "Bulgarian",
+                "Catalan",
+                "Chamorro",
+                "Croatian",
+                "Czech",
+                "Danish",
+                "Dutch",
+                "English",
+                "Esperanto",
+                "Estonian",
+                "Finnish",
+                "Gaelic",
+                "Galician",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hebrew",
+                "Hindi",
+                "Hungarian",
+                "Indonesian",
+                "Irish",
+                "Italian",
+                "Japanese",
+                "Kannada",
+                "Kazakh",
+                "Kirghiz",
+                "Korean",
+                "Latvian",
+                "Lithuanian",
+                "Malay",
+                "Malayalam",
+                "Mandarin",
+                "Marathi",
+                "Norwegian",
+                "Norwegian Bokmål",
+                "Persian",
+                "Polish",
+                "Portuguese",
+                "Punjabi",
+                "Romanian",
+                "Russian",
+                "Serbian",
+                "Sinhalese",
+                "Slovak",
+                "Slovenian",
+                "Spanish",
+                "Swahili",
+                "Swedish",
+                "Tagalog",
+                "Tamil",
+                "Telugu",
+                "Thai",
+                "Turkish",
+                "Ukrainian",
+                "Urdu",
+                "Vietnamese",
+                "Welsh",
+                "Zulu"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb.trending",
+          "type": "series",
+          "name": "TMDB - Trending",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "Day",
+                "Week"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://7a82163c306e-stremio-netflix-catalog-addon.baby-beamup.club/bmZ4LGRucCxhbXAsYXRwLGhibSxwbXAsaGx1LHBjcCxmbW4sY3BkOjpmcjoxNzA3MjM5NzY3Nzk2/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "pw.ers.netflix-catalog",
+      "version": "1.0.8",
+      "name": "Streaming Catalogs",
+      "contactEmail": null,
+      "description": "Your favourite streaming services!",
+      "logo": "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI",
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "nfx",
+          "type": "movie",
+          "name": "Netflix",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "nfx",
+          "type": "series",
+          "name": "Netflix",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "hbm",
+          "type": "movie",
+          "name": "HBO Max",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "hbm",
+          "type": "series",
+          "name": "HBO Max",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "dnp",
+          "type": "movie",
+          "name": "Disney+",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "dnp",
+          "type": "series",
+          "name": "Disney+",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "hlu",
+          "type": "movie",
+          "name": "Hulu",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "hlu",
+          "type": "series",
+          "name": "Hulu",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "amp",
+          "type": "movie",
+          "name": "Prime Video",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "amp",
+          "type": "series",
+          "name": "Prime Video",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "pmp",
+          "type": "movie",
+          "name": "Paramount+",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "pmp",
+          "type": "series",
+          "name": "Paramount+",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "atp",
+          "type": "movie",
+          "name": "Apple TV+",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "atp",
+          "type": "series",
+          "name": "Apple TV+",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "pcp",
+          "type": "movie",
+          "name": "Peacock",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "pcp",
+          "type": "series",
+          "name": "Peacock",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "fmn",
+          "type": "movie",
+          "name": "Funimation",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "fmn",
+          "type": "series",
+          "name": "Funimation",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "cpd",
+          "type": "movie",
+          "name": "Canal+",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "cpd",
+          "type": "series",
+          "name": "Canal+",
+          "extraRequired": [],
+          "extraSupported": []
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://stremiocatalog.vatax.xyz/eyJsYW5ndWFnZSI6ImZyIiwiYWdlUmFuZ2UiOiIxOCsiLCJycGRiQXBpS2V5IjoiIiwiZmFuYXJ0QXBpS2V5IjoiIiwicG9wdWxhckNhdGFsb2dUaXRsZSI6IiIsIm5ld0NhdGFsb2dUaXRsZSI6IiIsImZpbHRlckNvbnRlbnRXaXRob3V0UG9zdGVyIjoidHJ1ZSIsInByb3ZpZGVycyI6WyI4IiwiMzUwIiwiMzM3IiwiMTAiLCIxODk5IiwiNTMxIiwiMzgxIl0sInRtZGJBcGlLZXkiOiI4ZWZkMWFjMzEwZDA0MzU3NjA3YWUxMjM0ZGU4MmZkMyIsInJlZ2lvbnMiOlsiRlIiXSwidHJha3RVc2VybmFtZSI6IlZhdGFYIiwiaGlkZVRyYWt0SGlzdG9yeSI6ImZhbHNlIiwid2F0Y2hlZEVtb2ppIjoi4pyU77iPIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.streamingcatalogproviders",
+      "version": "1.3.0",
+      "name": "Streaming Catalog Providers",
+      "contactEmail": null,
+      "description": "Catalog from TMDB streaming providers.",
+      "logo": "https://stremiocatalog.vatax.xyz/assets/logo.png",
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "tmdb-discover-movies-popular-8",
+          "type": "movie",
+          "name": "Popular - Netflix",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-new-8",
+          "type": "movie",
+          "name": "New - Netflix",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-popular-8",
+          "type": "series",
+          "name": "Popular - Netflix",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-new-8",
+          "type": "series",
+          "name": "New - Netflix",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-popular-350",
+          "type": "movie",
+          "name": "Popular - Apple TV Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-new-350",
+          "type": "movie",
+          "name": "New - Apple TV Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-popular-350",
+          "type": "series",
+          "name": "Popular - Apple TV Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-new-350",
+          "type": "series",
+          "name": "New - Apple TV Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-popular-337",
+          "type": "movie",
+          "name": "Popular - Disney Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-new-337",
+          "type": "movie",
+          "name": "New - Disney Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-popular-337",
+          "type": "series",
+          "name": "Popular - Disney Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-new-337",
+          "type": "series",
+          "name": "New - Disney Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-popular-10",
+          "type": "movie",
+          "name": "Popular - Amazon Video",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-new-10",
+          "type": "movie",
+          "name": "New - Amazon Video",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-popular-10",
+          "type": "series",
+          "name": "Popular - Amazon Video",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-new-10",
+          "type": "series",
+          "name": "New - Amazon Video",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-popular-1899",
+          "type": "movie",
+          "name": "Popular - Max",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-new-1899",
+          "type": "movie",
+          "name": "New - Max",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-popular-1899",
+          "type": "series",
+          "name": "Popular - Max",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-new-1899",
+          "type": "series",
+          "name": "New - Max",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-popular-531",
+          "type": "movie",
+          "name": "Popular - Paramount Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-new-531",
+          "type": "movie",
+          "name": "New - Paramount Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-popular-531",
+          "type": "series",
+          "name": "Popular - Paramount Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-new-531",
+          "type": "series",
+          "name": "New - Paramount Plus",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-popular-381",
+          "type": "movie",
+          "name": "Popular - Canal+",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-movies-new-381",
+          "type": "movie",
+          "name": "New - Canal+",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Aventure",
+                "Fantastique",
+                "Animation",
+                "Drame",
+                "Horreur",
+                "Action",
+                "Comédie",
+                "Histoire",
+                "Western",
+                "Thriller",
+                "Crime",
+                "Documentaire",
+                "Science-Fiction",
+                "Mystère",
+                "Musique",
+                "Romance",
+                "Familial",
+                "Guerre",
+                "Téléfilm"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-popular-381",
+          "type": "series",
+          "name": "Popular - Canal+",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "tmdb-discover-series-new-381",
+          "type": "series",
+          "name": "New - Canal+",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Animation",
+                "Drame",
+                "Comédie",
+                "Western",
+                "Crime",
+                "Documentaire",
+                "Mystère",
+                "Familial",
+                "Action & Adventure",
+                "Kids",
+                "News",
+                "Reality",
+                "Science-Fiction & Fantastique",
+                "Soap",
+                "Talk",
+                "War & Politics"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "rating",
+              "isRequired": false,
+              "options": [
+                "8-10",
+                "6-8",
+                "4-6",
+                "2-4",
+                "0-2"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "year",
+              "isRequired": false,
+              "options": [
+                "2021-2024",
+                "2017-2020",
+                "2013-2016",
+                "2009-2012",
+                "2005-2008",
+                "2001-2004",
+                "1997-2000",
+                "1993-1996",
+                "1989-1992",
+                "1985-1988",
+                "1981-1984",
+                "1977-1980",
+                "1973-1976",
+                "1969-1972",
+                "1965-1968",
+                "1961-1964",
+                "1957-1960",
+                "1953-1956",
+                "1949-1952",
+                "1945-1948",
+                "1941-1944",
+                "1937-1940",
+                "1933-1936",
+                "1929-1932",
+                "1925-1928",
+                "1921-1924",
+                "1917-1920",
+                "1913-1916",
+                "1909-1912",
+                "1905-1908",
+                "1901-1904",
+                "1897-1900",
+                "1893-1896",
+                "1889-1892",
+                "1885-1888",
+                "1881-1884",
+                "1880-1880"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "ageRange",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://trakt.vatax.xyz/eyJ0cmFrdExpc3RzIjpbXSwidG1kYkFwaUtleSI6IjhlZmQxYWMzMTBkMDQzNTc2MDdhZTEyMzRkZTgyZmQzIiwicnBkYkFwaUtleSI6IiIsImZhbmFydEFwaUtleSI6IiIsImxhbmd1YWdlIjoiZnIiLCJ0b2dnbGVzIjp7IndhdGNobGlzdCI6dHJ1ZSwicmVjb21tZW5kYXRpb25zIjp0cnVlLCJ0cmVuZGluZyI6dHJ1ZSwicG9wdWxhciI6dHJ1ZX0sInRyYWt0VXNlcm5hbWUiOiJWYXRhWCIsIm1hcmtDb250ZW50SGlzdG9yeSI6dHJ1ZSwid2F0Y2hlZEVtb2ppIjoi4pyU77iPIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.stremiotraktaddon",
+      "version": "0.3.0",
+      "name": "Trakt Addon",
+      "contactEmail": null,
+      "description": "Addon that generates dynamic catalogs based on Trakt lists & catalogs in your language.",
+      "logo": null,
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "watchlist_movies",
+          "type": "movie",
+          "name": "Watchlist Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Holiday",
+                "Horror",
+                "Music",
+                "Musical",
+                "Mystery",
+                "None",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "watchlist_series",
+          "type": "series",
+          "name": "Watchlist Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Biography",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Game Show",
+                "History",
+                "Holiday",
+                "Home And Garden",
+                "Horror",
+                "Mini Series",
+                "Music",
+                "Musical",
+                "Mystery",
+                "News",
+                "None",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Soap",
+                "Special Interest",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "recommendations_movies",
+          "type": "movie",
+          "name": "Recommended Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Holiday",
+                "Horror",
+                "Music",
+                "Musical",
+                "Mystery",
+                "None",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "recommendations_series",
+          "type": "series",
+          "name": "Recommended Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Biography",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Game Show",
+                "History",
+                "Holiday",
+                "Home And Garden",
+                "Horror",
+                "Mini Series",
+                "Music",
+                "Musical",
+                "Mystery",
+                "News",
+                "None",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Soap",
+                "Special Interest",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trending_movies",
+          "type": "movie",
+          "name": "Trending Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Holiday",
+                "Horror",
+                "Music",
+                "Musical",
+                "Mystery",
+                "None",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trending_series",
+          "type": "series",
+          "name": "Trending Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Biography",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Game Show",
+                "History",
+                "Holiday",
+                "Home And Garden",
+                "Horror",
+                "Mini Series",
+                "Music",
+                "Musical",
+                "Mystery",
+                "News",
+                "None",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Soap",
+                "Special Interest",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "popular_movies",
+          "type": "movie",
+          "name": "Popular Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Holiday",
+                "Horror",
+                "Music",
+                "Musical",
+                "Mystery",
+                "None",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "popular_series",
+          "type": "series",
+          "name": "Popular Series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Biography",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Donghua",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Game Show",
+                "History",
+                "Holiday",
+                "Home And Garden",
+                "Horror",
+                "Mini Series",
+                "Music",
+                "Musical",
+                "Mystery",
+                "News",
+                "None",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Short",
+                "Soap",
+                "Special Interest",
+                "Sporting Event",
+                "Superhero",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://2ecbbd610840-trakt.baby-beamup.club/eyJsaXN0cyI6WyJ0cmFrdF9wb3B1bGFyIiwidHJha3RfdHJlbmRpbmciLCJ0cmFrdF93YXRjaGxpc3Q6c2VwYXJhdGVkIiwidHJha3RfcmVjIiwidHJha3Rfc2VhcmNoIl0sImlkcyI6WyJnYXJ5Y3Jhd2ZvcmRnYzp0b3AtbW92aWVzLW9mLXRoZS13ZWVrOnJhbmssYXNjIiwidmF0YXg6bXktcmVjb21tZW5kYXRpb25zLWNvdWNobW9uZXktdHY6cmFuayxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpuZXRmbGl4LW1vdmllczpyYW5rLGFzYyIsImdhcnljcmF3Zm9yZGdjOm5ldGZsaXgtc2hvd3M6cmFuayxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpkaXNuZXktbW92aWVzOnJhbmssYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6ZGlzbmV5LXNob3dzOnJhbmssYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6YW1hem9uLXByaW1lLW1vdmllczpyYW5rLGFzYyIsImdhcnljcmF3Zm9yZGdjOmFtYXpvbi1wcmltZS1zaG93czpyYW5rLGFzYyIsImdhcnljcmF3Zm9yZGdjOmhiby1zaG93czpyYW5rLGFzYyIsImdhcnljcmF3Zm9yZGdjOmh1bHUtbW92aWVzOnJhbmssYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6aHVsdS1zaG93czpyYW5rLGFzYyJdLCJhY2Nlc3NfdG9rZW4iOiI2YjRkN2NjZmUyOWEzOWIxZjFjMTI1NDNkMzM4MmUxZjRlM2Q4MmQ1MjgxMzM5ZDRmMTRlOTA0YjRiYzkxZTNhIiwicmVmcmVzaF90b2tlbiI6Ijk2ODBmMDc5ZWE0NzZjZGY0NjQ4ZTgyNmU2OWZjNGMxZjcyOTg4YTI3NzgzZGM3YWVjZGM5ODk4MTcyODU2ZmEiLCJleHBpcmVzIjoxNzM5NTU0MTcwLCJyZW1vdmVQcmVmaXgiOmZhbHNlfQ==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.trakt-tv",
+      "version": "0.2.7",
+      "name": "Trakt Tv",
+      "contactEmail": null,
+      "description": "Addon for getting Trakt's public and user lists, recommendations and watch list.\n user authenticated}\n token expires on: 2/14/2025, 5:29:30 PM",
+      "logo": "https://2ecbbd610840-trakt.baby-beamup.club/public/logoPS.png?ver=0.2.7",
+      "background": "https://2ecbbd610840-trakt.baby-beamup.club/public/background.png?ver=0.2.7",
+      "types": [],
+      "resources": [
+        {
+          "name": "meta",
+          "types": [
+            "series",
+            "movie"
+          ],
+          "idPrefixes": [
+            "trakt:"
+          ]
+        }
+      ],
+      "idPrefixes": [
+        "trakt"
+      ],
+      "catalogs": [
+        {
+          "id": "trakt_popular_movies",
+          "type": "trakt",
+          "name": "trakt - Popular movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "action",
+                "adventure",
+                "animation",
+                "anime",
+                "comedy",
+                "crime",
+                "disaster",
+                "documentary",
+                "Donghua",
+                "drama",
+                "eastern",
+                "family",
+                "fan-film",
+                "fantasy",
+                "film-noir",
+                "history",
+                "holiday",
+                "horror",
+                "indie",
+                "music",
+                "musical",
+                "mystery",
+                "none",
+                "road",
+                "romance",
+                "science-fiction",
+                "short",
+                "sports",
+                "sporting-event",
+                "suspense",
+                "thriller",
+                "tv-movie",
+                "war",
+                "western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_popular_series",
+          "type": "trakt",
+          "name": "trakt - Popular series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "action",
+                "adventure",
+                "animation",
+                "anime",
+                "comedy",
+                "crime",
+                "disaster",
+                "documentary",
+                "Donghua",
+                "drama",
+                "eastern",
+                "family",
+                "fan-film",
+                "fantasy",
+                "film-noir",
+                "history",
+                "holiday",
+                "horror",
+                "indie",
+                "music",
+                "musical",
+                "mystery",
+                "none",
+                "road",
+                "romance",
+                "science-fiction",
+                "short",
+                "sports",
+                "sporting-event",
+                "suspense",
+                "thriller",
+                "tv-movie",
+                "war",
+                "western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_trending_movies",
+          "type": "trakt",
+          "name": "trakt - Trending movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "action",
+                "adventure",
+                "animation",
+                "anime",
+                "comedy",
+                "crime",
+                "disaster",
+                "documentary",
+                "Donghua",
+                "drama",
+                "eastern",
+                "family",
+                "fan-film",
+                "fantasy",
+                "film-noir",
+                "history",
+                "holiday",
+                "horror",
+                "indie",
+                "music",
+                "musical",
+                "mystery",
+                "none",
+                "road",
+                "romance",
+                "science-fiction",
+                "short",
+                "sports",
+                "sporting-event",
+                "suspense",
+                "thriller",
+                "tv-movie",
+                "war",
+                "western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_trending_series",
+          "type": "trakt",
+          "name": "trakt - Trending series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "action",
+                "adventure",
+                "animation",
+                "anime",
+                "comedy",
+                "crime",
+                "disaster",
+                "documentary",
+                "Donghua",
+                "drama",
+                "eastern",
+                "family",
+                "fan-film",
+                "fantasy",
+                "film-noir",
+                "history",
+                "holiday",
+                "horror",
+                "indie",
+                "music",
+                "musical",
+                "mystery",
+                "none",
+                "road",
+                "romance",
+                "science-fiction",
+                "short",
+                "sports",
+                "sporting-event",
+                "suspense",
+                "thriller",
+                "tv-movie",
+                "war",
+                "western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_watchlist_movies",
+          "type": "trakt",
+          "name": "trakt - Watchlist movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_watchlist_series",
+          "type": "trakt",
+          "name": "trakt - Watchlist series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_rec_movies",
+          "type": "trakt",
+          "name": "trakt - Recommended movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "action",
+                "adventure",
+                "animation",
+                "anime",
+                "comedy",
+                "crime",
+                "disaster",
+                "documentary",
+                "Donghua",
+                "drama",
+                "eastern",
+                "family",
+                "fan-film",
+                "fantasy",
+                "film-noir",
+                "history",
+                "holiday",
+                "horror",
+                "indie",
+                "music",
+                "musical",
+                "mystery",
+                "none",
+                "road",
+                "romance",
+                "science-fiction",
+                "short",
+                "sports",
+                "sporting-event",
+                "suspense",
+                "thriller",
+                "tv-movie",
+                "war",
+                "western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_rec_series",
+          "type": "trakt",
+          "name": "trakt - Recommended series",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "action",
+                "adventure",
+                "animation",
+                "anime",
+                "comedy",
+                "crime",
+                "disaster",
+                "documentary",
+                "Donghua",
+                "drama",
+                "eastern",
+                "family",
+                "fan-film",
+                "fantasy",
+                "film-noir",
+                "history",
+                "holiday",
+                "horror",
+                "indie",
+                "music",
+                "musical",
+                "mystery",
+                "none",
+                "road",
+                "romance",
+                "science-fiction",
+                "short",
+                "sports",
+                "sporting-event",
+                "suspense",
+                "thriller",
+                "tv-movie",
+                "war",
+                "western"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_search_movies",
+          "type": "trakt",
+          "name": "trakt - search movies",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_search_series",
+          "type": "trakt",
+          "name": "trakt - search series",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20388873:rank,asc",
+          "type": "trakt",
+          "name": "Top Movies of the week",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:vatax:21963983:rank,asc",
+          "type": "trakt",
+          "name": "My Recommendations [couchmoney.tv]",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764770:rank,asc",
+          "type": "trakt",
+          "name": "Netflix Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764471:rank,asc",
+          "type": "trakt",
+          "name": "Netflix Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764798:rank,asc",
+          "type": "trakt",
+          "name": "Disney+ Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764592:rank,asc",
+          "type": "trakt",
+          "name": "Disney+ Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764771:rank,asc",
+          "type": "trakt",
+          "name": "Amazon Prime Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764575:rank,asc",
+          "type": "trakt",
+          "name": "Amazon Prime Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764504:rank,asc",
+          "type": "trakt",
+          "name": "HBO Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764807:rank,asc",
+          "type": "trakt",
+          "name": "Hulu Movies",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:garycrawfordgc:20764580:rank,asc",
+          "type": "trakt",
+          "name": "Hulu Shows",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://1fe84bc728af-stremio-anime-catalogs.baby-beamup.club/%7B%22anilist_trending-now%22%3A%22on%22%2C%22anilist_popular-this-season%22%3A%22on%22%2C%22anilist_upcoming-next-season%22%3A%22on%22%2C%22anilist_all-time-popular%22%3A%22on%22%2C%22anilist_top-anime%22%3A%22on%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.stremio.animecatalogs",
+      "version": "1.0.3",
+      "name": "Anime Catalogs",
+      "contactEmail": null,
+      "description": "Stremio catalogs for anime from: MyAnimeList, AniDB, AniList, Kitsu. Also supports filtering by dubbed and optional setting to use Rating Posters from RPDB.",
+      "logo": "https://1fe84bc728af-stremio-anime-catalogs.baby-beamup.club/addon-logo.png",
+      "background": "https://1fe84bc728af-stremio-anime-catalogs.baby-beamup.club/addon-background.jpg",
+      "types": [
+        "anime",
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "meta"
+      ],
+      "idPrefixes": [
+        "kitsu:"
+      ],
+      "catalogs": [
+        {
+          "id": "anilist_trending-now",
+          "type": "anime",
+          "name": "Trending Now AniList",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "anilist_popular-this-season",
+          "type": "anime",
+          "name": "Popular This Season AniList",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "anilist_upcoming-next-season",
+          "type": "anime",
+          "name": "Upcoming Next Season AniList",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "anilist_all-time-popular",
+          "type": "anime",
+          "name": "All Time Popular AniList",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "anilist_top-anime",
+          "type": "anime",
+          "name": "Top Anime AniList",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://anime-kitsu.strem.fun/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.anime.kitsu",
+      "version": "0.0.10",
+      "name": "Anime Kitsu",
+      "description": "Unofficial Kitsu.io anime catalog addon",
+      "logo": "https://i.imgur.com/7N6XGoO.png",
+      "background": "https://i.imgur.com/ym4n96o.png",
+      "resources": [
+        "catalog",
+        "meta",
+        "subtitles"
+      ],
+      "types": [
+        "anime",
+        "movie",
+        "series"
+      ],
+      "catalogs": [
+        {
+          "id": "kitsu-anime-trending",
+          "name": "Kitsu Trending",
+          "type": "anime"
+        },
+        {
+          "id": "kitsu-anime-airing",
+          "name": "Kitsu Top Airing",
+          "type": "anime",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ]
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Sci-Fi",
+            "Space",
+            "Mystery",
+            "Magic",
+            "Supernatural",
+            "Police",
+            "Fantasy",
+            "Sports",
+            "Romance",
+            "Cars",
+            "Slice of Life",
+            "Racing",
+            "Horror",
+            "Psychological",
+            "Thriller",
+            "Martial Arts",
+            "Super Power",
+            "School",
+            "Ecchi",
+            "Vampire",
+            "Historical",
+            "Military",
+            "Dementia",
+            "Mecha",
+            "Demons",
+            "Samurai",
+            "Harem",
+            "Music",
+            "Parody",
+            "Shoujo Ai",
+            "Game",
+            "Shounen Ai",
+            "Kids",
+            "Hentai",
+            "Yuri",
+            "Yaoi",
+            "Anime Influenced",
+            "Gender Bender",
+            "Doujinshi",
+            "Mahou Shoujo",
+            "Mahou Shounen",
+            "Gore",
+            "Law",
+            "Cooking",
+            "Mature",
+            "Medical",
+            "Political",
+            "Tokusatsu",
+            "Youth",
+            "Workplace",
+            "Crime",
+            "Zombies",
+            "Documentary",
+            "Family",
+            "Food",
+            "Friendship",
+            "Tragedy"
+          ]
+        },
+        {
+          "id": "kitsu-anime-popular",
+          "name": "Kitsu Most Popular",
+          "type": "anime",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ]
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Sci-Fi",
+            "Space",
+            "Mystery",
+            "Magic",
+            "Supernatural",
+            "Police",
+            "Fantasy",
+            "Sports",
+            "Romance",
+            "Cars",
+            "Slice of Life",
+            "Racing",
+            "Horror",
+            "Psychological",
+            "Thriller",
+            "Martial Arts",
+            "Super Power",
+            "School",
+            "Ecchi",
+            "Vampire",
+            "Historical",
+            "Military",
+            "Dementia",
+            "Mecha",
+            "Demons",
+            "Samurai",
+            "Harem",
+            "Music",
+            "Parody",
+            "Shoujo Ai",
+            "Game",
+            "Shounen Ai",
+            "Kids",
+            "Hentai",
+            "Yuri",
+            "Yaoi",
+            "Anime Influenced",
+            "Gender Bender",
+            "Doujinshi",
+            "Mahou Shoujo",
+            "Mahou Shounen",
+            "Gore",
+            "Law",
+            "Cooking",
+            "Mature",
+            "Medical",
+            "Political",
+            "Tokusatsu",
+            "Youth",
+            "Workplace",
+            "Crime",
+            "Zombies",
+            "Documentary",
+            "Family",
+            "Food",
+            "Friendship",
+            "Tragedy"
+          ]
+        },
+        {
+          "id": "kitsu-anime-rating",
+          "name": "Kitsu Highest Rated",
+          "type": "anime",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Sci-Fi",
+                "Space",
+                "Mystery",
+                "Magic",
+                "Supernatural",
+                "Police",
+                "Fantasy",
+                "Sports",
+                "Romance",
+                "Cars",
+                "Slice of Life",
+                "Racing",
+                "Horror",
+                "Psychological",
+                "Thriller",
+                "Martial Arts",
+                "Super Power",
+                "School",
+                "Ecchi",
+                "Vampire",
+                "Historical",
+                "Military",
+                "Dementia",
+                "Mecha",
+                "Demons",
+                "Samurai",
+                "Harem",
+                "Music",
+                "Parody",
+                "Shoujo Ai",
+                "Game",
+                "Shounen Ai",
+                "Kids",
+                "Hentai",
+                "Yuri",
+                "Yaoi",
+                "Anime Influenced",
+                "Gender Bender",
+                "Doujinshi",
+                "Mahou Shoujo",
+                "Mahou Shounen",
+                "Gore",
+                "Law",
+                "Cooking",
+                "Mature",
+                "Medical",
+                "Political",
+                "Tokusatsu",
+                "Youth",
+                "Workplace",
+                "Crime",
+                "Zombies",
+                "Documentary",
+                "Family",
+                "Food",
+                "Friendship",
+                "Tragedy"
+              ]
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Sci-Fi",
+            "Space",
+            "Mystery",
+            "Magic",
+            "Supernatural",
+            "Police",
+            "Fantasy",
+            "Sports",
+            "Romance",
+            "Cars",
+            "Slice of Life",
+            "Racing",
+            "Horror",
+            "Psychological",
+            "Thriller",
+            "Martial Arts",
+            "Super Power",
+            "School",
+            "Ecchi",
+            "Vampire",
+            "Historical",
+            "Military",
+            "Dementia",
+            "Mecha",
+            "Demons",
+            "Samurai",
+            "Harem",
+            "Music",
+            "Parody",
+            "Shoujo Ai",
+            "Game",
+            "Shounen Ai",
+            "Kids",
+            "Hentai",
+            "Yuri",
+            "Yaoi",
+            "Anime Influenced",
+            "Gender Bender",
+            "Doujinshi",
+            "Mahou Shoujo",
+            "Mahou Shounen",
+            "Gore",
+            "Law",
+            "Cooking",
+            "Mature",
+            "Medical",
+            "Political",
+            "Tokusatsu",
+            "Youth",
+            "Workplace",
+            "Crime",
+            "Zombies",
+            "Documentary",
+            "Family",
+            "Food",
+            "Friendship",
+            "Tragedy"
+          ]
+        },
+        {
+          "id": "kitsu-anime-list",
+          "name": "Kitsu",
+          "type": "anime",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "lastVideosIds",
+              "isRequired": false,
+              "optionsLimit": 20
+            },
+            {
+              "name": "skip"
+            }
+          ]
+        }
+      ],
+      "idPrefixes": [
+        "kitsu",
+        "mal",
+        "anilist",
+        "anidb"
+      ]
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://7a625ac658ec-animeo.baby-beamup.club/%7B%22token%22%3A%22eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNjODc2NDBhMmNmOWI2OGNiODk5MDE1YjE4OGU0OGU0OTQ0NmEyODI4NTY0MTNhZjkxMzE1ZTQ2NGMzNTQzOWNjNGExYTY0NzJhODk5MTNmIn0.eyJhdWQiOiIxNDI3NiIsImp0aSI6ImNjODc2NDBhMmNmOWI2OGNiODk5MDE1YjE4OGU0OGU0OTQ0NmEyODI4NTY0MTNhZjkxMzE1ZTQ2NGMzNTQzOWNjNGExYTY0NzJhODk5MTNmIiwiaWF0IjoxNzIwNjI0NDAzLCJuYmYiOjE3MjA2MjQ0MDMsImV4cCI6MTc1MjE2MDQwMywic3ViIjoiNzE2NDg3Iiwic2NvcGVzIjpbXX0.EMk7iISADkGG0rDop0QbuwFAb1Jol4J2xotgCeofErvX8Jz3dPrXO3n7TvHHLNlzkvhJ2FiGwbqjrkl6EsRtV3F_AyL3QThTJWNXnjxqW7m9vfuWde0V5jxkfk6CeTCnI0w7XAqCpNi6tc2w_IxYme02hLmUKVhhML7JSf0AlEBGMI8rpe4M-xZthE5q9GXDregmbDMU0rnXFZ0cRHin8BT2dZutPyV6Tr4-0Z2XnMEulfZl90GJ1z7sIScbCbmFpE9KaEc8YDPhcAu9iGUsYwTF6lJbfg2oPLLW2S2rz_zjEKl9k6IgaIaLPm_nJBljo5JBs3nxwuTRX-xZoHJz9R8i_gXilcwspFxEGLby54Kk1Z0E6WHCQTp4YCFvbKDqphMRm9gfAIqQEIs7nYfKpd0otEv6yQG3ZDBaGRxbvlu6rTxkh8BZ6EqpmKTW70frOqxbDgFzoWzjto34hiEGfiHIi66tFxFGUe7zUprolANBTGwEYnUms0Q6wYHIFAFxydVICzvbKSuTI191BGld9KZbtT7Z2wfaIH3eL-GF5SDxWqzffi9Uw_T6l8IIu_1axCqCk3NtBJxoS5joRP9aMMt7YVMsGsgVsicSvyejFZa4Eb01DENH8lEG26Ydxdzsr8tFhsG4m3epCVkgBM6-5-GxfG7IV4KYnfpTl9TTE4s%22%2C%22kitsuOnly%22%3Afalse%2C%22preAddedOnly%22%3Afalse%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.jenryk.animeo",
+      "version": "0.0.4",
+      "name": "animeo",
+      "contactEmail": null,
+      "description": "Track your anime progress with anilist while using stremio.",
+      "logo": "https://raw.githubusercontent.com/Jenrykster/animeo/main/logo.png",
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "anilist",
+        "tt",
+        "kitsu"
+      ],
+      "catalogs": [
+        {
+          "id": "CURRENT",
+          "type": "anime",
+          "name": "Currently watching",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "REPEATING",
+          "type": "anime",
+          "name": "Repeating",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "PLANNING",
+          "type": "anime",
+          "name": "Planning to watch",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "COMPLETED",
+          "type": "anime",
+          "name": "Completed",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "PAUSED",
+          "type": "anime",
+          "name": "Paused",
+          "extraRequired": [],
+          "extraSupported": []
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/stremio/languages=english,french,japanese/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "comunity.aio-subtitle",
+      "version": "1.0.0",
+      "name": "AIO Substitle",
+      "contactEmail": "dev.namnv@gmail.com",
+      "description": "Unofficial addon to get subtitles from Subscene, OpenSubtitles, and Kitsunekko. Uses Microsoft Translator to translate subtitles if they are available from providers. Visit https://aiosubtitle.org to easily download subtitles.",
+      "logo": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/assets/AI-sub.png",
+      "background": "https://3b4bbf5252c4-aio-streaming.baby-beamup.club/assets/background.jpg",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt",
+        "kitsu"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://onepaceaddon-zoropogger.koyeb.app/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "org.zoropogaddon",
+      "version": "0.3.0",
+      "name": "One Pace Catalog",
+      "contactEmail": null,
+      "description": "Adds One-pace catalog. One Pace is a fan project that recuts the One Piece anime in an endeavor to bring it more in line with the pacing of the original manga by Eiichiro Oda.",
+      "logo": "https://i.ibb.co/4sDjXZy/logo2.jpg",
+      "background": null,
+      "types": [
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "meta",
+        "stream"
+      ],
+      "idPrefixes": [
+        "_onepace"
+      ],
+      "catalogs": [
+        {
+          "id": "Anime",
+          "type": "series",
+          "name": null,
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://68d69db7dc40-debrid-search.baby-beamup.club/%7B%22DebridProvider%22%3A%22RealDebrid%22%2C%22DebridApiKey%22%3A%22C47LOK7EIGEM5VAEXFVNANNBUKVQM2MWPX76NWINR7HYPZ3EG5CA%22%2C%22ShowCatalog%22%3A%22true%22%7D/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.stremio.debrid-search",
+      "version": "0.1.11",
+      "name": "Debrid Search",
+      "description": "Stremio Addon to search downloads and torrents in your Debrid cloud",
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "logo": "https://img.icons8.com/fluency/256/search-in-cloud.png",
+      "catalogs": [
+        {
+          "id": "debridsearch",
+          "name": "Debrid Search - RealDebrid",
+          "type": "other",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false
+            },
+            {
+              "name": "skip",
+              "isRequired": false
+            }
+          ]
+        }
+      ],
+      "resources": [
+        "catalog",
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://torrentio.strem.fun/sort=qualitysize%7Clanguage=japanese,french%7Cqualityfilter=cam%7Climit=10%7Ctorbox=b8ac82c0-d386-499a-ae3e-11faf615177f/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "Torrentio TB",
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(+), Rutracker(+), Comando(+), BluDV(+), Torrent9(+), ilCorSaRoNeRo(+), MejorTorrent(+), Wolfmax4k(+), Cinecalidad(+) and TorBox enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+      "catalogs": [
+        {
+          "id": "torrentio-torbox-torrents",
+          "name": "TorBox Torrents",
+          "type": "other",
+          "extra": [
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "id": "torrentio-torbox-usenet",
+          "name": "TorBox Usenet",
+          "type": "other",
+          "extra": [
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "id": "torrentio-torbox-webdl",
+          "name": "TorBox WebDL",
+          "type": "other",
+          "extra": [
+            {
+              "name": "skip"
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        },
+        {
+          "name": "meta",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "torbox"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://comet.elfhosted.com/eyJpbmRleGVycyI6WyJiaXRzZWFyY2giLCJlenR2IiwidGhlcGlyYXRlYmF5IiwidGhlcmFyYmciLCJ5dHMiXSwibWF4UmVzdWx0cyI6MTUsIm1heFJlc3VsdHNQZXJSZXNvbHV0aW9uIjoxMCwibWF4U2l6ZSI6MCwicmVzdWx0Rm9ybWF0IjpbIkFsbCJdLCJyZXNvbHV0aW9ucyI6WyI0ayIsIjIxNjBwIiwiMTQ0MHAiLCIxMDgwcCIsIjcyMHAiXSwibGFuZ3VhZ2VzIjpbIk11bHRpIiwiRW5nbGlzaCIsIkphcGFuZXNlIiwiRnJlbmNoIl0sImRlYnJpZFNlcnZpY2UiOiJ0b3Jib3giLCJkZWJyaWRBcGlLZXkiOiJiOGFjODJjMC1kMzg2LTQ5OWEtYWUzZS0xMWZhZjYxNTE3N2YiLCJkZWJyaWRTdHJlYW1Qcm94eVBhc3N3b3JkIjoiIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "comet.elfhosted.com.StII",
+      "name": "Comet | ElfHosted | TB",
+      "description": "Stremio's fastest torrent/debrid search add-on.",
+      "version": "1.0.0",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "logo": "https://i.imgur.com/jmVoVMu.jpeg",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://comet.vatax.xyz/eyJpbmRleGVycyI6WyIxMzc3eCIsImdrdG9ycmVudCIsIm55YWFzaSIsInNoYXJld29vZC1hcGkiLCJ0aGVyYXJiZyIsInRvcnJlbnQ5IiwidG9ycmVudDktdGVsIiwidG9ycmVudGxlZWNoIiwieWdnYXBpIiwiemV0b3JyZW50cyJdLCJtYXhSZXN1bHRzIjoxNSwibWF4UmVzdWx0c1BlclJlc29sdXRpb24iOjAsIm1heFNpemUiOjUzNjg3MDkxMjAwMCwicmVzdWx0Rm9ybWF0IjpbIkFsbCJdLCJyZXNvbHV0aW9ucyI6WyI0ayIsIjIxNjBwIiwiMTQ0MHAiLCIxMDgwcCIsIjcyMHAiXSwibGFuZ3VhZ2VzIjpbIk11bHRpIiwiRW5nbGlzaCIsIkphcGFuZXNlIiwiRnJlbmNoIl0sImRlYnJpZFNlcnZpY2UiOiJ0b3Jib3giLCJkZWJyaWRBcGlLZXkiOiJiOGFjODJjMC1kMzg2LTQ5OWEtYWUzZS0xMWZhZjYxNTE3N2YiLCJkZWJyaWRTdHJlYW1Qcm94eVBhc3N3b3JkIjoiIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "stremio.comet.fast.IRfG",
+      "name": "Comet | TB",
+      "description": "Stremio's fastest torrent/debrid search add-on.",
+      "version": "1.0.0",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "logo": "https://i.imgur.com/jmVoVMu.jpeg",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://stremio.torbox.app/b8ac82c0-d386-499a-ae3e-11faf615177f/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "app.torbox.stremio",
+      "version": "1.0.0",
+      "name": "TorBox",
+      "contactEmail": "contact@torbox.app",
+      "description": "Provides torrent streams for users of TorBox. With zero config, and a free account you can instantly start watching your favorite torrents using TorBox. To add with streaming support, go to your TorBox settings and click the Access Stremio Addon button! Configuration can be done from the TorBox settings, which are propagated instantly, no need to reinstall the addon! Requires a TorBox account to stream. Get started for free at https://torbox.app",
+      "catalogs": [
+        {
+          "type": "movie",
+          "id": "user-movies",
+          "name": "Your Media"
+        },
+        {
+          "type": "series",
+          "id": "torbox-series",
+          "name": "TorBox Series",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "Thriller",
+                "TV Movie",
+                "War",
+                "Western"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "anime",
+          "id": "torbox-series-anime",
+          "name": "TorBox Anime Series",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Avant Garde",
+                "Award Winning",
+                "Boys Love",
+                "Comedy",
+                "Drama",
+                "Fantasy",
+                "Girls Love",
+                "Gourmet",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Slice of Life",
+                "Sports",
+                "Supernatural",
+                "Suspense",
+                "Ecchi",
+                "Erotica",
+                "Hentai"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "movie",
+          "id": "torbox-movies",
+          "name": "TorBox Movies",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "Thriller",
+                "TV Movie",
+                "War",
+                "Western"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "anime",
+          "id": "torbox-movies-anime",
+          "name": "TorBox Anime Movies",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Avant Garde",
+                "Award Winning",
+                "Boys Love",
+                "Comedy",
+                "Drama",
+                "Fantasy",
+                "Girls Love",
+                "Gourmet",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Slice of Life",
+                "Sports",
+                "Supernatural",
+                "Suspense",
+                "Ecchi",
+                "Erotica",
+                "Hentai"
+              ]
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ]
+        },
+        {
+          "name": "catalog",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ]
+        },
+        {
+          "name": "meta",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "usermovies"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "logo": "https://torbox.app/android-chrome-512x512.png"
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://torrentio.strem.fun/language=japanese,french%7Cqualityfilter=cam%7Climit=10%7Calldebrid=dA17XEaIaxe3DR3DSm1q/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "Torrentio AD",
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(+), Rutracker(+), Comando(+), BluDV(+), Torrent9(+), ilCorSaRoNeRo(+), MejorTorrent(+), Wolfmax4k(+), Cinecalidad(+) and AllDebrid enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+      "catalogs": [
+        {
+          "id": "torrentio-alldebrid",
+          "name": "AllDebrid",
+          "type": "other",
+          "extra": [
+            {
+              "name": "skip"
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        },
+        {
+          "name": "meta",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "alldebrid"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://comet.elfhosted.com/eyJpbmRleGVycyI6W10sIm1heFJlc3VsdHMiOjE1LCJtYXhSZXN1bHRzUGVyUmVzb2x1dGlvbiI6MTAsIm1heFNpemUiOjUzNjg3MDkxMjAwMDAsInJlbW92ZVRyYXNoIjp0cnVlLCJyZXN1bHRGb3JtYXQiOlsiQWxsIl0sInJlc29sdXRpb25zIjpbIjRrIiwiMjE2MHAiLCIxNDQwcCIsIjEwODBwIiwiNzIwcCJdLCJsYW5ndWFnZXMiOlsiTXVsdGkiLCJFbmdsaXNoIiwiSmFwYW5lc2UiLCJGcmVuY2giXSwiZGVicmlkU2VydmljZSI6ImFsbGRlYnJpZCIsImRlYnJpZEFwaUtleSI6ImRBMTdYRWFJYXhlM0RSM0RTbTFxIiwiZGVicmlkU3RyZWFtUHJveHlQYXNzd29yZCI6IiJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "comet.elfhosted.com",
+      "name": "Comet | ElfHosted | AD",
+      "description": "Stremio's fastest torrent/debrid search add-on.",
+      "version": "1.0.0",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "logo": "https://i.imgur.com/jmVoVMu.jpeg",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://jackettio.elfhosted.com/eyJtYXhUb3JyZW50cyI6MTUsInByaW90aXplUGFja1RvcnJlbnRzIjoyLCJleGNsdWRlS2V5d29yZHMiOlsiQ0FNIl0sImRlYnJpZElkIjoiYWxsZGVicmlkIiwiaGlkZVVuY2FjaGVkIjpmYWxzZSwic29ydENhY2hlZCI6W1sicXVhbGl0eSIsdHJ1ZV0sWyJzaXplIix0cnVlXV0sInNvcnRVbmNhY2hlZCI6W1sic2VlZGVycyIsdHJ1ZV1dLCJmb3JjZUNhY2hlTmV4dEVwaXNvZGUiOnRydWUsInByaW90aXplTGFuZ3VhZ2VzIjpbImZyZW5jaCJdLCJpbmRleGVyVGltZW91dFNlYyI6NjAsIm1ldGFMYW5ndWFnZSI6IiIsImVuYWJsZU1lZGlhRmxvdyI6ZmFsc2UsIm1lZGlhZmxvd1Byb3h5VXJsIjoiIiwibWVkaWFmbG93QXBpUGFzc3dvcmQiOiIiLCJtZWRpYWZsb3dQdWJsaWNJcCI6IiIsInF1YWxpdGllcyI6WzAsNzIwLDEwODAsMjE2MF0sImluZGV4ZXJzIjpbImJpdHNlYXJjaCIsImV6dHYiLCJ0aGVwaXJhdGViYXkiLCJ0aGVyYXJiZyIsInl0cyJdLCJkZWJyaWRBcGlLZXkiOiJkQTE3WEVhSWF4ZTNEUjNEU20xcSJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "jackettio.elfhosted.com",
+      "version": "1.7.0",
+      "name": "Jackettio AD",
+      "description": "Stremio addon that resolve streams using Jackett and Debrid. It seamlessly integrates with private trackers.",
+      "icon": "https://jackettio.elfhosted.com/icon",
+      "resources": [
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "behaviorHints": {
+        "configurable": true
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://stream-fusion.stremiofr.com/eyJhZGRvbkhvc3QiOiJodHRwczovL3N0cmVhbS1mdXNpb24uc3RyZW1pb2ZyLmNvbSIsImFwaUtleSI6IjM0NWU4YjIwLTNhN2ItNGIyOS1hZTU4LTEyOWZhNDk5NmY4NiIsInNlcnZpY2UiOlsiQWxsRGVicmlkIl0sIlJEVG9rZW4iOiJ7XG4gIFwiY2xpZW50X2lkXCI6IFwiMlQ2U0RYSVhMNkFCV1wiLFxuICBcImNsaWVudF9zZWNyZXRcIjogXCJkMjYxNjhjOGRjODUwNDNkZGNiYjcxOThlMDFiMmRlZDA1YWE0MmJhXCIsXG4gIFwiYWNjZXNzX3Rva2VuXCI6IFwiWTVUSDJWVVdZVlZLWlJKNVpCTUgzNllYUUxRSVZPMk5NTjZHWkk1T1FTUkpQTTJMREVJQVwiLFxuICBcInJlZnJlc2hfdG9rZW5cIjogXCIzQkk2REFGVk5HTFFLU0hUNE5IU0lLUlVQSlFVS1JSQ01WRlFPTlRBR1dYWE5DVEhXNFlBXCJcbn0iLCJBRFRva2VuIjoiTjBIZGx5RFNCWnZGS1FPTXkzQWkiLCJUQlRva2VuIjoiYjhhYzgyYzAtZDM4Ni00OTlhLWFlM2UtMTFmYWY2MTUxNzdmIiwiUE1Ub2tlbiI6IiIsIlRCVXNlbmV0IjpmYWxzZSwiVEJTZWFyY2giOnRydWUsIm1heFNpemUiOjEwMDAsImV4Y2x1c2lvbktleXdvcmRzIjpbXSwibGFuZ3VhZ2VzIjpbImVuIiwiZnIiLCJtdWx0aSJdLCJzb3J0IjoicXVhbGl0eXRoZW5zaXplIiwicmVzdWx0c1BlclF1YWxpdHkiOjEwLCJtYXhSZXN1bHRzIjozMCwibWluQ2FjaGVkUmVzdWx0cyI6NSwiZXhjbHVzaW9uIjpbImNhbSJdLCJjYWNoZVVybCI6Imh0dHBzOi8vc3RyZW1pby1qYWNrZXR0LWNhY2hlci5lbGZob3N0ZWQuY29tLyIsImNhY2hlIjp0cnVlLCJ6aWxlYW4iOnRydWUsInlnZ2ZsaXgiOnRydWUsInNoYXJld29vZCI6dHJ1ZSwieWdndG9ycmVudEN0ZyI6ZmFsc2UsInlnZ2ZsaXhDdGciOmZhbHNlLCJ0b3JyZW50aW5nIjpmYWxzZSwiZGVicmlkIjp0cnVlLCJtZXRhZGF0YVByb3ZpZGVyIjoidG1kYiIsImRlYnJpZERvd25sb2FkZXIiOiJBbGxEZWJyaWQifQ==/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.limedrive.streamfusion",
+      "icon": "https://i.imgur.com/q2VSdSp.png",
+      "version": "2.2.1",
+      "catalogs": [],
+      "resources": [
+        "catalog",
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "name": "StreamFusion",
+      "description": "StreamFusion enhances Stremio by integrating torrent indexers and debrid services, providing access to a vast array of cached torrent sources. This plugin seamlessly bridges Stremio with popular indexers and debrid platforms, offering users an expanded content library and a smooth streaming experience.",
+      "behaviorHints": {
+        "configurable": true
+      },
+      "config": null
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://comet.stremiofr.com/eyJpbmRleGVycyI6WyJ5Z2d0b3JyZW50Iiwic2hhcmV3b29kLWFwaSIsInlnZ2Nvb2tpZSIsImdrdG9ycmVudCIsImRtbSIsInlnZ2FwaSJdLCJtYXhSZXN1bHRzIjoxNSwibWF4UmVzdWx0c1BlclJlc29sdXRpb24iOjEwLCJtYXhTaXplIjoyMTQ3NDgzNjQ4MDAwLCJyZXN1bHRGb3JtYXQiOlsiQWxsIl0sInJlc29sdXRpb25zIjpbIjRrIiwiMjE2MHAiLCIxNDQwcCIsIjEwODBwIiwiNzIwcCJdLCJsYW5ndWFnZXMiOlsiTXVsdGkiLCJFbmdsaXNoIiwiSmFwYW5lc2UiLCJGcmVuY2giXSwiZGVicmlkU2VydmljZSI6ImFsbGRlYnJpZCIsImRlYnJpZEFwaUtleSI6ImRBMTdYRWFJYXhlM0RSM0RTbTFxIiwiZGVicmlkU3RyZWFtUHJveHlQYXNzd29yZCI6IiJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "stremio.comet.fr",
+      "name": "CometFR | AD",
+      "description": "Stremio addons for French content.",
+      "version": "1.0.0",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "logo": "https://i.imgur.com/dUL8j6C.png",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://jackettio.stremiofr.com/eyJtYXhUb3JyZW50cyI6MTUsInByaW90aXplUGFja1RvcnJlbnRzIjoyLCJleGNsdWRlS2V5d29yZHMiOlsiQ0FNIl0sImRlYnJpZElkIjoiYWxsZGVicmlkIiwiaGlkZVVuY2FjaGVkIjpmYWxzZSwic29ydENhY2hlZCI6W1sicXVhbGl0eSIsdHJ1ZV0sWyJzaXplIix0cnVlXV0sInNvcnRVbmNhY2hlZCI6W1sic2VlZGVycyIsdHJ1ZV1dLCJmb3JjZUNhY2hlTmV4dEVwaXNvZGUiOmZhbHNlLCJwcmlvdGl6ZUxhbmd1YWdlcyI6WyJmcmVuY2giXSwiaW5kZXhlclRpbWVvdXRTZWMiOjYwLCJtZXRhTGFuZ3VhZ2UiOiIiLCJlbmFibGVNZWRpYUZsb3ciOmZhbHNlLCJtZWRpYWZsb3dQcm94eVVybCI6IiIsIm1lZGlhZmxvd0FwaVBhc3N3b3JkIjoiIiwibWVkaWFmbG93UHVibGljSXAiOiIiLCJxdWFsaXRpZXMiOlswLDcyMCwxMDgwLDIxNjBdLCJpbmRleGVycyI6WyJ5Z2dhcGkiLCJ5Z2djb29raWUiLCJzaGFyZXdvb2QtYXBpIl0sImRlYnJpZEFwaUtleSI6ImRBMTdYRWFJYXhlM0RSM0RTbTFxIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.stremio.StremioFR",
+      "version": "1.7.0",
+      "name": "StremioFR Tracker AD",
+      "description": "Stremio addon that resolve streams using Jackett and Debrid. It seamlessly integrates with private trackers.",
+      "icon": "https://jackettio.stremiofr.com/icon",
+      "resources": [
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "behaviorHints": {
+        "configurable": true
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://streamfusion.vatax.xyz/eyJhZGRvbkhvc3QiOiJodHRwczovL3N0cmVhbWZ1c2lvbi52YXRheC54eXoiLCJhcGlLZXkiOiI1NDMyYTVkZC1hMTc0LTQ5YjUtOWM3YS02MDQ2ZjU5ZmZhNmQiLCJzZXJ2aWNlIjpbIkFsbERlYnJpZCJdLCJSRFRva2VuIjoie1xuICBcImNsaWVudF9pZFwiOiBcIjJUNlNEWElYTDZBQldcIixcbiAgXCJjbGllbnRfc2VjcmV0XCI6IFwiZDI2MTY4YzhkYzg1MDQzZGRjYmI3MTk4ZTAxYjJkZWQwNWFhNDJiYVwiLFxuICBcImFjY2Vzc190b2tlblwiOiBcIjI2VUEyWkg1MzRXR1dZTEZTNVhNR0ZDUUtHSzQ2SkxYMk5OTFEyRUFURllHRk5WTzNQTlFcIixcbiAgXCJyZWZyZXNoX3Rva2VuXCI6IFwiNUZCWEhaRk9VWkZFSENVUFpFRktDTFNWUjdXVVhCVkxCV0tTUlRPRVk1SVZRTURXUE9PUVwiXG59IiwiQURUb2tlbiI6Ik4wSGRseURTQlp2RktRT015M0FpIiwiVEJUb2tlbiI6ImI4YWM4MmMwLWQzODYtNDk5YS1hZTNlLTExZmFmNjE1MTc3ZiIsIlRCVXNlbmV0IjpmYWxzZSwiVEJTZWFyY2giOnRydWUsIm1heFNpemUiOjEwMDAsImV4Y2x1c2lvbktleXdvcmRzIjpbXSwibGFuZ3VhZ2VzIjpbImVuIiwiZnIiLCJtdWx0aSJdLCJzb3J0Ijoic2l6ZWRlc2MiLCJyZXN1bHRzUGVyUXVhbGl0eSI6MTAsIm1heFJlc3VsdHMiOjMwLCJtaW5DYWNoZWRSZXN1bHRzIjo1LCJleGNsdXNpb24iOlsiY2FtIl0sImNhY2hlVXJsIjoiaHR0cHM6Ly9zdHJlbWlvLWphY2tldHQtY2FjaGVyLmVsZmhvc3RlZC5jb20vIiwiamFja2V0dCI6dHJ1ZSwiY2FjaGUiOnRydWUsInppbGVhbiI6dHJ1ZSwieWdnZmxpeCI6dHJ1ZSwic2hhcmV3b29kIjp0cnVlLCJ5Z2d0b3JyZW50Q3RnIjpmYWxzZSwieWdnZmxpeEN0ZyI6ZmFsc2UsInRvcnJlbnRpbmciOmZhbHNlLCJkZWJyaWQiOnRydWUsIm1ldGFkYXRhUHJvdmlkZXIiOiJ0bWRiIiwiZGVicmlkRG93bmxvYWRlciI6IkFsbERlYnJpZCJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.limedrive.streamfusion",
+      "icon": "https://i.imgur.com/q2VSdSp.png",
+      "version": "2.2.1",
+      "catalogs": [],
+      "resources": [
+        "catalog",
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "name": "StreamFusion",
+      "description": "StreamFusion enhances Stremio by integrating torrent indexers and debrid services, providing access to a vast array of cached torrent sources. This plugin seamlessly bridges Stremio with popular indexers and debrid platforms, offering users an expanded content library and a smooth streaming experience.",
+      "behaviorHints": {
+        "configurable": true
+      },
+      "config": null
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://comet.vatax.xyz/eyJpbmRleGVycyI6WyIxMzc3eCIsImdrdG9ycmVudCIsIm55YWFzaSIsInNoYXJld29vZC1hcGkiLCJ0aGVyYXJiZyIsInRvcnJlbnQ5IiwidG9ycmVudDktdGVsIiwidG9ycmVudGxlZWNoIiwieWdnYXBpIiwiemV0b3JyZW50cyJdLCJtYXhSZXN1bHRzIjoxNSwibWF4UmVzdWx0c1BlclJlc29sdXRpb24iOjEwLCJtYXhTaXplIjoxMDczNzQxODI0MDAwLCJyZXN1bHRGb3JtYXQiOlsiQWxsIl0sInJlc29sdXRpb25zIjpbIjRrIiwiMjE2MHAiLCIxNDQwcCIsIjEwODBwIiwiNzIwcCJdLCJsYW5ndWFnZXMiOlsiTXVsdGkiLCJFbmdsaXNoIiwiSmFwYW5lc2UiLCJGcmVuY2giXSwiZGVicmlkU2VydmljZSI6ImFsbGRlYnJpZCIsImRlYnJpZEFwaUtleSI6ImRBMTdYRWFJYXhlM0RSM0RTbTFxIiwiZGVicmlkU3RyZWFtUHJveHlQYXNzd29yZCI6IiJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "stremio.comet.fast",
+      "name": "Comet | AD",
+      "description": "Stremio's fastest torrent/debrid search add-on.",
+      "version": "1.0.0",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "logo": "https://i.imgur.com/jmVoVMu.jpeg",
+      "background": "https://i.imgur.com/WwnXB3k.jpeg",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://stremiojackett.vatax.xyz/eyJhZGRvbkhvc3QiOiJodHRwczovL3N0cmVtaW9qYWNrZXR0LnZhdGF4Lnh5eiIsImphY2tldHRIb3N0IjoiaHR0cDovLzE5Mi4xNjguMS4xMDg6OTExNyIsImphY2tldHRBcGlLZXkiOiI2bGRmcHdtdzU1NTZjN2RyZ3RqNTk2cXRob3ZpdHIzcCIsInNlcnZpY2UiOiJhbGxkZWJyaWQiLCJkZWJyaWRLZXkiOiJkQTE3WEVhSWF4ZTNEUjNEU20xcSIsIm1heFNpemUiOiIyMDAwIiwiZXhjbHVzaW9uS2V5d29yZHMiOltdLCJsYW5ndWFnZXMiOlsiZW4iLCJmciIsIm11bHRpIl0sInNvcnQiOiJzaXplZGVzYyIsInJlc3VsdHNQZXJRdWFsaXR5IjoiMTAiLCJtYXhSZXN1bHRzIjoiMTUiLCJleGNsdXNpb24iOlsiY2FtIl0sInRtZGJBcGkiOiI4ZWZkMWFjMzEwZDA0MzU3NjA3YWUxMjM0ZGU4MmZkMyIsImphY2tldHQiOnRydWUsImNhY2hlIjp0cnVlLCJ0b3JyZW50aW5nIjpmYWxzZSwiZGVicmlkIjp0cnVlLCJtZXRhZGF0YVByb3ZpZGVyIjoidG1kYiJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.aymene69.jackett",
+      "icon": "https://i.imgur.com/tVjqEJP.png",
+      "version": "4.2.2",
+      "catalogs": [],
+      "resources": [
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "name": "Jackett",
+      "description": "Elevate your Stremio experience with seamless access to Jackett torrent links, effortlessly fetching torrents for your selected movies within the Stremio interface.",
+      "behaviorHints": {
+        "configurable": true
+      }
+    },
+    "flags": {}
+  },
+  {
+    "transportUrl": "https://jackettio.vatax.xyz/eyJtYXhUb3JyZW50cyI6MTUsInByaW90aXplUGFja1RvcnJlbnRzIjoyLCJleGNsdWRlS2V5d29yZHMiOlsiQ0FNIl0sImRlYnJpZElkIjoiYWxsZGVicmlkIiwiaGlkZVVuY2FjaGVkIjpmYWxzZSwic29ydENhY2hlZCI6W1sicXVhbGl0eSIsdHJ1ZV0sWyJzaXplIix0cnVlXV0sInNvcnRVbmNhY2hlZCI6W1sic2VlZGVycyIsdHJ1ZV1dLCJmb3JjZUNhY2hlTmV4dEVwaXNvZGUiOnRydWUsInByaW90aXplTGFuZ3VhZ2VzIjpbImZyZW5jaCJdLCJpbmRleGVyVGltZW91dFNlYyI6NjAsIm1ldGFMYW5ndWFnZSI6IiIsImVuYWJsZU1lZGlhRmxvdyI6ZmFsc2UsIm1lZGlhZmxvd1Byb3h5VXJsIjoiIiwibWVkaWFmbG93QXBpUGFzc3dvcmQiOiIiLCJtZWRpYWZsb3dQdWJsaWNJcCI6IiIsInF1YWxpdGllcyI6WzAsNzIwLDEwODAsMjE2MF0sImluZGV4ZXJzIjpbInlnZ2FwaSIsInNoYXJld29vZC1hcGkiLCJ0b3JyZW50OSIsInRoZXJhcmJnIiwidG9ycmVudGxlZWNoIiwibnlhYXNpIiwieWdnY29va2llIiwiZ2t0b3JyZW50IiwidG9ycmVudDktdGVsIiwiemV0b3JyZW50cyIsIjEzMzd4Il0sImRlYnJpZEFwaUtleSI6ImRBMTdYRWFJYXhlM0RSM0RTbTFxIn0=/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "community.stremio.jackettio",
+      "version": "1.7.0",
+      "name": "Jackettio AD",
+      "description": "Stremio addon that resolve streams using Jackett and Debrid. It seamlessly integrates with private trackers.",
+      "icon": "https://jackettio.vatax.xyz/icon",
+      "resources": [
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "behaviorHints": {
+        "configurable": true
+      }
+    },
+    "flags": {}
+  }
+]

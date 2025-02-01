@@ -1,0 +1,1280 @@
+{
+  "greg@greg.com": [
+    {
+      "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "com.linvo.cinemeta",
+        "version": "3.0.12",
+        "description": "The official addon for movie and series catalogs",
+        "name": "Cinemeta",
+        "resources": [
+          "catalog",
+          "meta",
+          "addon_catalog"
+        ],
+        "types": [
+          "movie",
+          "series"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "addonCatalogs": [
+          {
+            "type": "all",
+            "id": "official",
+            "name": "Official"
+          },
+          {
+            "type": "movie",
+            "id": "official",
+            "name": "Official"
+          },
+          {
+            "type": "series",
+            "id": "official",
+            "name": "Official"
+          },
+          {
+            "type": "channel",
+            "id": "official",
+            "name": "Official"
+          },
+          {
+            "type": "all",
+            "id": "community",
+            "name": "Community"
+          },
+          {
+            "type": "movie",
+            "id": "community",
+            "name": "Community"
+          },
+          {
+            "type": "series",
+            "id": "community",
+            "name": "Community"
+          },
+          {
+            "type": "channel",
+            "id": "community",
+            "name": "Community"
+          },
+          {
+            "type": "tv",
+            "id": "community",
+            "name": "Community"
+          },
+          {
+            "type": "Podcasts",
+            "id": "community",
+            "name": "Community"
+          },
+          {
+            "type": "other",
+            "id": "community",
+            "name": "Community"
+          }
+        ],
+        "catalogs": [
+          {
+            "type": "movie",
+            "id": "top",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation",
+              "Biography",
+              "Comedy",
+              "Crime",
+              "Documentary",
+              "Drama",
+              "Family",
+              "Fantasy",
+              "History",
+              "Horror",
+              "Mystery",
+              "Romance",
+              "Sci-Fi",
+              "Sport",
+              "Thriller",
+              "War",
+              "Western"
+            ],
+            "extra": [
+              {
+                "name": "genre",
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Biography",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Sport",
+                  "Thriller",
+                  "War",
+                  "Western"
+                ]
+              },
+              {
+                "name": "search"
+              },
+              {
+                "name": "skip"
+              }
+            ],
+            "extraSupported": [
+              "search",
+              "genre",
+              "skip"
+            ],
+            "name": "Popular"
+          },
+          {
+            "type": "series",
+            "id": "top",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation",
+              "Biography",
+              "Comedy",
+              "Crime",
+              "Documentary",
+              "Drama",
+              "Family",
+              "Fantasy",
+              "History",
+              "Horror",
+              "Mystery",
+              "Romance",
+              "Sci-Fi",
+              "Sport",
+              "Thriller",
+              "War",
+              "Western",
+              "Reality-TV",
+              "Talk-Show",
+              "Game-Show"
+            ],
+            "extra": [
+              {
+                "name": "genre",
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Biography",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Sport",
+                  "Thriller",
+                  "War",
+                  "Western",
+                  "Reality-TV",
+                  "Talk-Show",
+                  "Game-Show"
+                ]
+              },
+              {
+                "name": "search"
+              },
+              {
+                "name": "skip"
+              }
+            ],
+            "extraSupported": [
+              "search",
+              "genre",
+              "skip"
+            ],
+            "name": "Popular"
+          },
+          {
+            "type": "movie",
+            "id": "year",
+            "genres": [
+              "2024",
+              "2023",
+              "2022",
+              "2021",
+              "2020",
+              "2019",
+              "2018",
+              "2017",
+              "2016",
+              "2015",
+              "2014",
+              "2013",
+              "2012",
+              "2011",
+              "2010",
+              "2009",
+              "2008",
+              "2007",
+              "2006",
+              "2005",
+              "2004",
+              "2003",
+              "2002",
+              "2001",
+              "2000",
+              "1999",
+              "1998",
+              "1997",
+              "1996",
+              "1995",
+              "1994",
+              "1993",
+              "1992",
+              "1991",
+              "1990",
+              "1989",
+              "1988",
+              "1987",
+              "1986",
+              "1985",
+              "1984",
+              "1983",
+              "1982",
+              "1981",
+              "1980",
+              "1979",
+              "1978",
+              "1977",
+              "1976",
+              "1975",
+              "1974",
+              "1973",
+              "1972",
+              "1971",
+              "1970",
+              "1969",
+              "1968",
+              "1967",
+              "1966",
+              "1965",
+              "1964",
+              "1963",
+              "1962",
+              "1961",
+              "1960",
+              "1959",
+              "1958",
+              "1957",
+              "1956",
+              "1955",
+              "1954",
+              "1953",
+              "1952",
+              "1951",
+              "1950",
+              "1949",
+              "1948",
+              "1947",
+              "1946",
+              "1945",
+              "1944",
+              "1943",
+              "1942",
+              "1941",
+              "1940",
+              "1939",
+              "1938",
+              "1937",
+              "1936",
+              "1935",
+              "1934",
+              "1933",
+              "1932",
+              "1931",
+              "1930",
+              "1929",
+              "1928",
+              "1927",
+              "1926",
+              "1925",
+              "1924",
+              "1923",
+              "1922",
+              "1921",
+              "1920"
+            ],
+            "extra": [
+              {
+                "name": "genre",
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010",
+                  "2009",
+                  "2008",
+                  "2007",
+                  "2006",
+                  "2005",
+                  "2004",
+                  "2003",
+                  "2002",
+                  "2001",
+                  "2000",
+                  "1999",
+                  "1998",
+                  "1997",
+                  "1996",
+                  "1995",
+                  "1994",
+                  "1993",
+                  "1992",
+                  "1991",
+                  "1990",
+                  "1989",
+                  "1988",
+                  "1987",
+                  "1986",
+                  "1985",
+                  "1984",
+                  "1983",
+                  "1982",
+                  "1981",
+                  "1980",
+                  "1979",
+                  "1978",
+                  "1977",
+                  "1976",
+                  "1975",
+                  "1974",
+                  "1973",
+                  "1972",
+                  "1971",
+                  "1970",
+                  "1969",
+                  "1968",
+                  "1967",
+                  "1966",
+                  "1965",
+                  "1964",
+                  "1963",
+                  "1962",
+                  "1961",
+                  "1960",
+                  "1959",
+                  "1958",
+                  "1957",
+                  "1956",
+                  "1955",
+                  "1954",
+                  "1953",
+                  "1952",
+                  "1951",
+                  "1950",
+                  "1949",
+                  "1948",
+                  "1947",
+                  "1946",
+                  "1945",
+                  "1944",
+                  "1943",
+                  "1942",
+                  "1941",
+                  "1940",
+                  "1939",
+                  "1938",
+                  "1937",
+                  "1936",
+                  "1935",
+                  "1934",
+                  "1933",
+                  "1932",
+                  "1931",
+                  "1930",
+                  "1929",
+                  "1928",
+                  "1927",
+                  "1926",
+                  "1925",
+                  "1924",
+                  "1923",
+                  "1922",
+                  "1921",
+                  "1920"
+                ],
+                "isRequired": true
+              },
+              {
+                "name": "skip"
+              }
+            ],
+            "extraSupported": [
+              "genre",
+              "skip"
+            ],
+            "extraRequired": [
+              "genre"
+            ],
+            "name": "New"
+          },
+          {
+            "type": "series",
+            "id": "year",
+            "genres": [
+              "2024",
+              "2023",
+              "2022",
+              "2021",
+              "2020",
+              "2019",
+              "2018",
+              "2017",
+              "2016",
+              "2015",
+              "2014",
+              "2013",
+              "2012",
+              "2011",
+              "2010",
+              "2009",
+              "2008",
+              "2007",
+              "2006",
+              "2005",
+              "2004",
+              "2003",
+              "2002",
+              "2001",
+              "2000",
+              "1999",
+              "1998",
+              "1997",
+              "1996",
+              "1995",
+              "1994",
+              "1993",
+              "1992",
+              "1991",
+              "1990",
+              "1989",
+              "1988",
+              "1987",
+              "1986",
+              "1985",
+              "1984",
+              "1983",
+              "1982",
+              "1981",
+              "1980",
+              "1979",
+              "1978",
+              "1977",
+              "1976",
+              "1975",
+              "1974",
+              "1973",
+              "1972",
+              "1971",
+              "1970",
+              "1969",
+              "1968",
+              "1967",
+              "1966",
+              "1965",
+              "1964",
+              "1963",
+              "1962",
+              "1961",
+              "1960"
+            ],
+            "extra": [
+              {
+                "name": "genre",
+                "options": [
+                  "2024",
+                  "2023",
+                  "2022",
+                  "2021",
+                  "2020",
+                  "2019",
+                  "2018",
+                  "2017",
+                  "2016",
+                  "2015",
+                  "2014",
+                  "2013",
+                  "2012",
+                  "2011",
+                  "2010",
+                  "2009",
+                  "2008",
+                  "2007",
+                  "2006",
+                  "2005",
+                  "2004",
+                  "2003",
+                  "2002",
+                  "2001",
+                  "2000",
+                  "1999",
+                  "1998",
+                  "1997",
+                  "1996",
+                  "1995",
+                  "1994",
+                  "1993",
+                  "1992",
+                  "1991",
+                  "1990",
+                  "1989",
+                  "1988",
+                  "1987",
+                  "1986",
+                  "1985",
+                  "1984",
+                  "1983",
+                  "1982",
+                  "1981",
+                  "1980",
+                  "1979",
+                  "1978",
+                  "1977",
+                  "1976",
+                  "1975",
+                  "1974",
+                  "1973",
+                  "1972",
+                  "1971",
+                  "1970",
+                  "1969",
+                  "1968",
+                  "1967",
+                  "1966",
+                  "1965",
+                  "1964",
+                  "1963",
+                  "1962",
+                  "1961",
+                  "1960"
+                ],
+                "isRequired": true
+              },
+              {
+                "name": "skip"
+              }
+            ],
+            "extraSupported": [
+              "genre",
+              "skip"
+            ],
+            "extraRequired": [
+              "genre"
+            ],
+            "name": "New"
+          },
+          {
+            "type": "movie",
+            "id": "imdbRating",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation",
+              "Biography",
+              "Comedy",
+              "Crime",
+              "Documentary",
+              "Drama",
+              "Family",
+              "Fantasy",
+              "History",
+              "Horror",
+              "Mystery",
+              "Romance",
+              "Sci-Fi",
+              "Sport",
+              "Thriller",
+              "War",
+              "Western"
+            ],
+            "extra": [
+              {
+                "name": "genre",
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Biography",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Sport",
+                  "Thriller",
+                  "War",
+                  "Western"
+                ]
+              },
+              {
+                "name": "skip"
+              }
+            ],
+            "extraSupported": [
+              "genre",
+              "skip"
+            ],
+            "name": "Featured"
+          },
+          {
+            "type": "series",
+            "id": "imdbRating",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation",
+              "Biography",
+              "Comedy",
+              "Crime",
+              "Documentary",
+              "Drama",
+              "Family",
+              "Fantasy",
+              "History",
+              "Horror",
+              "Mystery",
+              "Romance",
+              "Sci-Fi",
+              "Sport",
+              "Thriller",
+              "War",
+              "Western",
+              "Reality-TV",
+              "Talk-Show",
+              "Game-Show"
+            ],
+            "extra": [
+              {
+                "name": "genre",
+                "options": [
+                  "Action",
+                  "Adventure",
+                  "Animation",
+                  "Biography",
+                  "Comedy",
+                  "Crime",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Fantasy",
+                  "History",
+                  "Horror",
+                  "Mystery",
+                  "Romance",
+                  "Sci-Fi",
+                  "Sport",
+                  "Thriller",
+                  "War",
+                  "Western",
+                  "Reality-TV",
+                  "Talk-Show",
+                  "Game-Show"
+                ]
+              },
+              {
+                "name": "skip"
+              }
+            ],
+            "extraSupported": [
+              "genre",
+              "skip"
+            ],
+            "name": "Featured"
+          },
+          {
+            "type": "series",
+            "id": "last-videos",
+            "extra": [
+              {
+                "name": "lastVideosIds",
+                "isRequired": true,
+                "optionsLimit": 100
+              }
+            ],
+            "extraSupported": [
+              "lastVideosIds"
+            ],
+            "extraRequired": [
+              "lastVideosIds"
+            ],
+            "name": "Last videos"
+          },
+          {
+            "type": "series",
+            "id": "calendar-videos",
+            "extra": [
+              {
+                "name": "calendarVideosIds",
+                "isRequired": true,
+                "optionsLimit": 100
+              }
+            ],
+            "extraSupported": [
+              "calendarVideosIds"
+            ],
+            "extraRequired": [
+              "calendarVideosIds"
+            ],
+            "name": "Calendar videos"
+          }
+        ],
+        "behaviorHints": {
+          "newEpisodeNotifications": true
+        }
+      },
+      "flags": {
+        "official": true,
+        "protected": true
+      }
+    },
+    {
+      "transportUrl": "https://opensubtitles-v3.strem.io/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "org.stremio.opensubtitlesv3",
+        "version": "1.0.0",
+        "name": "OpenSubtitles v3",
+        "description": "OpenSubtitles v3 Addon for Stremio",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "subtitles"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "catalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": false,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": true,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "org.stremio.local",
+        "version": "1.10.0",
+        "name": "Local Files (without catalog support)",
+        "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
+        "types": [
+          "movie",
+          "series",
+          "other"
+        ],
+        "resources": [
+          {
+            "name": "meta",
+            "types": [
+              "other"
+            ],
+            "idPrefixes": [
+              "local:",
+              "bt:"
+            ]
+          },
+          {
+            "name": "stream",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "tt"
+            ]
+          }
+        ],
+        "catalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": false,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": true,
+        "protected": true
+      }
+    },
+    {
+      "transportUrl": "https://modshack.duckdns.org/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.premiumize.proxy",
+        "version": "1.0.0",
+        "name": "Premiumize Proxy",
+        "description": "Combined Torrent Streams with Premiumize Debrid",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "stream"
+        ],
+        "idPrefixes": null,
+        "catalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": false,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://torrentiopro.duckdns.org/pr3m1um1z3pr0x/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "com.stremio.torrentio.addon",
+        "version": "0.0.14",
+        "name": "Torrentio PM",
+        "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(-), NyaaSi(-), TokyoTosho(-), AniDex(-), Rutor(-), Rutracker(-), Comando(-), BluDV(-), Torrent9(+), ilCorSaRoNeRo(-), MejorTorrent(-), Wolfmax4k(-), Cinecalidad(-) and Premiumize enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+        "types": [
+          "movie",
+          "series",
+          "anime",
+          "other"
+        ],
+        "resources": [
+          {
+            "name": "stream",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "tt",
+              "kitsu"
+            ]
+          }
+        ],
+        "idPrefixes": null,
+        "catalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": false,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://propremiumize.duckdns.org/pr3m1um1z3pr0x/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "org.premiumize",
+        "version": "1.6.0",
+        "name": "Premiumize",
+        "description": "Stream movies and series via Debrid services",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "stream"
+        ],
+        "idPrefixes": [
+          "tt",
+          "tmdb"
+        ],
+        "catalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": false,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://123easyas.duckdns.org/eyJ1c2VybmFtZSI6ImlnamZwYWxwbGMiLCJwYXNzd29yZCI6ImxtZ3Fzd2V2dHYifQ==/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "org.stremio.easynews",
+        "version": "1.0.0",
+        "name": "Easynews",
+        "description": "Stream movies and series from Easynews with high quality sources",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "catalog",
+          {
+            "name": "meta",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "easynews"
+            ]
+          },
+          {
+            "name": "stream",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "tt",
+              "tmdb",
+              "easynews"
+            ]
+          }
+        ],
+        "idPrefixes": null,
+        "catalogs": [
+          {
+            "type": "movie",
+            "id": "easynews-movie-catalog",
+            "name": "Easynews Movies",
+            "extra": [
+              {
+                "name": "search",
+                "isRequired": true
+              }
+            ]
+          },
+          {
+            "type": "series",
+            "id": "easynews-series-catalog",
+            "name": "Easynews Series",
+            "extra": [
+              {
+                "name": "search",
+                "isRequired": true
+              }
+            ]
+          }
+        ],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://ufccatalog.duckdns.org/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "org.stremio.ufc",
+        "version": "1.3.0",
+        "name": "UFC Catalog",
+        "description": "Stremio Add-on showcasing UFC events and related content from TMDB with daily updates",
+        "types": [
+          "movie"
+        ],
+        "resources": [
+          "catalog",
+          "meta"
+        ],
+        "idPrefixes": [
+          "tmdb"
+        ],
+        "catalogs": [
+          {
+            "type": "movie",
+            "id": "ufc-movie-catalog",
+            "name": "UFC Events",
+            "extra": [
+              {
+                "name": "search",
+                "isRequired": false
+              }
+            ]
+          }
+        ],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": false,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://lucky-cloud-4a8f.stremiotv.workers.dev/eyJ1c2VybmFtZSI6InR3aGxqc2Rla3ciLCJwYXNzd29yZCI6InRiaXItcnVuYi16ZGRsIn0=/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "org.stremio.easynewsrss",
+        "version": "2.1.0",
+        "name": "Easynews rss",
+        "description": "Stream movies and series from Easynews with high quality sources",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "catalog",
+          {
+            "name": "meta",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "easynews"
+            ]
+          },
+          {
+            "name": "stream",
+            "types": [
+              "movie",
+              "series"
+            ],
+            "idPrefixes": [
+              "tt",
+              "tmdb",
+              "easynews"
+            ]
+          }
+        ],
+        "idPrefixes": null,
+        "catalogs": [
+          {
+            "type": "movie",
+            "id": "easynews-movie-catalog",
+            "name": "Easynews Movies",
+            "extra": [
+              {
+                "name": "search",
+                "isRequired": true
+              }
+            ]
+          },
+          {
+            "type": "series",
+            "id": "easynews-series-catalog",
+            "name": "Easynews Series",
+            "extra": [
+              {
+                "name": "search",
+                "isRequired": true
+              }
+            ]
+          }
+        ],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": true,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://jackettiopro.duckdns.org/pr3m1um1z3pr0x/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "community.stremio.jackettio",
+        "version": "1.6.0",
+        "name": "TMDb UFC Jackettio PM",
+        "description": "Stremio addon that resolve streams using Jackett and Debrid. It seamlessly integrates with private trackers.",
+        "types": [
+          "movie",
+          "series"
+        ],
+        "resources": [
+          "stream"
+        ],
+        "idPrefixes": [
+          "tt",
+          "tmdb"
+        ],
+        "catalogs": [],
+        "behaviorHints": {
+          "adult": false,
+          "p2p": false,
+          "configurable": false,
+          "configurationRequired": false
+        }
+      },
+      "flags": {
+        "official": false,
+        "protected": false
+      }
+    },
+    {
+      "transportUrl": "https://7a82163c306e-stremio-netflix-catalog-addon.baby-beamup.club/bmZ4LGRucCxhbXAsYXRwLGhibSxuZmsscG1wLGRwZTp0MC1mcmVlLXJwZGI6dXM6MTczNjg4ODYwMTgwOA%3D%3D/manifest.json",
+      "transportName": "",
+      "manifest": {
+        "id": "pw.ers.netflix-catalog",
+        "logo": "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI",
+        "version": "1.0.9",
+        "name": "Streaming Catalogs",
+        "description": "Your favourite streaming services!",
+        "catalogs": [
+          {
+            "id": "nfx",
+            "type": "movie",
+            "name": "Netflix"
+          },
+          {
+            "id": "nfx",
+            "type": "series",
+            "name": "Netflix"
+          },
+          {
+            "id": "nfk",
+            "type": "movie",
+            "name": "Netflix Kids"
+          },
+          {
+            "id": "nfk",
+            "type": "series",
+            "name": "Netflix Kids"
+          },
+          {
+            "id": "hbm",
+            "type": "movie",
+            "name": "HBO Max"
+          },
+          {
+            "id": "hbm",
+            "type": "series",
+            "name": "HBO Max"
+          },
+          {
+            "id": "dnp",
+            "type": "movie",
+            "name": "Disney+"
+          },
+          {
+            "id": "dnp",
+            "type": "series",
+            "name": "Disney+"
+          },
+          {
+            "id": "amp",
+            "type": "movie",
+            "name": "Prime Video"
+          },
+          {
+            "id": "amp",
+            "type": "series",
+            "name": "Prime Video"
+          },
+          {
+            "id": "pmp",
+            "type": "movie",
+            "name": "Paramount+"
+          },
+          {
+            "id": "pmp",
+            "type": "series",
+            "name": "Paramount+"
+          },
+          {
+            "id": "atp",
+            "type": "movie",
+            "name": "Apple TV+"
+          },
+          {
+            "id": "atp",
+            "type": "series",
+            "name": "Apple TV+"
+          },
+          {
+            "id": "dpe",
+            "type": "series",
+            "name": "Discovery+"
+          }
+        ],
+        "resources": [
+          "catalog"
+        ],
+        "types": [
+          "movie",
+          "series"
+        ],
+        "idPrefixes": [
+          "tt"
+        ],
+        "behaviorHints": {
+          "configurable": true
+        }
+      },
+      "flags": {}
+    }
+  ]
+}
